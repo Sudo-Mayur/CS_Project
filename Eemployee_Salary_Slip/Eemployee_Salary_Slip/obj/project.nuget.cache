@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "a1mZcJah/1EtXj7Krm305z7P82b5kRnA/1u0eBuiYpZTE9F6c8d/ePSpKmqHsjl2DoNHLt69D/z85/Souezrtw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Eemployee_Salary_Slip\\Eemployee_Salary_Slip\\Employee_Salary_Slip.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

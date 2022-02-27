@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\bin\Debug\net5.0\Assignment_Linq1.exe
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\bin\Debug\net5.0\Assignment_Linq1.deps.json
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\bin\Debug\net5.0\Assignment_Linq1.runtimeconfig.json
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\bin\Debug\net5.0\Assignment_Linq1.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\bin\Debug\net5.0\Assignment_Linq1.dll
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\bin\Debug\net5.0\Assignment_Linq1.pdb
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\obj\Debug\net5.0\Assignment_Linq1.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\obj\Debug\net5.0\Assignment_Linq1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\obj\Debug\net5.0\Assignment_Linq1.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\obj\Debug\net5.0\Assignment_Linq1.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\obj\Debug\net5.0\Assignment_Linq1.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\obj\Debug\net5.0\Assignment_Linq1.dll
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\obj\Debug\net5.0\refint\Assignment_Linq1.dll
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\obj\Debug\net5.0\Assignment_Linq1.pdb
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\obj\Debug\net5.0\Assignment_Linq1.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Assignment_Linq1\obj\Debug\net5.0\ref\Assignment_Linq1.dll

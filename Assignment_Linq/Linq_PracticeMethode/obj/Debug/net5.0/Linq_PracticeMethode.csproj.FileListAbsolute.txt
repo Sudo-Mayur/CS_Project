@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\bin\Debug\net5.0\Linq_PracticeMethode.exe
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\bin\Debug\net5.0\Linq_PracticeMethode.deps.json
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\bin\Debug\net5.0\Linq_PracticeMethode.runtimeconfig.json
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\bin\Debug\net5.0\Linq_PracticeMethode.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\bin\Debug\net5.0\Linq_PracticeMethode.dll
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\bin\Debug\net5.0\Linq_PracticeMethode.pdb
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\obj\Debug\net5.0\Linq_PracticeMethode.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\obj\Debug\net5.0\Linq_PracticeMethode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\obj\Debug\net5.0\Linq_PracticeMethode.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\obj\Debug\net5.0\Linq_PracticeMethode.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\obj\Debug\net5.0\Linq_PracticeMethode.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\obj\Debug\net5.0\Linq_PracticeMethode.dll
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\obj\Debug\net5.0\refint\Linq_PracticeMethode.dll
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\obj\Debug\net5.0\Linq_PracticeMethode.pdb
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\obj\Debug\net5.0\Linq_PracticeMethode.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Linq_PracticeMethode\obj\Debug\net5.0\ref\Linq_PracticeMethode.dll

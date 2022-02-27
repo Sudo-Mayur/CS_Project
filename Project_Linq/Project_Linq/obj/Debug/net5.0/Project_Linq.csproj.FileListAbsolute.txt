@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\bin\Debug\net5.0\Project_Linq.exe
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\bin\Debug\net5.0\Project_Linq.deps.json
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\bin\Debug\net5.0\Project_Linq.runtimeconfig.json
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\bin\Debug\net5.0\Project_Linq.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\bin\Debug\net5.0\Project_Linq.dll
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\bin\Debug\net5.0\Project_Linq.pdb
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\obj\Debug\net5.0\Project_Linq.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\obj\Debug\net5.0\Project_Linq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\obj\Debug\net5.0\Project_Linq.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\obj\Debug\net5.0\Project_Linq.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\obj\Debug\net5.0\Project_Linq.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\obj\Debug\net5.0\Project_Linq.dll
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\obj\Debug\net5.0\refint\Project_Linq.dll
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\obj\Debug\net5.0\Project_Linq.pdb
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\obj\Debug\net5.0\Project_Linq.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Project_Linq\Project_Linq\obj\Debug\net5.0\ref\Project_Linq.dll

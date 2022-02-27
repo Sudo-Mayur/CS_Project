@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32104.313
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_NetFrwk_ConnectedArchitecture", "CS_NetFrwk_ConnectedArchitecture\CS_NetFrwk_ConnectedArchitecture.csproj", "{1FF24F9B-FDB9-41D9-977F-6F10AB6DF9A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_NetFrwk_ConnectedApp", "CS_NetFrwk_ConnectedApp\CS_NetFrwk_ConnectedApp.csproj", "{8AF63873-C1D9-4710-B727-6EE13FAE6299}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FF24F9B-FDB9-41D9-977F-6F10AB6DF9A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF24F9B-FDB9-41D9-977F-6F10AB6DF9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF24F9B-FDB9-41D9-977F-6F10AB6DF9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF24F9B-FDB9-41D9-977F-6F10AB6DF9A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF63873-C1D9-4710-B727-6EE13FAE6299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF63873-C1D9-4710-B727-6EE13FAE6299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF63873-C1D9-4710-B727-6EE13FAE6299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF63873-C1D9-4710-B727-6EE13FAE6299}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8747A29E-C5DE-420B-BB4F-5931E867C30E}
+	EndGlobalSection
+EndGlobal

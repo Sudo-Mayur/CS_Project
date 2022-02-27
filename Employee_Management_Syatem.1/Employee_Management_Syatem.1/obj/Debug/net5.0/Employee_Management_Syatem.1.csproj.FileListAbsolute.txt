@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\bin\Debug\net5.0\Employee_Management_Syatem.1.exe
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\bin\Debug\net5.0\Employee_Management_Syatem.1.deps.json
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\bin\Debug\net5.0\Employee_Management_Syatem.1.runtimeconfig.json
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\bin\Debug\net5.0\Employee_Management_Syatem.1.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\bin\Debug\net5.0\Employee_Management_Syatem.1.dll
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\bin\Debug\net5.0\Employee_Management_Syatem.1.pdb
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\obj\Debug\net5.0\Employee_Management_Syatem.1.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\obj\Debug\net5.0\Employee_Management_Syatem.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\obj\Debug\net5.0\Employee_Management_Syatem.1.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\obj\Debug\net5.0\Employee_Management_Syatem.1.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\obj\Debug\net5.0\Employee_Management_Syatem.1.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\obj\Debug\net5.0\Employee_Management_Syatem.1.dll
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\obj\Debug\net5.0\refint\Employee_Management_Syatem.1.dll
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\obj\Debug\net5.0\Employee_Management_Syatem.1.pdb
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\obj\Debug\net5.0\Employee_Management_Syatem.1.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Employee_Management_Syatem.1\Employee_Management_Syatem.1\obj\Debug\net5.0\ref\Employee_Management_Syatem.1.dll

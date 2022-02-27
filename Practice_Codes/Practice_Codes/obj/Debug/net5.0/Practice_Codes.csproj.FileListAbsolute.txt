@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\bin\Debug\net5.0\Practice_Codes.exe
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\bin\Debug\net5.0\Practice_Codes.deps.json
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\bin\Debug\net5.0\Practice_Codes.runtimeconfig.json
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\bin\Debug\net5.0\Practice_Codes.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\bin\Debug\net5.0\Practice_Codes.dll
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\bin\Debug\net5.0\Practice_Codes.pdb
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\obj\Debug\net5.0\Practice_Codes.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\obj\Debug\net5.0\Practice_Codes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\obj\Debug\net5.0\Practice_Codes.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\obj\Debug\net5.0\Practice_Codes.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\obj\Debug\net5.0\Practice_Codes.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\obj\Debug\net5.0\Practice_Codes.dll
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\obj\Debug\net5.0\refint\Practice_Codes.dll
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\obj\Debug\net5.0\Practice_Codes.pdb
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\obj\Debug\net5.0\Practice_Codes.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Practice_Codes\obj\Debug\net5.0\ref\Practice_Codes.dll

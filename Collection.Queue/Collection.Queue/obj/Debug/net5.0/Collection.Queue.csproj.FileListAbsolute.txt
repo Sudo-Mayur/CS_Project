@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\obj\Debug\net5.0\Collection.Queue.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\obj\Debug\net5.0\Collection.Queue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\obj\Debug\net5.0\Collection.Queue.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\obj\Debug\net5.0\Collection.Queue.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\obj\Debug\net5.0\Collection.Queue.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\bin\Debug\net5.0\Collection.Queue.exe
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\bin\Debug\net5.0\Collection.Queue.deps.json
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\bin\Debug\net5.0\Collection.Queue.runtimeconfig.json
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\bin\Debug\net5.0\Collection.Queue.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\bin\Debug\net5.0\Collection.Queue.dll
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\bin\Debug\net5.0\Collection.Queue.pdb
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\obj\Debug\net5.0\Collection.Queue.dll
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\obj\Debug\net5.0\refint\Collection.Queue.dll
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\obj\Debug\net5.0\Collection.Queue.pdb
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\obj\Debug\net5.0\Collection.Queue.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Collection.Queue\Collection.Queue\obj\Debug\net5.0\ref\Collection.Queue.dll

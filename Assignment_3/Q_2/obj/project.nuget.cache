@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mjF5Z8/o74MNmrm9GS81Dd+Pk5FTlIHu6Xo4v/7+wmc47HZfKVG4g3RJjAHGdNOns+ppiOzN5UPSdMZu71h9CQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Assignment_3\\Q_2\\Q_2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

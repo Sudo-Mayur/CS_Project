@@ -1,0 +1,8 @@
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_24_FEb\bin\Debug\CS_Thread_24_FEb.exe.config
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_24_FEb\bin\Debug\CS_Thread_24_FEb.exe
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_24_FEb\bin\Debug\CS_Thread_24_FEb.pdb
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_24_FEb\obj\Debug\CS_Thread_24_FEb.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_24_FEb\obj\Debug\CS_Thread_24_FEb.csproj.SuggestedBindingRedirects.cache
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_24_FEb\obj\Debug\CS_Thread_24_FEb.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_24_FEb\obj\Debug\CS_Thread_24_FEb.exe
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_24_FEb\obj\Debug\CS_Thread_24_FEb.pdb

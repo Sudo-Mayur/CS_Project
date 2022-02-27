@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Employee_Management_System_Practice/1.0.0": {
+        "runtime": {
+          "Employee_Management_System_Practice.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Employee_Management_System_Practice/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

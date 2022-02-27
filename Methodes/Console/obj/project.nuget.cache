@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "q9tNVVwbrjQxl+BwCmfXxHotiCO1bHRoD9x6a92U60ScuXRHYPCfpxMJU0P4oka5KKJW81J1NiG0kdWB2mFk6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Methodes\\Console\\Console.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

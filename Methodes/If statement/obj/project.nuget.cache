@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SUGzkXP+za7JRAa72T5+gnHZK/IWZ+UOqdDxAEtqIa/YDEvdAaqus1n4fAkLBPL86ktHDbJhWa/P3Vb51Psvvw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Methodes\\If statement\\If statement.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

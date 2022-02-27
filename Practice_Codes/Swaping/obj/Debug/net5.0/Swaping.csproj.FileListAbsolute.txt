@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\bin\Debug\net5.0\Swaping.exe
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\bin\Debug\net5.0\Swaping.deps.json
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\bin\Debug\net5.0\Swaping.runtimeconfig.json
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\bin\Debug\net5.0\Swaping.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\bin\Debug\net5.0\Swaping.dll
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\bin\Debug\net5.0\Swaping.pdb
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\obj\Debug\net5.0\Swaping.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\obj\Debug\net5.0\Swaping.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\obj\Debug\net5.0\Swaping.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\obj\Debug\net5.0\Swaping.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\obj\Debug\net5.0\Swaping.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\obj\Debug\net5.0\Swaping.dll
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\obj\Debug\net5.0\refint\Swaping.dll
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\obj\Debug\net5.0\Swaping.pdb
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\obj\Debug\net5.0\Swaping.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Swaping\obj\Debug\net5.0\ref\Swaping.dll

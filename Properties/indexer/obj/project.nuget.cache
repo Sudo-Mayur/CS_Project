@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+kgAQoq+EmWufcXBvpoHVfc8pLZAOOEXdqXf3gX33VV3Hjm9TfTpmGKlnm/P9Z6wioi+fpsEuhaGW53ksOcthw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Properties\\indexer\\indexer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

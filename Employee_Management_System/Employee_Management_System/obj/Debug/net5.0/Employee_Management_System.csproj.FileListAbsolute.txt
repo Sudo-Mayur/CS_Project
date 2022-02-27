@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\bin\Debug\net5.0\Employee_Management_System.exe
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\bin\Debug\net5.0\Employee_Management_System.deps.json
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\bin\Debug\net5.0\Employee_Management_System.runtimeconfig.json
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\bin\Debug\net5.0\Employee_Management_System.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\bin\Debug\net5.0\Employee_Management_System.dll
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\bin\Debug\net5.0\Employee_Management_System.pdb
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\obj\Debug\net5.0\Employee_Management_System.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\obj\Debug\net5.0\Employee_Management_System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\obj\Debug\net5.0\Employee_Management_System.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\obj\Debug\net5.0\Employee_Management_System.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\obj\Debug\net5.0\Employee_Management_System.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\obj\Debug\net5.0\Employee_Management_System.dll
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\obj\Debug\net5.0\refint\Employee_Management_System.dll
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\obj\Debug\net5.0\Employee_Management_System.pdb
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\obj\Debug\net5.0\Employee_Management_System.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Employee_Management_System\Employee_Management_System\obj\Debug\net5.0\ref\Employee_Management_System.dll

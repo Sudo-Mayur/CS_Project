@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TVgNJIjcCyFtSbHF6AaRfb+G6AKtJeLgbutEgRiEBFYjb8nZ21vgz41ld+LuEJZI8Gelvhyv+/mA5NbBvVIwfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Employee_Management_Syatem.1\\Employee_Management_Syatem.1\\Employee_Management_Syatem.1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

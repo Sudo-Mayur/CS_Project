@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Console\If statement\bin\Debug\net5.0\If statement.exe
+C:\Users\Coditas\source\repos\Console\If statement\bin\Debug\net5.0\If statement.deps.json
+C:\Users\Coditas\source\repos\Console\If statement\bin\Debug\net5.0\If statement.runtimeconfig.json
+C:\Users\Coditas\source\repos\Console\If statement\bin\Debug\net5.0\If statement.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Console\If statement\bin\Debug\net5.0\If statement.dll
+C:\Users\Coditas\source\repos\Console\If statement\bin\Debug\net5.0\If statement.pdb
+C:\Users\Coditas\source\repos\Console\If statement\obj\Debug\net5.0\If statement.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Console\If statement\obj\Debug\net5.0\If statement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Console\If statement\obj\Debug\net5.0\If statement.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Console\If statement\obj\Debug\net5.0\If statement.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Console\If statement\obj\Debug\net5.0\If statement.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Console\If statement\obj\Debug\net5.0\If statement.dll
+C:\Users\Coditas\source\repos\Console\If statement\obj\Debug\net5.0\refint\If statement.dll
+C:\Users\Coditas\source\repos\Console\If statement\obj\Debug\net5.0\If statement.pdb
+C:\Users\Coditas\source\repos\Console\If statement\obj\Debug\net5.0\If statement.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Console\If statement\obj\Debug\net5.0\ref\If statement.dll

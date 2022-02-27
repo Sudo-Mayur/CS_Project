@@ -1,0 +1,8 @@
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\ConsoleApp1\obj\Debug\Linq_Assignmentm.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\ConsoleApp1\obj\Debug\Linq_Assignmentm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\ConsoleApp1\obj\Debug\Linq_Assignmentm.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\bin\Debug\net5.0\Employee_Salary_Slip.exe
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\bin\Debug\net5.0\Employee_Salary_Slip.deps.json
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\bin\Debug\net5.0\Employee_Salary_Slip.runtimeconfig.json
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\bin\Debug\net5.0\Employee_Salary_Slip.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\bin\Debug\net5.0\Employee_Salary_Slip.dll
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\bin\Debug\net5.0\Employee_Salary_Slip.pdb
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\obj\Debug\net5.0\Employee_Salary_Slip.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\obj\Debug\net5.0\Employee_Salary_Slip.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\obj\Debug\net5.0\Employee_Salary_Slip.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\obj\Debug\net5.0\Employee_Salary_Slip.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\obj\Debug\net5.0\Employee_Salary_Slip.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\obj\Debug\net5.0\Employee_Salary_Slip.dll
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\obj\Debug\net5.0\refint\Employee_Salary_Slip.dll
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\obj\Debug\net5.0\Employee_Salary_Slip.pdb
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\obj\Debug\net5.0\Employee_Salary_Slip.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Eemployee_Salary_Slip\Eemployee_Salary_Slip\obj\Debug\net5.0\ref\Employee_Salary_Slip.dll

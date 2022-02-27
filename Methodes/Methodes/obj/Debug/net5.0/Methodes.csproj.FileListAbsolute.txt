@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Methodes\Methodes\bin\Debug\net5.0\Methodes.exe
+C:\Users\Coditas\source\repos\Methodes\Methodes\bin\Debug\net5.0\Methodes.deps.json
+C:\Users\Coditas\source\repos\Methodes\Methodes\bin\Debug\net5.0\Methodes.runtimeconfig.json
+C:\Users\Coditas\source\repos\Methodes\Methodes\bin\Debug\net5.0\Methodes.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Methodes\Methodes\bin\Debug\net5.0\Methodes.dll
+C:\Users\Coditas\source\repos\Methodes\Methodes\bin\Debug\net5.0\Methodes.pdb
+C:\Users\Coditas\source\repos\Methodes\Methodes\obj\Debug\net5.0\Methodes.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Methodes\Methodes\obj\Debug\net5.0\Methodes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Methodes\Methodes\obj\Debug\net5.0\Methodes.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Methodes\Methodes\obj\Debug\net5.0\Methodes.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Methodes\Methodes\obj\Debug\net5.0\Methodes.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Methodes\Methodes\obj\Debug\net5.0\Methodes.dll
+C:\Users\Coditas\source\repos\Methodes\Methodes\obj\Debug\net5.0\refint\Methodes.dll
+C:\Users\Coditas\source\repos\Methodes\Methodes\obj\Debug\net5.0\Methodes.pdb
+C:\Users\Coditas\source\repos\Methodes\Methodes\obj\Debug\net5.0\Methodes.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Methodes\Methodes\obj\Debug\net5.0\ref\Methodes.dll

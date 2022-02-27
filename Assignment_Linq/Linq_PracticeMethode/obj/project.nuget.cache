@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ypGDGVPxN5GEM2fSjuTVDXQ9W/DxFbvSNlgeMcNnvQF+FI6CiFDDHY/QQYGPWxMxc1pAJtJT+43B8Hf8pERY3A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Assignment_Linq\\Linq_PracticeMethode\\Linq_PracticeMethode.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

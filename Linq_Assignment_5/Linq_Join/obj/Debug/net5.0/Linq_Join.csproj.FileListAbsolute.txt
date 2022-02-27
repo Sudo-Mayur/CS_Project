@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\bin\Debug\net5.0\Linq_Join.exe
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\bin\Debug\net5.0\Linq_Join.deps.json
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\bin\Debug\net5.0\Linq_Join.runtimeconfig.json
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\bin\Debug\net5.0\Linq_Join.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\bin\Debug\net5.0\Linq_Join.dll
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\bin\Debug\net5.0\Linq_Join.pdb
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\obj\Debug\net5.0\Linq_Join.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\obj\Debug\net5.0\Linq_Join.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\obj\Debug\net5.0\Linq_Join.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\obj\Debug\net5.0\Linq_Join.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\obj\Debug\net5.0\Linq_Join.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\obj\Debug\net5.0\Linq_Join.dll
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\obj\Debug\net5.0\refint\Linq_Join.dll
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\obj\Debug\net5.0\Linq_Join.pdb
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\obj\Debug\net5.0\Linq_Join.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Linq_Assignment_5\Linq_Join\obj\Debug\net5.0\ref\Linq_Join.dll

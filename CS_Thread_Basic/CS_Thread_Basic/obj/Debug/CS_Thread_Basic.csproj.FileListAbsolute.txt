@@ -1,0 +1,8 @@
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_Basic\bin\Debug\CS_Thread_Basic.exe.config
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_Basic\bin\Debug\CS_Thread_Basic.exe
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_Basic\bin\Debug\CS_Thread_Basic.pdb
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_Basic\obj\Debug\CS_Thread_Basic.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_Basic\obj\Debug\CS_Thread_Basic.csproj.SuggestedBindingRedirects.cache
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_Basic\obj\Debug\CS_Thread_Basic.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_Basic\obj\Debug\CS_Thread_Basic.exe
+C:\Users\Coditas\source\repos\CS_Thread_Basic\CS_Thread_Basic\obj\Debug\CS_Thread_Basic.pdb

@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Console\Math_Class\bin\Debug\net5.0\Math_Class.exe
+C:\Users\Coditas\source\repos\Console\Math_Class\bin\Debug\net5.0\Math_Class.deps.json
+C:\Users\Coditas\source\repos\Console\Math_Class\bin\Debug\net5.0\Math_Class.runtimeconfig.json
+C:\Users\Coditas\source\repos\Console\Math_Class\bin\Debug\net5.0\Math_Class.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Console\Math_Class\bin\Debug\net5.0\Math_Class.dll
+C:\Users\Coditas\source\repos\Console\Math_Class\bin\Debug\net5.0\Math_Class.pdb
+C:\Users\Coditas\source\repos\Console\Math_Class\obj\Debug\net5.0\Math_Class.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Console\Math_Class\obj\Debug\net5.0\Math_Class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Console\Math_Class\obj\Debug\net5.0\Math_Class.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Console\Math_Class\obj\Debug\net5.0\Math_Class.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Console\Math_Class\obj\Debug\net5.0\Math_Class.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Console\Math_Class\obj\Debug\net5.0\Math_Class.dll
+C:\Users\Coditas\source\repos\Console\Math_Class\obj\Debug\net5.0\refint\Math_Class.dll
+C:\Users\Coditas\source\repos\Console\Math_Class\obj\Debug\net5.0\Math_Class.pdb
+C:\Users\Coditas\source\repos\Console\Math_Class\obj\Debug\net5.0\Math_Class.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Console\Math_Class\obj\Debug\net5.0\ref\Math_Class.dll

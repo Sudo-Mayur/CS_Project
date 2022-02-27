@@ -1,0 +1,8 @@
+C:\Users\Coditas\source\repos\CS_NetFrwk_Disconnected.csproj\CS_NetFrwk_Disconnected.csproj\bin\Debug\CS_NetFrwk_Disconnected.csproj.exe.config
+C:\Users\Coditas\source\repos\CS_NetFrwk_Disconnected.csproj\CS_NetFrwk_Disconnected.csproj\bin\Debug\CS_NetFrwk_Disconnected.csproj.exe
+C:\Users\Coditas\source\repos\CS_NetFrwk_Disconnected.csproj\CS_NetFrwk_Disconnected.csproj\bin\Debug\CS_NetFrwk_Disconnected.csproj.pdb
+C:\Users\Coditas\source\repos\CS_NetFrwk_Disconnected.csproj\CS_NetFrwk_Disconnected.csproj\obj\Debug\CS_NetFrwk_Disconnected.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\CS_NetFrwk_Disconnected.csproj\CS_NetFrwk_Disconnected.csproj\obj\Debug\CS_NetFrwk_Disconnected.csproj.SuggestedBindingRedirects.cache
+C:\Users\Coditas\source\repos\CS_NetFrwk_Disconnected.csproj\CS_NetFrwk_Disconnected.csproj\obj\Debug\CS_NetFrwk_Disconnected.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\CS_NetFrwk_Disconnected.csproj\CS_NetFrwk_Disconnected.csproj\obj\Debug\CS_NetFrwk_Disconnected.csproj.exe
+C:\Users\Coditas\source\repos\CS_NetFrwk_Disconnected.csproj\CS_NetFrwk_Disconnected.csproj\obj\Debug\CS_NetFrwk_Disconnected.csproj.pdb

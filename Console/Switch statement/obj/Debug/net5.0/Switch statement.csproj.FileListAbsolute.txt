@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Console\Switch statement\bin\Debug\net5.0\Switch statement.exe
+C:\Users\Coditas\source\repos\Console\Switch statement\bin\Debug\net5.0\Switch statement.deps.json
+C:\Users\Coditas\source\repos\Console\Switch statement\bin\Debug\net5.0\Switch statement.runtimeconfig.json
+C:\Users\Coditas\source\repos\Console\Switch statement\bin\Debug\net5.0\Switch statement.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Console\Switch statement\bin\Debug\net5.0\Switch statement.dll
+C:\Users\Coditas\source\repos\Console\Switch statement\bin\Debug\net5.0\Switch statement.pdb
+C:\Users\Coditas\source\repos\Console\Switch statement\obj\Debug\net5.0\Switch statement.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Console\Switch statement\obj\Debug\net5.0\Switch statement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Console\Switch statement\obj\Debug\net5.0\Switch statement.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Console\Switch statement\obj\Debug\net5.0\Switch statement.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Console\Switch statement\obj\Debug\net5.0\Switch statement.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Console\Switch statement\obj\Debug\net5.0\Switch statement.dll
+C:\Users\Coditas\source\repos\Console\Switch statement\obj\Debug\net5.0\refint\Switch statement.dll
+C:\Users\Coditas\source\repos\Console\Switch statement\obj\Debug\net5.0\Switch statement.pdb
+C:\Users\Coditas\source\repos\Console\Switch statement\obj\Debug\net5.0\Switch statement.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Console\Switch statement\obj\Debug\net5.0\ref\Switch statement.dll

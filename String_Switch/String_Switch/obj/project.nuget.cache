@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eUNy0/P280nb/9l7suRfBaqYjEBBeVulrSpYSadV925bVZ8ETnGoPhpxnHR3PZTT9WqxfPnJMyrCq0PJGygb9A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\String_Switch\\String_Switch\\String_Switch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

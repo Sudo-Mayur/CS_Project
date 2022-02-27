@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "w6qV0uLodvAGyeQCu6w57CKml5PjOTrWMLzqujwu/ILkYT1WPqL0TxL4Jo0G2QE9bU/AbdZ1Oo62bITPv7kqqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\EMS_Updated\\EMS_Updated\\EMS_Updated.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

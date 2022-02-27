@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\bin\Debug\net5.0\EMS_Updated.exe
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\bin\Debug\net5.0\EMS_Updated.deps.json
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\bin\Debug\net5.0\EMS_Updated.runtimeconfig.json
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\bin\Debug\net5.0\EMS_Updated.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\bin\Debug\net5.0\EMS_Updated.dll
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\bin\Debug\net5.0\EMS_Updated.pdb
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\obj\Debug\net5.0\EMS_Updated.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\obj\Debug\net5.0\EMS_Updated.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\obj\Debug\net5.0\EMS_Updated.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\obj\Debug\net5.0\EMS_Updated.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\obj\Debug\net5.0\EMS_Updated.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\obj\Debug\net5.0\EMS_Updated.dll
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\obj\Debug\net5.0\refint\EMS_Updated.dll
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\obj\Debug\net5.0\EMS_Updated.pdb
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\obj\Debug\net5.0\EMS_Updated.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\EMS_Updated\EMS_Updated\obj\Debug\net5.0\ref\EMS_Updated.dll

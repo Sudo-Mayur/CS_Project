@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\bin\Debug\net5.0\Dept_Records.exe
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\bin\Debug\net5.0\Dept_Records.deps.json
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\bin\Debug\net5.0\Dept_Records.runtimeconfig.json
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\bin\Debug\net5.0\Dept_Records.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\bin\Debug\net5.0\Dept_Records.dll
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\bin\Debug\net5.0\Dept_Records.pdb
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\obj\Debug\net5.0\Dept_Records.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\obj\Debug\net5.0\Dept_Records.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\obj\Debug\net5.0\Dept_Records.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\obj\Debug\net5.0\Dept_Records.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\obj\Debug\net5.0\Dept_Records.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\obj\Debug\net5.0\Dept_Records.dll
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\obj\Debug\net5.0\refint\Dept_Records.dll
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\obj\Debug\net5.0\Dept_Records.pdb
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\obj\Debug\net5.0\Dept_Records.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Assignment_Linq\Dept_Records\obj\Debug\net5.0\ref\Dept_Records.dll

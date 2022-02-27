@@ -1,0 +1,5 @@
+C:\Users\Coditas\source\repos\Employee_Management_System_Final\Employee_Management_System_Final\obj\Debug\net5.0\Employee_Management_System_Final.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Employee_Management_System_Final\Employee_Management_System_Final\obj\Debug\net5.0\Employee_Management_System_Final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Employee_Management_System_Final\Employee_Management_System_Final\obj\Debug\net5.0\Employee_Management_System_Final.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Employee_Management_System_Final\Employee_Management_System_Final\obj\Debug\net5.0\Employee_Management_System_Final.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Employee_Management_System_Final\Employee_Management_System_Final\obj\Debug\net5.0\Employee_Management_System_Final.csproj.CoreCompileInputs.cache

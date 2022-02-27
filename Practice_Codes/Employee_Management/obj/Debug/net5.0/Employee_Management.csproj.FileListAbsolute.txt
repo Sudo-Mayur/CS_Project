@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\bin\Debug\net5.0\Employee_Management.exe
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\bin\Debug\net5.0\Employee_Management.deps.json
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\bin\Debug\net5.0\Employee_Management.runtimeconfig.json
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\bin\Debug\net5.0\Employee_Management.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\bin\Debug\net5.0\Employee_Management.dll
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\bin\Debug\net5.0\Employee_Management.pdb
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\obj\Debug\net5.0\Employee_Management.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\obj\Debug\net5.0\Employee_Management.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\obj\Debug\net5.0\Employee_Management.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\obj\Debug\net5.0\Employee_Management.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\obj\Debug\net5.0\Employee_Management.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\obj\Debug\net5.0\Employee_Management.dll
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\obj\Debug\net5.0\refint\Employee_Management.dll
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\obj\Debug\net5.0\Employee_Management.pdb
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\obj\Debug\net5.0\Employee_Management.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Practice_Codes\Employee_Management\obj\Debug\net5.0\ref\Employee_Management.dll

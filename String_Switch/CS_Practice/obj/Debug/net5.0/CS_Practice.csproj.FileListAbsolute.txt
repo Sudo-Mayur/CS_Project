@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\bin\Debug\net5.0\CS_Practice.exe
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\bin\Debug\net5.0\CS_Practice.deps.json
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\bin\Debug\net5.0\CS_Practice.runtimeconfig.json
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\bin\Debug\net5.0\CS_Practice.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\bin\Debug\net5.0\CS_Practice.dll
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\bin\Debug\net5.0\CS_Practice.pdb
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\obj\Debug\net5.0\CS_Practice.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\obj\Debug\net5.0\CS_Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\obj\Debug\net5.0\CS_Practice.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\obj\Debug\net5.0\CS_Practice.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\obj\Debug\net5.0\CS_Practice.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\obj\Debug\net5.0\CS_Practice.dll
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\obj\Debug\net5.0\refint\CS_Practice.dll
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\obj\Debug\net5.0\CS_Practice.pdb
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\obj\Debug\net5.0\CS_Practice.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\String_Switch\CS_Practice\obj\Debug\net5.0\ref\CS_Practice.dll

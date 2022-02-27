@@ -1,0 +1,8 @@
+C:\Users\Coditas\source\repos\Connected_Architecture\Connected_Architecture\bin\Debug\Connected_Architecture.exe.config
+C:\Users\Coditas\source\repos\Connected_Architecture\Connected_Architecture\bin\Debug\Connected_Architecture.exe
+C:\Users\Coditas\source\repos\Connected_Architecture\Connected_Architecture\bin\Debug\Connected_Architecture.pdb
+C:\Users\Coditas\source\repos\Connected_Architecture\Connected_Architecture\obj\Debug\Connected_Architecture.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Connected_Architecture\Connected_Architecture\obj\Debug\Connected_Architecture.csproj.SuggestedBindingRedirects.cache
+C:\Users\Coditas\source\repos\Connected_Architecture\Connected_Architecture\obj\Debug\Connected_Architecture.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Connected_Architecture\Connected_Architecture\obj\Debug\Connected_Architecture.exe
+C:\Users\Coditas\source\repos\Connected_Architecture\Connected_Architecture\obj\Debug\Connected_Architecture.pdb

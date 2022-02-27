@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GaWe2s39Ml6v68++8DN71IwXoI153YRDmwI4pnDdKFcwfzUBcoM0NP24Ci/B4dL7ZYPjkFxTeUouWf11VgqQ0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Eemployee_Salary_Slip\\Number_To_String\\Number_To_String.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

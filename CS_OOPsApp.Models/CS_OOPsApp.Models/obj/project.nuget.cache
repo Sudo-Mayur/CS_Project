@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qi3GW9adLvdeUrDZg4XTTxHJ1uzQ22fdfJLDWC1t7Tvo/QAMJs8I7TAnMjWHl5nyX2pCkvFnIY5/twa5aOkOYw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\CS_OOPsApp.Models\\CS_OOPsApp.Models\\CS_OOPsApp.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

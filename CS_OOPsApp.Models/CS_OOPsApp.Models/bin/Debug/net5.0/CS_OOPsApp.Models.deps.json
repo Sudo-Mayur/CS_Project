@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CS_OOPsApp.Models/1.0.0": {
+        "runtime": {
+          "CS_OOPsApp.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CS_OOPsApp.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,8 @@
+C:\Users\Coditas\source\repos\CS_Dispose\CS_Dispose\bin\Debug\CS_Dispose.exe.config
+C:\Users\Coditas\source\repos\CS_Dispose\CS_Dispose\bin\Debug\CS_Dispose.exe
+C:\Users\Coditas\source\repos\CS_Dispose\CS_Dispose\bin\Debug\CS_Dispose.pdb
+C:\Users\Coditas\source\repos\CS_Dispose\CS_Dispose\obj\Debug\CS_Dispose.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\CS_Dispose\CS_Dispose\obj\Debug\CS_Dispose.csproj.SuggestedBindingRedirects.cache
+C:\Users\Coditas\source\repos\CS_Dispose\CS_Dispose\obj\Debug\CS_Dispose.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\CS_Dispose\CS_Dispose\obj\Debug\CS_Dispose.exe
+C:\Users\Coditas\source\repos\CS_Dispose\CS_Dispose\obj\Debug\CS_Dispose.pdb

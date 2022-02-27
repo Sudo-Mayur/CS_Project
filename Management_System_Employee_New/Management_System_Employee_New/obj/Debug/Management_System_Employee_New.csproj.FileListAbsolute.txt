@@ -1,0 +1,8 @@
+C:\Users\Coditas\source\repos\Management_System_Employee_New\Management_System_Employee_New\bin\Debug\Management_System_Employee_New.exe.config
+C:\Users\Coditas\source\repos\Management_System_Employee_New\Management_System_Employee_New\bin\Debug\Management_System_Employee_New.exe
+C:\Users\Coditas\source\repos\Management_System_Employee_New\Management_System_Employee_New\bin\Debug\Management_System_Employee_New.pdb
+C:\Users\Coditas\source\repos\Management_System_Employee_New\Management_System_Employee_New\obj\Debug\Management_System_Employee_New.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Management_System_Employee_New\Management_System_Employee_New\obj\Debug\Management_System_Employee_New.csproj.SuggestedBindingRedirects.cache
+C:\Users\Coditas\source\repos\Management_System_Employee_New\Management_System_Employee_New\obj\Debug\Management_System_Employee_New.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Management_System_Employee_New\Management_System_Employee_New\obj\Debug\Management_System_Employee_New.exe
+C:\Users\Coditas\source\repos\Management_System_Employee_New\Management_System_Employee_New\obj\Debug\Management_System_Employee_New.pdb

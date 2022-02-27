@@ -1,0 +1,8 @@
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\Linq_Assignment_Final2\bin\Debug\Linq_Assignment_Final2.exe.config
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\Linq_Assignment_Final2\bin\Debug\Linq_Assignment_Final2.exe
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\Linq_Assignment_Final2\bin\Debug\Linq_Assignment_Final2.pdb
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\Linq_Assignment_Final2\obj\Debug\Linq_Assignment_Final2.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\Linq_Assignment_Final2\obj\Debug\Linq_Assignment_Final2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\Linq_Assignment_Final2\obj\Debug\Linq_Assignment_Final2.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\Linq_Assignment_Final2\obj\Debug\Linq_Assignment_Final2.exe
+C:\Users\Coditas\source\repos\Assignment_LinqFinal\Linq_Assignment_Final2\obj\Debug\Linq_Assignment_Final2.pdb

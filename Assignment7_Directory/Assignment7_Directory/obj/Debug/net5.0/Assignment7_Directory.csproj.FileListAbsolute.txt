@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\bin\Debug\net5.0\Assignment7_Directory.exe
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\bin\Debug\net5.0\Assignment7_Directory.deps.json
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\bin\Debug\net5.0\Assignment7_Directory.runtimeconfig.json
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\bin\Debug\net5.0\Assignment7_Directory.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\bin\Debug\net5.0\Assignment7_Directory.dll
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\bin\Debug\net5.0\Assignment7_Directory.pdb
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\obj\Debug\net5.0\Assignment7_Directory.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\obj\Debug\net5.0\Assignment7_Directory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\obj\Debug\net5.0\Assignment7_Directory.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\obj\Debug\net5.0\Assignment7_Directory.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\obj\Debug\net5.0\Assignment7_Directory.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\obj\Debug\net5.0\Assignment7_Directory.dll
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\obj\Debug\net5.0\refint\Assignment7_Directory.dll
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\obj\Debug\net5.0\Assignment7_Directory.pdb
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\obj\Debug\net5.0\Assignment7_Directory.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\Assignment7_Directory\Assignment7_Directory\obj\Debug\net5.0\ref\Assignment7_Directory.dll

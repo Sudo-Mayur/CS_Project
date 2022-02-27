@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uHumkat94GySYKSjkevjzoyGH90tC3nC+odIXMSUSeIspWLCBw37VDwGowosHXY7tzCBUZfgNjgjsYxia4BssQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Employee_Management_System_1\\Employee_Management_System_1\\Employee_Management_System_1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

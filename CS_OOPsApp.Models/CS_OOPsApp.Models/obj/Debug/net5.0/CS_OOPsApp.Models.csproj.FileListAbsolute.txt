@@ -1,0 +1,16 @@
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\bin\Debug\net5.0\CS_OOPsApp.Models.exe
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\bin\Debug\net5.0\CS_OOPsApp.Models.deps.json
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\bin\Debug\net5.0\CS_OOPsApp.Models.runtimeconfig.json
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\bin\Debug\net5.0\CS_OOPsApp.Models.runtimeconfig.dev.json
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\bin\Debug\net5.0\CS_OOPsApp.Models.dll
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\bin\Debug\net5.0\CS_OOPsApp.Models.pdb
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\obj\Debug\net5.0\CS_OOPsApp.Models.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\obj\Debug\net5.0\CS_OOPsApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\obj\Debug\net5.0\CS_OOPsApp.Models.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\obj\Debug\net5.0\CS_OOPsApp.Models.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\obj\Debug\net5.0\CS_OOPsApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\obj\Debug\net5.0\CS_OOPsApp.Models.dll
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\obj\Debug\net5.0\refint\CS_OOPsApp.Models.dll
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\obj\Debug\net5.0\CS_OOPsApp.Models.pdb
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\obj\Debug\net5.0\CS_OOPsApp.Models.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\CS_OOPsApp.Models\CS_OOPsApp.Models\obj\Debug\net5.0\ref\CS_OOPsApp.Models.dll

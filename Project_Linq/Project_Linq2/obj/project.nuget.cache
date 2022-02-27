@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7NzBG6COVyKOAgjbi3/CRrPnKKzmvEYYYkCxmrOtZenkvkRKCeatZgWAqMrlYE7f8op0HBCirKhn6U76GBQkTQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Project_Linq\\Project_Linq2\\Project_Linq2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

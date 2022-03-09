@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Cc5RHHJdYpLoLaVe0vVj69MJu//3Zq2uR2/Ae2CZ9I5gjijeMq4EGGrQkrMtfqiyv5Si4b9UiIekfnht3ZzJ/g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\CS_Entity_Framework\\CS_Entity_Framework\\CS_Entity_Framework.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.1\\microsoft.netcore.app.runtime.win-x64.6.0.1.nupkg.sha512",
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.1\\microsoft.aspnetcore.app.runtime.win-x64.6.0.1.nupkg.sha512",
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.1\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

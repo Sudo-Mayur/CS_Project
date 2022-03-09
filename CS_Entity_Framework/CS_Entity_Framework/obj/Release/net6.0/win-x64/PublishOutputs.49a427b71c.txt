@@ -1,0 +1,2 @@
+C:\Users\Coditas\source\repos\CS_Entity_Framework\CS_Entity_Framework\bin\Release\net6.0\win-x64\publish\CS_Entity_Framework.pdb
+C:\Users\Coditas\source\repos\CS_Entity_Framework\CS_Entity_Framework\bin\Release\net6.0\win-x64\publish\CS_Entity_Framework.exe

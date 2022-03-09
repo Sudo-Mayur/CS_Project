@@ -1,0 +1,14 @@
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\bin\Debug\net6.0\ClassLibrary_DB_First.deps.json
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\bin\Debug\net6.0\ClassLibrary_DB_First.runtimeconfig.json
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\bin\Debug\net6.0\ClassLibrary_DB_First.dll
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\bin\Debug\net6.0\ClassLibrary_DB_First.pdb
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\obj\Debug\net6.0\ClassLibrary_DB_First.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\obj\Debug\net6.0\ClassLibrary_DB_First.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\obj\Debug\net6.0\ClassLibrary_DB_First.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\obj\Debug\net6.0\ClassLibrary_DB_First.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\obj\Debug\net6.0\ClassLibrary_DB_First.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\obj\Debug\net6.0\ClassLibrary_DB_First.dll
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\obj\Debug\net6.0\refint\ClassLibrary_DB_First.dll
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\obj\Debug\net6.0\ClassLibrary_DB_First.pdb
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\obj\Debug\net6.0\ClassLibrary_DB_First.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\ClassLibrary_DB_First\ClassLibrary_DB_First\obj\Debug\net6.0\ref\ClassLibrary_DB_First.dll

@@ -88,7 +88,7 @@ namespace CS_Thread_24_FEb
             Employee emp = new Employee();
             Console.WriteLine("Enter EmpNo");
             emp.EmpNo = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Your Name ");
+            Console.WriteLine("Enter Your Name");
             emp.EmpName = Console.ReadLine();
             Console.WriteLine("Enter Salary");
             emp.salary = Convert.ToInt32(Console.ReadLine());

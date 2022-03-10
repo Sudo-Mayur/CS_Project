@@ -38,6 +38,7 @@ foreach(var i in IntergerList)
     Console.WriteLine(i);
 }
 Console.WriteLine();
+Console.WriteLine();
 
 foreach(var i in stringList)
 {
@@ -128,6 +129,7 @@ static void ProcessCollection( List<object> values,out List<int> IntergerList,ou
                     DateTimeList.Add(item);
                 }
                 break;
+                
 
         }
     }

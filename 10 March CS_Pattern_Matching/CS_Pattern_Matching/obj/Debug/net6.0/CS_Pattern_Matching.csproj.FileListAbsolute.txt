@@ -13,3 +13,18 @@ C:\Users\Coditas\source\repos\CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\
 C:\Users\Coditas\source\repos\CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\CS_Pattern_Matching.pdb
 C:\Users\Coditas\source\repos\CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\CS_Pattern_Matching.genruntimeconfig.cache
 C:\Users\Coditas\source\repos\CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\ref\CS_Pattern_Matching.dll
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\bin\Debug\net6.0\CS_Pattern_Matching.exe
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\bin\Debug\net6.0\CS_Pattern_Matching.deps.json
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\bin\Debug\net6.0\CS_Pattern_Matching.runtimeconfig.json
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\bin\Debug\net6.0\CS_Pattern_Matching.dll
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\bin\Debug\net6.0\CS_Pattern_Matching.pdb
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\CS_Pattern_Matching.csproj.AssemblyReference.cache
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\CS_Pattern_Matching.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\CS_Pattern_Matching.AssemblyInfoInputs.cache
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\CS_Pattern_Matching.AssemblyInfo.cs
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\CS_Pattern_Matching.csproj.CoreCompileInputs.cache
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\CS_Pattern_Matching.dll
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\refint\CS_Pattern_Matching.dll
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\CS_Pattern_Matching.pdb
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\CS_Pattern_Matching.genruntimeconfig.cache
+C:\Users\Coditas\source\repos\10 March CS_Pattern_Matching\CS_Pattern_Matching\obj\Debug\net6.0\ref\CS_Pattern_Matching.dll

@@ -54,7 +54,7 @@ namespace Hospital_Managment_System_Final.DataAccess
             Console.WriteLine("Enter Date");
             DateTime dateTime = Convert.ToDateTime(Console.ReadLine());
             var totalCollection = ctx.DailyCollections.Where(x => x.Apdate == dateTime).Sum(x => x.Fees);
-            Console.WriteLine($"Total collection for today was Rs{totalCollection}/-");
+            Console.WriteLine($"Total Collection for the day is: {totalCollection} rupees");
             Console.WriteLine("-------------------------------------------------------------------------------------------");
         }
 

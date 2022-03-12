@@ -80,7 +80,7 @@ do
             Console.WriteLine("enter Medicines");
             patient.Medicines = Console.ReadLine();
 
-            Console.WriteLine("enter Apdate");
+            Console.WriteLine("enter Apdate Like 2022-03-11 in this format");
             patient.Apdate = Convert.ToDateTime(Console.ReadLine());
             record.Apdate = patient.Apdate;
             //2022-02-02
@@ -157,7 +157,7 @@ do
             Console.WriteLine("enter Medicines");
             patient1.Medicines = Console.ReadLine();
 
-            Console.WriteLine("enter Apdate");
+            Console.WriteLine("enter Apdate  Like 2022-03-11 in this format");
             patient1.Apdate = Convert.ToDateTime(Console.ReadLine());
             Record1.Apdate = patient1.Apdate;
 

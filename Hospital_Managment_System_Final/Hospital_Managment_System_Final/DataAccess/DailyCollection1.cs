@@ -51,7 +51,7 @@ namespace Hospital_Managment_System_Final.DataAccess
 
         public void dailyCollection()
         {
-            Console.WriteLine("Enter Date");
+            Console.WriteLine("Enter Date Like 2022-03-11 in this format");
             DateTime dateTime = Convert.ToDateTime(Console.ReadLine());
             var totalCollection = ctx.DailyCollections.Where(x => x.Apdate == dateTime).Sum(x => x.Fees);
             Console.WriteLine($"Total Collection for the day is: {totalCollection} rupees");

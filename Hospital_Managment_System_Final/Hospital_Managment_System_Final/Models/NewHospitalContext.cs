@@ -33,7 +33,7 @@ namespace Hospital_Managment_System_Final.Models
             modelBuilder.Entity<DailyCollection>(entity =>
             {
                 entity.HasKey(e => e.RecordNo)
-                    .HasName("PK__DailyCol__FBDEAF5A3019B309");
+                    .HasName("PK__DailyCol__FBDEAF5A60F00089");
 
                 entity.ToTable("DailyCollection");
 
@@ -45,13 +45,13 @@ namespace Hospital_Managment_System_Final.Models
                     .WithMany(p => p.DailyCollections)
                     .HasForeignKey(d => d.PatientRegNo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__DailyColl__Patie__4AB81AF0");
+                    .HasConstraintName("FK__DailyColl__Patie__5EBF139D");
             });
 
             modelBuilder.Entity<PatientInfo>(entity =>
             {
                 entity.HasKey(e => e.PatientRegNo)
-                    .HasName("PK__PatientI__8D5AD766E777EE35");
+                    .HasName("PK__PatientI__8D5AD766932F40C0");
 
                 entity.ToTable("PatientInfo");
 

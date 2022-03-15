@@ -3,24 +3,24 @@ using Hospital_Managment_System_Final.DataAccess;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 
-
 IDataAccess<PatientInfo, int> dataAccess = new PatientDataAccess();
 IDataAccess1<DailyCollection, int> dataAccess1 = new DailyCollection1();
+
 DailyCollection1 D = new DailyCollection1();
 
 int a = 0;
 do
 {
-    Console.WriteLine("********************WELCOME TO CLINIC MANAGEMENT SYSTEM********************\n"+
+    Console.WriteLine("********************WELCOME TO CLINIC MANAGEMENT SYSTEM********************\n" +
                           "Enter Operation that You want to perform \n" +
                           "1.Get All Patient Records \n" +
                           "2.Add new Patient information\n" +
-                          "3.Find patient Record by PatientNo\n"+
+                          "3.Find patient Record by PatientNo\n" +
                           "4.Update Record\n" +
                           "5.Delete Record from DailyCollectin\n" +
                           "6.Delete Record from PatientInfo\n" +
-                          "7.DailyCollection DateWise\n"+
-                          "8.View All Collection Records\n"+
+                          "7.DailyCollection DateWise\n" +
+                          "8.View All Collection Records\n" +
                           "9.Exit\n" +
                           "10.Clear Screen");
     Console.WriteLine("-------------------------------------------------------------------------------------------");
@@ -118,7 +118,7 @@ do
             var Record1 = new DailyCollection();
 
             Console.WriteLine("Enter RecordNo");
-            Record1.RecordNo=Convert.ToInt32(Console.ReadLine());
+            Record1.RecordNo = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("enter PatientRegNo");
             patient1.PatientRegNo = IsPositiveNumber();
@@ -186,7 +186,7 @@ do
             Console.WriteLine($"Deleted Record" +
                 $"{JsonSerializer.Serialize(DeletePat)}");
             break;
-        
+
         case 7:
             D.dailyCollection();
             break;
@@ -209,7 +209,7 @@ do
             Console.Clear();
             break;
 
-            default:
+        default:
             Console.WriteLine("Wrong Choice");
             break;
     }

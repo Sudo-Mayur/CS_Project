@@ -16,7 +16,7 @@ do
 {
     Console.WriteLine();
 Console.WriteLine("***********WELCOME TO MAYUR RESTAURANT**********\n"+
-                  "1.Creat Bill\n" +
+                  "1.Creat Bill\n"+
                   "2.SHow Bill on Bill Number\n" +
                   "3.Show Bill on CustmerID\n" +
                   "4.Show Bill Table History\n"+
@@ -49,120 +49,136 @@ switch (choice)
         {
             Console.WriteLine($"{item.DishNo}\t {item.DishName}\t       {item.Rate}");
         }
+          
         char ans;
         do
         {
-            DishInfo Dishinfo = new DishInfo();
+                DishInfo Dishinfo = new DishInfo();
+                Dishinfo.CustomorId = custinfo.CustomorId;
 
-            Dishinfo.CustomorId = custinfo.CustomorId;
+                int z = 0;
+                do
+                {                   
+                    Console.WriteLine("Enter DishNo");
+                    Dishinfo.DishNo = IsPositiveNumber();
+                    var dishNo = await dataAccessDishInfo.GetbyId((int)Dishinfo.DishNo);
+                   
+                    if (dishNo != null)
+                    {
+                        Console.WriteLine("Enter Quantity");
+                        Dishinfo.Quantity = IsPositiveNumber();
 
-            Console.WriteLine("Enter DishNo");
-            Dishinfo.DishNo = IsPositiveNumber();
-               
-            Console.WriteLine("Enter Quantity");
-            Dishinfo.Quantity = IsPositiveNumber();
+                        switch (Dishinfo.DishNo)
+                        {
+                            case 1:
+                                Dishinfo.DishName = "Roti";
+                                Dishinfo.Rate = 20;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-            switch (Dishinfo.DishNo)
-            {
-                case 1:
-                    Dishinfo.DishName = "Roti";
-                    Dishinfo.Rate = 20;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 2:
+                                Dishinfo.DishName = "Rice";
+                                Dishinfo.Rate = 60;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 2:
-                    Dishinfo.DishName = "Rice";
-                    Dishinfo.Rate = 60;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 3:
+                                Dishinfo.DishName = "Chapati";
+                                Dishinfo.Rate = 10;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 3:
-                    Dishinfo.DishName = "Chapati";
-                    Dishinfo.Rate = 10;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 4:
+                                Dishinfo.DishName = "ChickenThali";
+                                Dishinfo.Rate = 150;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 4:
-                    Dishinfo.DishName = "ChickenThali";
-                    Dishinfo.Rate = 150;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 5:
+                                Dishinfo.DishName = "ChickenTikka";
+                                Dishinfo.Rate = 170;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 5:
-                    Dishinfo.DishName = "ChickenTikka";
-                    Dishinfo.Rate = 170;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 6:
+                                Dishinfo.DishName = "ChickenChilli";
+                                Dishinfo.Rate = 130;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
+                            case 7:
+                                Dishinfo.DishName = "FishThali";
+                                Dishinfo.Rate = 200;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 6:
-                    Dishinfo.DishName = "ChickenChilli";
-                    Dishinfo.Rate = 130;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
-                case 7:
-                    Dishinfo.DishName = "FishThali";
-                    Dishinfo.Rate = 200;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 8:
+                                Dishinfo.DishName = "VegThali";
+                                Dishinfo.Rate = 100;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 8:
-                    Dishinfo.DishName = "VegThali";
-                    Dishinfo.Rate = 100;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 9:
+                                Dishinfo.DishName = "ShahiPanner";
+                                Dishinfo.Rate = 120;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 9:
-                    Dishinfo.DishName = "ShahiPanner";
-                    Dishinfo.Rate = 120;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 10:
+                                Dishinfo.DishName = "PaneerTikka";
+                                Dishinfo.Rate = 150;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
+                            case 11:
+                                Dishinfo.DishName = "PannerPalak";
+                                Dishinfo.Rate = 130;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 10:
-                    Dishinfo.DishName = "PaneerTikka";
-                    Dishinfo.Rate = 150;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
-                case 11:
-                    Dishinfo.DishName = "PannerPalak";
-                    Dishinfo.Rate = 130;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 12:
+                                Dishinfo.DishName = "FrideRice";
+                                Dishinfo.Rate = 130;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
+                            case 13:
+                                Dishinfo.DishName = "ChickenBiryani";
+                                Dishinfo.Rate = 170;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 12:
-                    Dishinfo.DishName = "FrideRice";
-                    Dishinfo.Rate = 130;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
-                case 13:
-                    Dishinfo.DishName = "ChickenBiryani";
-                    Dishinfo.Rate = 170;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 14:
+                                Dishinfo.DishName = "ChickenLolliPop";
+                                Dishinfo.Rate = 130;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 14:
-                    Dishinfo.DishName = "ChickenLolliPop";
-                    Dishinfo.Rate = 130;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 15:
+                                Dishinfo.DishName = "VegBiryani";
+                                Dishinfo.Rate = 120;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 15:
-                    Dishinfo.DishName = "VegBiryani";
-                    Dishinfo.Rate = 120;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
+                            case 16:
+                                Dishinfo.DishName = "ChickenHandi";
+                                Dishinfo.Rate = 350;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
 
-                case 16:
-                    Dishinfo.DishName = "ChickenHandi";
-                    Dishinfo.Rate = 350;
-                    Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                    break;
-
-                case 17:
-                        Dishinfo.DishName = "Veg Maratha";
-                        Dishinfo.Rate = 130;
-                        Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                        break;
-                }
+                            case 17:
+                                Dishinfo.DishName = "Veg Maratha";
+                                Dishinfo.Rate = 130;
+                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                                break;
+                        }
+                        z = 0;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please Enter Correct Dish Number Which is Available in Dish Table");
+                        z++;
+                        Console.WriteLine(z);
+                    }
+                  
+                } while (z!=0);
 
             var CreatData1 = await dataAccessDishInfo.CreatAsync(Dishinfo);
 
@@ -229,40 +245,37 @@ switch (choice)
 
 
     case 2:
-
-        Console.WriteLine("Enter Bill Number");
-        int BillNo = IsPositiveNumber();
-        var billtable = await dataAccessBill.GetbyId(BillNo);
-
-
-        if (billtable != null)
-        {
-            Console.WriteLine("****************************************MAYUR RESTAURANT***************************************************");
-            Console.WriteLine("Date                BillNo     CustomorId CustName  MobileNo    TableNo   SubTotal  Tax  TotalBill  PaymentMode");
-            Console.WriteLine($"{billtable.Date}\t {billtable.BillNo}\t {billtable.CustomorId}\t{billtable.CustName}\t {billtable.MobileNo}\t {billtable.TableNo}\t {billtable.SubTotal}\t\t{billtable.Tax}\t{billtable.TotalBill}\t{billtable.PaymentMode}");
-        }
-        else
-        {
-            Console.WriteLine("Record Not Found...........");
-        }
-        Console.WriteLine("----------------------------------------------------------------------------------------------------------");
-        break;
-
+            Console.WriteLine("enter CustomorID");
+            int ID1 = IsPositiveNumber();
+            var billnonew = await dataAccessCustomorInfo.GetbyId(ID1);
+            if (billnonew != null)
+            {
+                newbill.ShowTableDishInfo(ID1);
+            }
+            else
+            {
+                Console.WriteLine("Record Not Found");
+            }
+            break;
 
     case 3:
+            Console.WriteLine("Enter Bill Number");
+            int BillNo = IsPositiveNumber();
+            var billtable = await dataAccessBill.GetbyId(BillNo);
 
-        Console.WriteLine("enter CustomorID");
-        int ID1 = IsPositiveNumber();
-        var billnonew = await dataAccessCustomorInfo.GetbyId(ID1);
-        if (billnonew != null)
-        {
-            newbill.ShowTableDishInfo(ID1);
-        }
-        else
-        {
-            Console.WriteLine("Record Not Found");
-        }
-        break;
+
+            if (billtable != null)
+            {
+                Console.WriteLine("****************************************MAYUR RESTAURANT***************************************************");
+                Console.WriteLine("Date                BillNo     CustomorId CustName  MobileNo    TableNo   SubTotal  Tax  TotalBill  PaymentMode");
+                Console.WriteLine($"{billtable.Date}\t {billtable.BillNo}\t {billtable.CustomorId}\t{billtable.CustName}\t {billtable.MobileNo}\t {billtable.TableNo}\t {billtable.SubTotal}\t\t{billtable.Tax}\t{billtable.TotalBill}\t{billtable.PaymentMode}");
+            }
+            else
+            {
+                Console.WriteLine("Record Not Found...........");
+            }
+            Console.WriteLine("----------------------------------------------------------------------------------------------------------");          
+            break;
 
     case 4:
         Console.WriteLine("*************************MAYUR RESTAURANT***********************************");

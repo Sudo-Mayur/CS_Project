@@ -15,14 +15,13 @@ do
                           "Enter Operation that You want to perform \n" +
                           "1.Get All Patient Records \n" +
                           "2.Add new Patient information\n" +
-                          "3.Find patient Record by PatientNo\n" +
-                          "4.Update Record\n" +
-                          "5.Delete Record from DailyCollectin\n" +
-                          "6.Delete Record from PatientInfo\n" +
-                          "7.DailyCollection DateWise\n" +
-                          "8.View All Collection Records\n" +
-                          "9.Exit\n" +
-                          "10.Clear Screen");
+                          "3.Find patient Record by PatientNo\n"+
+                          "4.Update patient Record\n" +
+                          "5.Delete patient Record \n"+
+                          "6.DailyCollection DateWise\n" +
+                          "7.View All Collection Records\n" +
+                          "8.Clear Screen\n"+
+                          "9.Exit");
     Console.WriteLine("-------------------------------------------------------------------------------------------");
     int choice = Convert.ToInt32(Console.ReadLine());
     switch (choice)
@@ -172,43 +171,32 @@ do
 
         case 5:
             Console.WriteLine("enter RecordNo for delete");
-            int deleteRecord1 = Convert.ToInt32(Console.ReadLine());
-            var DeleteRecord = await dataAccess1.DeleteAsync(deleteRecord1);
-
+            int deleteRecord = Convert.ToInt32(Console.ReadLine());
+            var DeleteRecord = await dataAccess1.DeleteAsync(deleteRecord);
+            var DeletePat = await dataAccess.DeleteAsync(deleteRecord);          
             break;
 
         case 6:
-            Console.WriteLine("enter PatientRegNo for delete");
-            int deleteRecord = Convert.ToInt32(Console.ReadLine());
-            // var DeleteRecord = await dataAccess1.DeleteAsync(deleteRecord);
-            var DeletePat = await dataAccess.DeleteAsync(deleteRecord);
-
-            Console.WriteLine($"Deleted Record" +
-                $"{JsonSerializer.Serialize(DeletePat)}");
-            break;
-
-        case 7:
             D.dailyCollection();
             break;
 
-        case 8:
+        case 7:
             var AllRecords = await dataAccess1.GetAsync();
             foreach (var item in AllRecords)
             {
                 Console.WriteLine($"{item.RecordNo} {item.PatientRegNo}  {item.Apdate} {item.Fees}");
             }
-
             Console.WriteLine("-------------------------------------------------------------------------------------------");
+            break;
+
+        case 8:
+            Console.Clear();
             break;
 
         case 9:
             a++;
             break;
-
-        case 10:
-            Console.Clear();
-            break;
-
+           
         default:
             Console.WriteLine("Wrong Choice");
             break;
@@ -317,4 +305,4 @@ static string IsCorrectMobileNum()
     return Mob;
 }
 
-Console.ReadLine();
+

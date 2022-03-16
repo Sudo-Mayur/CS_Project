@@ -1,6 +1,8 @@
 ﻿using Restaurant_Billing_System_New.Models;
 using Restaurant_Billing_System_New.DataAccess;
 using System.Text.RegularExpressions;
+//dotnet ef dbcontext scaffold "Data Source=.;Initial Catalog=restaurant;Integrated Security=SSPI" Microsoft.EntityFrameworkCore.SqlServer -o Models
+
 
 restaurantContext ctx = new restaurantContext();
 IDataAccessCustomorInfo<CustomorInfo, int> dataAccessCustomorInfo = new CustomorInfoAccess();
@@ -11,58 +13,56 @@ BillAccess newbill = new BillAccess();
 
 
 int a = 0;
-//dotnet ef dbcontext scaffold "Data Source=.;Initial Catalog=restaurant;Integrated Security=SSPI" Microsoft.EntityFrameworkCore.SqlServer -o Models
 do
 {
     Console.WriteLine();
-Console.WriteLine("***********WELCOME TO MAYUR RESTAURANT**********\n"+
-                  "1.Creat Bill\n"+
-                  "2.SHow Bill on Bill Number\n" +
-                  "3.Show Bill on CustmerID\n" +
-                  "4.Show Bill Table History\n"+
-                  "5.Clear Screen\n"+
-                  "6.Exit\n");
+    Console.WriteLine("***********WELCOME TO MAYUR RESTAURANT**********\n" +
+                      "1.Creat Bill\n" +
+                      "2.Show Bill on CustmerID\n" +
+                      "3.SHow Bill on Bill Number\n" +
+                      "4.Show Bill Table History\n" +
+                      "5.Clear Screen\n" +
+                      "6.Exit\n");
 
+    Console.WriteLine("Enter Your Choice");
+    int choice = Convert.ToInt32(Console.ReadLine());
+    switch (choice)
+    {
+        case 1:
+            Console.WriteLine("Create New Bill");
 
-Console.WriteLine("Enter Your Choice");
-int choice = Convert.ToInt32(Console.ReadLine());
-switch (choice)
-{
-    case 1:
-        Console.WriteLine("Create New Bill");
+            CustomorInfo custinfo = new CustomorInfo();
+            Bill bill = new Bill();
 
-        CustomorInfo custinfo = new CustomorInfo();
-        Bill bill = new Bill();
+            Console.WriteLine("Enter Name");
+            custinfo.CustName = IsCorrectName();
 
-        Console.WriteLine("Enter Name");
-        custinfo.CustName = IsCorrectName();
+            Console.WriteLine("Enter MobileNo");
+            custinfo.MobileNo = IsCorrectMobileNum();
 
-        Console.WriteLine("Enter MobileNo");
-        custinfo.MobileNo = IsCorrectMobileNum();
+            var CreatData = await dataAccessCustomorInfo.CreatAsync(custinfo);
 
-        var CreatData = await dataAccessCustomorInfo.CreatAsync(custinfo);
+            Console.WriteLine("***************Dish Table****************");
+            var DishTable = await dataAccessDish.GetAsync();
+            Console.WriteLine("DishNo DishName        Rate");
+            foreach (var item in DishTable)
+            {
+                Console.WriteLine($"{item.DishNo}\t {item.DishName}\t       {item.Rate}");
+            }
 
-        Console.WriteLine("***************Dish Table****************");
-        var DishTable = await dataAccessDish.GetAsync();
-        Console.WriteLine("DishNo DishName        Rate");
-        foreach (var item in DishTable)
-        {
-            Console.WriteLine($"{item.DishNo}\t {item.DishName}\t       {item.Rate}");
-        }
-          
-        char ans;
-        do
-        {
+            char ans;
+            do
+            {
                 DishInfo Dishinfo = new DishInfo();
                 Dishinfo.CustomorId = custinfo.CustomorId;
 
                 int z = 0;
                 do
-                {                   
+                {
                     Console.WriteLine("Enter DishNo");
                     Dishinfo.DishNo = IsPositiveNumber();
                     var dishNo = await dataAccessDishInfo.GetbyId((int)Dishinfo.DishNo);
-                   
+
                     if (dishNo != null)
                     {
                         Console.WriteLine("Enter Quantity");
@@ -175,41 +175,56 @@ switch (choice)
                     {
                         Console.WriteLine("Please Enter Correct Dish Number Which is Available in Dish Table");
                         z++;
-                        Console.WriteLine(z);
+
                     }
-                  
-                } while (z!=0);
 
-            var CreatData1 = await dataAccessDishInfo.CreatAsync(Dishinfo);
+                } while (z != 0);
 
-            Console.WriteLine("DO  you want to add Another Dish then Enter Y or y and to Stop adding Dish enter any key");
-            ans = Convert.ToChar(Console.ReadLine());
+                var CreatData1 = await dataAccessDishInfo.CreatAsync(Dishinfo);
 
-        } while (ans == 'Y' || ans=='y');
+                Console.WriteLine("DO  you want to add Another Dish then Enter Y or y and to Stop adding Dish enter any key");
+                ans = Convert.ToChar(Console.ReadLine());
+
+            } while (ans == 'Y' || ans == 'y');
 
 
-        bill.Date = Convert.ToDateTime(DateTime.Now);
+            bill.Date = Convert.ToDateTime(DateTime.Now);
 
-        bill.CustomorId = custinfo.CustomorId;
+            bill.CustomorId = custinfo.CustomorId;
 
-        bill.CustName = custinfo.CustName;
-        bill.MobileNo = custinfo.MobileNo;
+            bill.CustName = custinfo.CustName;
+            bill.MobileNo = custinfo.MobileNo;
 
-        Console.WriteLine("Enter Table Number");
-        bill.TableNo = IsPositiveNumber();
+            int tableNo = 0;
+            do
+            {
+                Console.WriteLine("Enter Table Number Inbetween (1 to 10)");
+                bill.TableNo = IsPositiveNumber();
+                if (bill.TableNo >= 1 && bill.TableNo <= 10)
+                {
+                    bill.TableNo = bill.TableNo;
+                    tableNo = 0;
+                }
+                else
+                {
+                    Console.WriteLine("Please enter table number between 1 to 10");
+                    tableNo++;
+                }
+            } while (tableNo != 0);
 
-        bill.SubTotal = ctx.DishInfos.Where(x => x.CustomorId == custinfo.CustomorId).Sum(x => x.Amount);
 
-        bill.Tax = 5;
-        bill.TotalBill = bill.SubTotal + (bill.SubTotal * 5 / 100);
+            bill.SubTotal = ctx.DishInfos.Where(x => x.CustomorId == custinfo.CustomorId).Sum(x => x.Amount);
 
-       int M = 0;
-       do
-       {
-        Console.WriteLine("Enter Payment Mode 1.cash 2.UPI 3.Card");
-        int Mode = IsPositiveNumber();
-            
-           
+            bill.Tax = 5;
+            bill.TotalBill = bill.SubTotal + (bill.SubTotal * 5 / 100);
+
+            int M = 0;
+            do
+            {
+                Console.WriteLine("Enter Payment Mode 1.cash 2.UPI 3.Card");
+                int Mode = IsPositiveNumber();
+
+
                 if (Mode == 1 || Mode == 2 || Mode == 3)
                 {
                     switch (Mode)
@@ -244,7 +259,7 @@ switch (choice)
             break;
 
 
-    case 2:
+        case 2:
             Console.WriteLine("enter CustomorID");
             int ID1 = IsPositiveNumber();
             var billnonew = await dataAccessCustomorInfo.GetbyId(ID1);
@@ -258,7 +273,7 @@ switch (choice)
             }
             break;
 
-    case 3:
+        case 3:
             Console.WriteLine("Enter Bill Number");
             int BillNo = IsPositiveNumber();
             var billtable = await dataAccessBill.GetbyId(BillNo);
@@ -274,32 +289,32 @@ switch (choice)
             {
                 Console.WriteLine("Record Not Found...........");
             }
-            Console.WriteLine("----------------------------------------------------------------------------------------------------------");          
+            Console.WriteLine("----------------------------------------------------------------------------------------------------------");
             break;
 
-    case 4:
-        Console.WriteLine("*************************MAYUR RESTAURANT***********************************");
-        Console.WriteLine("Date                BillNo     CustomorId CustName  MobileNo    TableNo   SubTotal  Tax  TotalBill  PaymentMode");
-        var Bill = await dataAccessBill.GetAsync();
-        foreach (var item in Bill)
-        {
-            Console.WriteLine($"{item.Date}\t {item.BillNo}\t {item.CustomorId}\t{item.CustName}\t {item.MobileNo}\t {item.TableNo}\t {item.SubTotal}\t\t{item.Tax}\t{item.TotalBill}\t{item.PaymentMode}");
-        }
-        break;
+        case 4:
+            Console.WriteLine("*************************MAYUR RESTAURANT***********************************");
+            Console.WriteLine("Date                BillNo     CustomorId CustName  MobileNo    TableNo   SubTotal  Tax  TotalBill  PaymentMode");
+            var Bill = await dataAccessBill.GetAsync();
+            foreach (var item in Bill)
+            {
+                Console.WriteLine($"{item.Date}\t {item.BillNo}\t {item.CustomorId}\t{item.CustName}\t {item.MobileNo}\t {item.TableNo}\t {item.SubTotal}\t\t{item.Tax}\t{item.TotalBill}\t{item.PaymentMode}");
+            }
+            break;
 
-    case 5:
-        Console.Clear();
-        break;
+        case 5:
+            Console.Clear();
+            break;
 
-    case 6:
-        a++;
-        break;
+        case 6:
+            a++;
+            break;
 
-    default:
-        Console.WriteLine("wrong Choice");
-        break;
-}
-} while (a == 0) ;
+        default:
+            Console.WriteLine("wrong Choice");
+            break;
+    }
+} while (a == 0);
 
 
 //Validations
@@ -401,7 +416,6 @@ static string IsCorrectMobileNum()
     } while (g > 0);
     return Mob;
 }
-
 
 
 

@@ -33,7 +33,7 @@ namespace Restaurant_Billing_System_New.DataAccess
             }
         }
 
-        
+
         async Task<IEnumerable<DishInfo>> IDataAccessDishInfo<DishInfo, int>.GetAsync()
         {
             try
@@ -62,6 +62,6 @@ namespace Restaurant_Billing_System_New.DataAccess
             }
 
         }
-       
+
     }
 }

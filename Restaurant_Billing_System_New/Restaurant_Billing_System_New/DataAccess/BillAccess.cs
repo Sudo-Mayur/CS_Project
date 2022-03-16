@@ -73,7 +73,7 @@ namespace Restaurant_Billing_System_New.DataAccess
             }
         }
 
-       
+
         public void ShowTableDishInfo(int ID)
         {
             CustomorInfo custinfo = new CustomorInfo();

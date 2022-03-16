@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Restaurant_Billing_System_New.DataAccess
 {
-    internal class BillAccess : IDataAccess1<Bill, int>
+    internal class BillAccess : IDataAccessBill<Bill, int>
     {
         restaurantContext ctx;
         public BillAccess()
@@ -17,7 +17,7 @@ namespace Restaurant_Billing_System_New.DataAccess
             ctx = new restaurantContext();
         }
 
-        async Task<Bill> IDataAccess1<Bill, int>.CreatAsync(Bill entity)
+        async Task<Bill> IDataAccessBill<Bill, int>.CreatAsync(Bill entity)
         {
             try
             {
@@ -33,12 +33,12 @@ namespace Restaurant_Billing_System_New.DataAccess
             }
         }
 
-        Task<Bill> IDataAccess1<Bill, int>.DeleteAsync(int ID)
+        Task<Bill> IDataAccessBill<Bill, int>.DeleteAsync(int ID)
         {
             throw new NotImplementedException();
         }
 
-        async Task<IEnumerable<Bill>> IDataAccess1<Bill, int>.GetAsync()
+        async Task<IEnumerable<Bill>> IDataAccessBill<Bill, int>.GetAsync()
         {
             try
             {
@@ -52,7 +52,7 @@ namespace Restaurant_Billing_System_New.DataAccess
             }
         }
 
-        async Task<Bill> IDataAccess1<Bill, int>.GetbyId(int ID)
+        async Task<Bill> IDataAccessBill<Bill, int>.GetbyId(int ID)
         {
             try
             {
@@ -73,11 +73,7 @@ namespace Restaurant_Billing_System_New.DataAccess
             }
         }
 
-        Task<Bill> IDataAccess1<Bill, int>.UpdateAsync(int ID, Bill entity)
-        {
-            throw new NotImplementedException();
-        }
-
+       
         public void ShowTableDishInfo(int ID)
         {
             CustomorInfo custinfo = new CustomorInfo();

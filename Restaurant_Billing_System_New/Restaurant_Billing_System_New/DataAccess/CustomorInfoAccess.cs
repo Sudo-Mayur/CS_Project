@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Restaurant_Billing_System_New.DataAccess
 {
-    internal class CustomorInfoAccess : IDataAccess2<CustomorInfo, int>
+    internal class CustomorInfoAccess : IDataAccessCustomorInfo<CustomorInfo, int>
     {
         restaurantContext ctx;
         public CustomorInfoAccess()
@@ -17,7 +17,7 @@ namespace Restaurant_Billing_System_New.DataAccess
             ctx = new restaurantContext();
         }
 
-        async Task<CustomorInfo> IDataAccess2<CustomorInfo, int>.CreatAsync(CustomorInfo entity)
+        async Task<CustomorInfo> IDataAccessCustomorInfo<CustomorInfo, int>.CreatAsync(CustomorInfo entity)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace Restaurant_Billing_System_New.DataAccess
         }
 
 
-        async Task<CustomorInfo> IDataAccess2<CustomorInfo, int>.GetbyId(int ID)
+        async Task<CustomorInfo> IDataAccessCustomorInfo<CustomorInfo, int>.GetbyId(int ID)
         {
             try
             {

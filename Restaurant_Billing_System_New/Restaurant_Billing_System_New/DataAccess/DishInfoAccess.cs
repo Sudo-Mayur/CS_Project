@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Restaurant_Billing_System_New.DataAccess
 {
-    internal class DishInfoAccess : IDataAccess<DishInfo, int>
+    internal class DishInfoAccess : IDataAccessDishInfo<DishInfo, int>
     {
         restaurantContext ctx;
         public DishInfoAccess()
@@ -17,7 +17,7 @@ namespace Restaurant_Billing_System_New.DataAccess
             ctx = new restaurantContext();
         }
 
-        async Task<DishInfo> IDataAccess<DishInfo, int>.CreatAsync(DishInfo entity)
+        async Task<DishInfo> IDataAccessDishInfo<DishInfo, int>.CreatAsync(DishInfo entity)
         {
             try
             {
@@ -33,12 +33,8 @@ namespace Restaurant_Billing_System_New.DataAccess
             }
         }
 
-        Task<DishInfo> IDataAccess<DishInfo, int>.DeleteAsync(int ID)
-        {
-            throw new NotImplementedException();
-        }
-
-        async Task<IEnumerable<DishInfo>> IDataAccess<DishInfo, int>.GetAsync()
+        
+        async Task<IEnumerable<DishInfo>> IDataAccessDishInfo<DishInfo, int>.GetAsync()
         {
             try
             {
@@ -52,7 +48,7 @@ namespace Restaurant_Billing_System_New.DataAccess
             }
         }
 
-        async Task<DishInfo> IDataAccess<DishInfo, int>.GetbyId(int ID)
+        async Task<DishInfo> IDataAccessDishInfo<DishInfo, int>.GetbyId(int ID)
         {
             try
             {
@@ -66,10 +62,6 @@ namespace Restaurant_Billing_System_New.DataAccess
             }
 
         }
-
-        Task<DishInfo> IDataAccess<DishInfo, int>.UpdateAsync(int ID, DishInfo entity)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

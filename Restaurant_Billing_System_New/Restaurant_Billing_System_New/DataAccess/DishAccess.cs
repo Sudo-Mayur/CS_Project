@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Restaurant_Billing_System_New.DataAccess
 {
-    internal class DishAccess : IDataAccess3<Dish, int>
+    internal class DishAccess : IDataAccessDish<Dish, int>
     {
         restaurantContext ctx;
         public DishAccess()
@@ -16,7 +16,7 @@ namespace Restaurant_Billing_System_New.DataAccess
             ctx = new restaurantContext();
         }
 
-        async Task<IEnumerable<Dish>> IDataAccess3<Dish, int>.GetAsync()
+        async Task<IEnumerable<Dish>> IDataAccessDish<Dish, int>.GetAsync()
         {
             try
             {

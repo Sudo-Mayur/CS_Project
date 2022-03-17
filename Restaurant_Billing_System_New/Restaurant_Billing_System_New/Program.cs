@@ -56,129 +56,152 @@ do
                 DishInfo Dishinfo = new DishInfo();
                 Dishinfo.CustomorId = custinfo.CustomorId;
 
-                int z = 0;
+                //int z = 0;
+                //do
+                //{
+                int x=0;
                 do
                 {
                     Console.WriteLine("Enter DishNo");
                     Dishinfo.DishNo = IsPositiveNumber();
                     var dishNo = await dataAccessDishInfo.GetbyId((int)Dishinfo.DishNo);
-
-                    if (dishNo != null)
+                    if (dishNo == null)
                     {
-                        Console.WriteLine("Enter Quantity");
-                        Dishinfo.Quantity = IsPositiveNumber();
-
-                        switch (Dishinfo.DishNo)
-                        {
-                            case 1:
-                                Dishinfo.DishName = "Roti";
-                                Dishinfo.Rate = 20;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 2:
-                                Dishinfo.DishName = "Rice";
-                                Dishinfo.Rate = 60;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 3:
-                                Dishinfo.DishName = "Chapati";
-                                Dishinfo.Rate = 10;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 4:
-                                Dishinfo.DishName = "ChickenThali";
-                                Dishinfo.Rate = 150;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 5:
-                                Dishinfo.DishName = "ChickenTikka";
-                                Dishinfo.Rate = 170;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 6:
-                                Dishinfo.DishName = "ChickenChilli";
-                                Dishinfo.Rate = 130;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-                            case 7:
-                                Dishinfo.DishName = "FishThali";
-                                Dishinfo.Rate = 200;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 8:
-                                Dishinfo.DishName = "VegThali";
-                                Dishinfo.Rate = 100;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 9:
-                                Dishinfo.DishName = "ShahiPanner";
-                                Dishinfo.Rate = 120;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 10:
-                                Dishinfo.DishName = "PaneerTikka";
-                                Dishinfo.Rate = 150;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-                            case 11:
-                                Dishinfo.DishName = "PannerPalak";
-                                Dishinfo.Rate = 130;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 12:
-                                Dishinfo.DishName = "FrideRice";
-                                Dishinfo.Rate = 130;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-                            case 13:
-                                Dishinfo.DishName = "ChickenBiryani";
-                                Dishinfo.Rate = 170;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 14:
-                                Dishinfo.DishName = "ChickenLolliPop";
-                                Dishinfo.Rate = 130;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 15:
-                                Dishinfo.DishName = "VegBiryani";
-                                Dishinfo.Rate = 120;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 16:
-                                Dishinfo.DishName = "ChickenHandi";
-                                Dishinfo.Rate = 350;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-
-                            case 17:
-                                Dishinfo.DishName = "Veg Maratha";
-                                Dishinfo.Rate = 130;
-                                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
-                                break;
-                        }
-                        z = 0;
+                        Console.WriteLine("Please Enter Correct Dish Number Which is Available in Dish Table");
+                        x = 0;
                     }
                     else
                     {
-                        Console.WriteLine("Please Enter Correct Dish Number Which is Available in Dish Table");
-                        z++;
-
+                        Console.WriteLine("Enter Quantity");
+                        Dishinfo.Quantity = IsPositiveNumber();
+                        var Dname = dishNo.DishName;
+                        Dishinfo.DishName = Dname;
+                        var Prise = dishNo.Rate;
+                        Dishinfo.Rate = Prise;
+                        Dishinfo.Amount = Dishinfo.Quantity * Prise;
+                        x++;
                     }
 
-                } while (z != 0);
+                }while(x==0);
+                    
+                  
+
+                //    if (dishNo != null)
+                //    {
+                //        Console.WriteLine("Enter Quantity");
+                //        Dishinfo.Quantity = IsPositiveNumber();
+
+                //        switch (Dishinfo.DishNo)
+                //        {
+                //            case 1:
+                //                Dishinfo.DishName = "Roti";
+                //                Dishinfo.Rate = 20;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 2:
+                //                Dishinfo.DishName = "Rice";
+                //                Dishinfo.Rate = 60;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 3:
+                //                Dishinfo.DishName = "Chapati";
+                //                Dishinfo.Rate = 10;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 4:
+                //                Dishinfo.DishName = "ChickenThali";
+                //                Dishinfo.Rate = 150;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 5:
+                //                Dishinfo.DishName = "ChickenTikka";
+                //                Dishinfo.Rate = 170;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 6:
+                //                Dishinfo.DishName = "ChickenChilli";
+                //                Dishinfo.Rate = 130;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+                //            case 7:
+                //                Dishinfo.DishName = "FishThali";
+                //                Dishinfo.Rate = 200;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 8:
+                //                Dishinfo.DishName = "VegThali";
+                //                Dishinfo.Rate = 100;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 9:
+                //                Dishinfo.DishName = "ShahiPanner";
+                //                Dishinfo.Rate = 120;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 10:
+                //                Dishinfo.DishName = "PaneerTikka";
+                //                Dishinfo.Rate = 150;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+                //            case 11:
+                //                Dishinfo.DishName = "PannerPalak";
+                //                Dishinfo.Rate = 130;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 12:
+                //                Dishinfo.DishName = "FrideRice";
+                //                Dishinfo.Rate = 130;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+                //            case 13:
+                //                Dishinfo.DishName = "ChickenBiryani";
+                //                Dishinfo.Rate = 170;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 14:
+                //                Dishinfo.DishName = "ChickenLolliPop";
+                //                Dishinfo.Rate = 130;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 15:
+                //                Dishinfo.DishName = "VegBiryani";
+                //                Dishinfo.Rate = 120;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 16:
+                //                Dishinfo.DishName = "ChickenHandi";
+                //                Dishinfo.Rate = 350;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+
+                //            case 17:
+                //                Dishinfo.DishName = "Veg Maratha";
+                //                Dishinfo.Rate = 130;
+                //                Dishinfo.Amount = Dishinfo.Quantity * Dishinfo.Rate;
+                //                break;
+                //        }
+                //        z = 0;
+                //    }
+                //    else
+                //    {
+                //        Console.WriteLine("Please Enter Correct Dish Number Which is Available in Dish Table");
+                //        z++;
+
+                //    }
+
+                //} while (z != 0);
 
                 var CreatData1 = await dataAccessDishInfo.CreatAsync(Dishinfo);
 

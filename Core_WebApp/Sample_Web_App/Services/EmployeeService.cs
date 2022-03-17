@@ -59,6 +59,11 @@ namespace Sample_Web_App.Services
             try
             {
                 var result = await ctx.Employees.ToListAsync();
+                foreach(var item in result)
+                {
+                    item.Tax = item.Salary * 0.10;
+                }
+                await ctx.SaveChangesAsync();
                 return result;
             }
             catch (Exception ex)
@@ -74,6 +79,7 @@ namespace Sample_Web_App.Services
             try
             {
                 var DeptFindID = await ctx.Employees.FindAsync(id);
+
                 if (DeptFindID == null)
                 {
                     return null;

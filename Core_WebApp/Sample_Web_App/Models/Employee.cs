@@ -13,6 +13,7 @@ namespace Sample_Web_App.Models
         public string Designation { get; set; }
         public int DeptNo { get; set; }
         public string Email { get; set; }
+        public double Tax { get; set; }
 
         public virtual Department DeptNoNavigation { get; set; }
     }

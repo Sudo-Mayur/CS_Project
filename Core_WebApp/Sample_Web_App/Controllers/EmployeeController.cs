@@ -54,5 +54,12 @@ namespace Sample_Web_App.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult Details(int id)
+        {
+            var res = empService.GetAsync(id).Result;
+            return View(res);
+        }
+
     }
 }
+//dotnet ef dbcontext scaffold "Data Source=.;Initial Catalog=Enterprise1;Integrated Security=SSPI" Microsoft.EntityFrameworkCore.SqlServer -o Models --force

@@ -154,3 +154,4 @@ C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\
 C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\User\Create.cshtml.g.cs
 C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\User\Edit.cshtml.g.cs
 C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\User\Delete.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\Employee\Details.cshtml.g.cs

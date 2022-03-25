@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Sample_Web_App.Models;
 using Sample_Web_App.Services;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -25,8 +26,30 @@ namespace Sample_Web_App.Controllers
         }
         public IActionResult Index()
         {
-            var res = empService.GetAsync().Result; 
-            return View(res);
+
+            var resEmp = empService.GetAsync().Result; 
+            var ResDept =deptService.GetAsync().Result;
+            //return View(res);
+            var Resultant = from e in resEmp
+                            join d in ResDept on
+                            e.DeptNo equals d.DeptNo
+                            select new
+                            {
+                                EmpNo = e.EmpNo,
+                                EmpName = e.EmpName,
+                                Salary = e.Salary,
+                                Designation = e.Designation,
+                                DeptName = d.DeptName,
+                                Email = e.Email,
+                                Tax=e.Tax
+                            };
+            List<EmployeeData> employeeData = new List<EmployeeData>();
+            foreach (var d in Resultant)
+            {
+                employeeData.Add(new EmployeeData() { EmpNo = d.EmpNo, EmpName = d.EmpName, Salary = d.Salary, Designation = d.Designation, DeptName = d.DeptName, Email = d.Email, Tax=d.Tax });
+            }
+            //employeeData.Clear();
+            return View(employeeData);
         }
 
         public IActionResult Create()
@@ -116,26 +139,9 @@ namespace Sample_Web_App.Controllers
 
         public IActionResult ValidateEmpName(string  EmpName)
         {
-           // var emp = empService.GetAsync(EmpName).Result;
-            //Regex reg = new Regex("[a-zA-z]+[\b]{1}[a-zA-z]+[\b]{1}[a-zA-z]+");
-            //if(reg.IsMatch(Convert.ToString(EmpName)))
-            //{
-            //    return Json(data: true);
-            //}
-            //else
-            //{
-            //    return Json(data: "EmpName is not in correct format");
-            //}
-            int count = 0;
-            foreach (char c in EmpName)
-            {
-                if (c == ' ')
-                {
-                    count++;
-                }
-            }
 
-            if(count==2)
+            Regex reg = new Regex("^([a-zA-Z]+( [a-zA-Z]+)+)$");
+            if (reg.IsMatch(Convert.ToString(EmpName)))
             {
                 return Json(data: true);
             }
@@ -143,6 +149,24 @@ namespace Sample_Web_App.Controllers
             {
                 return Json(data: false);
             }
+
+            //int count = 0;
+            //foreach (char c in EmpName)
+            //{
+            //    if (c == ' ')
+            //    {
+            //        count++;
+            //    }
+            //}
+
+            //if(count==2)
+            //{
+            //    return Json(data: true);
+            //}
+            //else
+            //{
+            //    return Json(data: false);
+            //}
         }
             
 

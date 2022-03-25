@@ -35,7 +35,7 @@ namespace Restaurant_Billing_System_New.Models
             modelBuilder.Entity<Bill>(entity =>
             {
                 entity.HasKey(e => e.BillNo)
-                    .HasName("PK__Bill__11F28419C44B338E");
+                    .HasName("PK__Bill__11F28419018CEC20");
 
                 entity.ToTable("Bill");
 
@@ -58,13 +58,13 @@ namespace Restaurant_Billing_System_New.Models
                 entity.HasOne(d => d.Customor)
                     .WithMany(p => p.Bills)
                     .HasForeignKey(d => d.CustomorId)
-                    .HasConstraintName("FK__Bill__CustomorID__59063A47");
+                    .HasConstraintName("FK__Bill__CustomorID__6E01572D");
             });
 
             modelBuilder.Entity<CustomorInfo>(entity =>
             {
                 entity.HasKey(e => e.CustomorId)
-                    .HasName("PK__Customor__39C6DEFBA5D0EB61");
+                    .HasName("PK__Customor__39C6DEFBB888BE03");
 
                 entity.ToTable("CustomorInfo");
 
@@ -82,11 +82,9 @@ namespace Restaurant_Billing_System_New.Models
             modelBuilder.Entity<Dish>(entity =>
             {
                 entity.HasKey(e => e.DishNo)
-                    .HasName("PK__Dish__188327BB01D062AC");
+                    .HasName("PK__Dish__188327BB5706A4F5");
 
                 entity.ToTable("Dish");
-
-                entity.Property(e => e.DishNo).ValueGeneratedNever();
 
                 entity.Property(e => e.DishName)
                     .HasMaxLength(200)
@@ -96,7 +94,7 @@ namespace Restaurant_Billing_System_New.Models
             modelBuilder.Entity<DishInfo>(entity =>
             {
                 entity.HasKey(e => e.LogId)
-                    .HasName("PK__DishInfo__5E5499A83B45C19E");
+                    .HasName("PK__DishInfo__5E5499A8AC339CAB");
 
                 entity.ToTable("DishInfo");
 
@@ -111,12 +109,12 @@ namespace Restaurant_Billing_System_New.Models
                 entity.HasOne(d => d.Customor)
                     .WithMany(p => p.DishInfos)
                     .HasForeignKey(d => d.CustomorId)
-                    .HasConstraintName("FK__DishInfo__Custom__5535A963");
+                    .HasConstraintName("FK__DishInfo__Custom__6A30C649");
 
                 entity.HasOne(d => d.DishNoNavigation)
                     .WithMany(p => p.DishInfos)
                     .HasForeignKey(d => d.DishNo)
-                    .HasConstraintName("FK__DishInfo__DishNo__5629CD9C");
+                    .HasConstraintName("FK__DishInfo__DishNo__6B24EA82");
             });
 
             OnModelCreatingPartial(modelBuilder);

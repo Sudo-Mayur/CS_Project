@@ -1,3 +1,5 @@
+//using Core_WebApp.CustomFilters;
+using Core_WebApp.CustomFilters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -5,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MVC_Assignments.CustomFilters;
 using Sample_Web_App.Models;
 using Sample_Web_App.Services;
 using System;
@@ -41,7 +44,28 @@ namespace Sample_Web_App
             services.AddScoped<IService<Employee, int>, EmployeeService>();
             services.AddScoped<IService<UserInfo, int>, UserService>();
 
-            services.AddControllersWithViews();
+            // COfigure Sessions
+            // The Session Time out is 20 Mins for Idle Request
+            services.AddDistributedMemoryCache();
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+            });
+
+
+
+            // Process the Request for API and Views both 
+            // for MVC
+            // THis is is used to Register Filters at Global Level
+            services.AddControllersWithViews(options =>
+            {
+                options.Filters.Add(typeof(LogFilterAttribute));
+               // options.Filters.Add(new LogFilterAttribute());
+
+                // REgister the Exception Filter
+                // The IModelMetadataProvider will be resolved by the 
+                // PIpeline
+                options.Filters.Add(typeof(AppExceptionFilterAttribute));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,10 +84,18 @@ namespace Sample_Web_App
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            // Generate ROute Table for 
+            // All Controllers (MVC and API)
             app.UseRouting();
+
+            // Use the Sessin Middleware
+            app.UseSession();
 
             app.UseAuthorization();
 
+
+            //Map the incoming request with thw controller(MVC and API)
+            //Map the incoming requiest with razor view
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
@@ -73,3 +105,4 @@ namespace Sample_Web_App
         }
     }
 }
+

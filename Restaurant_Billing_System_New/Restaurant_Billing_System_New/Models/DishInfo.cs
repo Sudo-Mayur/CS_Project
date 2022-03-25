@@ -7,7 +7,7 @@ namespace Restaurant_Billing_System_New.Models
     {
         public int LogId { get; set; }
         public int? CustomorId { get; set; }
-        public int? DishNo { get; set; }
+        public int DishNo { get; set; }
         public string? DishName { get; set; }
         public int? Quantity { get; set; }
         public double? Rate { get; set; }

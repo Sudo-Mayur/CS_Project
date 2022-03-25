@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32104.313
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital_Managment_System_Final", "Hospital_Managment_System_Final\Hospital_Managment_System_Final.csproj", "{002D4BD4-A8C2-45BC-99CC-88542F34266A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayur_Clinic_Updated", "Mayur_Clinic_Updated\Mayur_Clinic_Updated.csproj", "{8D63D46E-6894-45D4-9231-D0C361469031}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{002D4BD4-A8C2-45BC-99CC-88542F34266A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{002D4BD4-A8C2-45BC-99CC-88542F34266A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{002D4BD4-A8C2-45BC-99CC-88542F34266A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D63D46E-6894-45D4-9231-D0C361469031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D63D46E-6894-45D4-9231-D0C361469031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D63D46E-6894-45D4-9231-D0C361469031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D63D46E-6894-45D4-9231-D0C361469031}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -53,15 +53,18 @@ namespace Restaurant_Billing_System_New.DataAccess
             try
             {
                 var result = await ctx.DishInfos.FindAsync(ID);
+                if (result == null)
+                {
+                    return null;
+                }
                 return result;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 return null;
             }
-
+            
         }
-
     }
 }

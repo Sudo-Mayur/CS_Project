@@ -30,6 +30,5 @@ namespace Restaurant_Billing_System_New.DataAccess
     {
         Task<IEnumerable<TEntity>> GetAsync();
        
-
     }
 }

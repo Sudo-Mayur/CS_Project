@@ -92,9 +92,20 @@ namespace Restaurant_Billing_System_New.DataAccess
                 Console.WriteLine($"{item.Date}\t {item.BillNo}\t {item.CustomorId}\t{item.CustName}\t {item.MobileNo}\t {item.TableNo}\t {item.SubTotal}\t\t{item.Tax}\t{item.TotalBill}\t{item.PaymentMode}");
 
             }
+
+            Console.WriteLine("-------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("***********WE ARE SO GRATEFUL FOR THE PLEASURE OF SERVING YOU AND HOPE WE MET YOUR  EXPECTATIONS.***********");
             Console.WriteLine("-------------------------------------------------------------------------------------------------------------");
 
 
+        }
+        public void DailyCollection()
+        {
+            Console.WriteLine("Enter Date Like 2022-03-11 in this format");
+            DateTime dateTime = Convert.ToDateTime(Console.ReadLine());
+            var totalCollection = ctx.Bills.Where(x => x.Date == dateTime).Sum(x => x.TotalBill);
+            Console.WriteLine($"Total Collection for the day is: {totalCollection} rupees");
+            Console.WriteLine("-------------------------------------------------------------------------------------------");           
         }
     }
 }

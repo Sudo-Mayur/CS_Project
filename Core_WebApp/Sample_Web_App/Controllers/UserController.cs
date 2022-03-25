@@ -25,8 +25,16 @@ namespace Sample_Web_App.Controllers
         [HttpPost]
         public IActionResult Create(UserInfo user)
         {
-            var res = userService.Create(user).Result;
-            return RedirectToAction("Index");
+            if(ModelState.IsValid)
+            {
+                var res = userService.Create(user).Result;
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(user);
+            }
+          
         }
 
         public IActionResult Edit(int id)
@@ -38,8 +46,16 @@ namespace Sample_Web_App.Controllers
         [HttpPost]
         public IActionResult Edit(int id, UserInfo user)
         {
-            var res = userService.UpdateAsync(id, user).Result;
-            return RedirectToAction("Index");
+            if(ModelState.IsValid)
+            {
+                var res = userService.UpdateAsync(id, user).Result;
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(user);
+            }
+           
         }
 
         public IActionResult Delete(int id)

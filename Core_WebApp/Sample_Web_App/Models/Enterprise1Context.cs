@@ -19,6 +19,8 @@ namespace Sample_Web_App.Models
 
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<ExceptionLogTable> ExceptionLogTables { get; set; }
+        public virtual DbSet<LogTable> LogTables { get; set; }
         public virtual DbSet<UserInfo> UserInfos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -82,6 +84,58 @@ namespace Sample_Web_App.Models
                     .HasForeignKey(d => d.DeptNo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Employee__DeptNo__6E01572D");
+            });
+
+            modelBuilder.Entity<ExceptionLogTable>(entity =>
+            {
+                entity.HasKey(e => e.RequestId)
+                    .HasName("PK__Exceptio__33A8517A85392F80");
+
+                entity.ToTable("ExceptionLogTable");
+
+                entity.Property(e => e.ActionName)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ControllerName)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ExceptionMessage)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ExceptionType)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ExecutionCompletionTime)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.RequestDateTime).HasColumnType("datetime");
+            });
+
+            modelBuilder.Entity<LogTable>(entity =>
+            {
+                entity.HasKey(e => e.RequestId)
+                    .HasName("PK__LogTable__33A8517A82283CE5");
+
+                entity.ToTable("LogTable");
+
+                entity.Property(e => e.ActionName)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ControllerName)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ExecutionCompletionTime)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.RequestDateTime).HasColumnType("datetime");
             });
 
             modelBuilder.Entity<UserInfo>(entity =>

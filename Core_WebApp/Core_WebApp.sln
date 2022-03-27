@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample_Web_App", "Sample_We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationNew_Employeee", "WebApplicationNew_Employeee\WebApplicationNew_Employeee.csproj", "{3AC4B0B5-31D7-4D17-9295-AD9C6243B761}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_App_Job_Seeker", "Web_App_Job_Seeker\Web_App_Job_Seeker.csproj", "{5766DD54-DFCA-4C3F-B74A-33F99E37453F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3AC4B0B5-31D7-4D17-9295-AD9C6243B761}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AC4B0B5-31D7-4D17-9295-AD9C6243B761}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AC4B0B5-31D7-4D17-9295-AD9C6243B761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5766DD54-DFCA-4C3F-B74A-33F99E37453F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5766DD54-DFCA-4C3F-B74A-33F99E37453F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5766DD54-DFCA-4C3F-B74A-33F99E37453F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5766DD54-DFCA-4C3F-B74A-33F99E37453F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

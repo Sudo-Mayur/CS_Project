@@ -214,4 +214,4 @@ namespace Sample_Web_App.Controllers
     }
 }
 
-//dotnet ef dbcontext scaffold "Data Source=.;Initial Catalog=SuperMarket;Integrated Security=SSPI" Microsoft.EntityFrameworkCore.SqlServer -o Models --force
+//dotnet ef dbcontext scaffold "Data Source=.;Initial Catalog=Company;Integrated Security=SSPI" Microsoft.EntityFrameworkCore.SqlServer -o Models --force

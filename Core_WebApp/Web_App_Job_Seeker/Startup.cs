@@ -40,6 +40,12 @@ namespace Web_App_Job_Seeker
             services.AddScoped<IService<EducationalInfo, int>, EducationalInfoService>();
             services.AddScoped<IService<ProfessionalInfo, int>, ProfessionalInfoService>();
 
+            // COfigure Sessions
+            // The Session Time out is 20 Mins for Idle Request
+            services.AddDistributedMemoryCache();
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+            });
 
 
 
@@ -63,6 +69,10 @@ namespace Web_App_Job_Seeker
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            // Use the Sessin Middleware
+            app.UseSession();
+
 
             app.UseAuthorization();
 

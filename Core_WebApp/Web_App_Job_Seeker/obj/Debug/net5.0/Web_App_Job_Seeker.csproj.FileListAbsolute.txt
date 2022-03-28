@@ -145,3 +145,4 @@ C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Ra
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\CreateEdu.cshtml.g.cs
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\CreatePro.cshtml.g.cs
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\Index.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\FileUpload.cshtml.g.cs

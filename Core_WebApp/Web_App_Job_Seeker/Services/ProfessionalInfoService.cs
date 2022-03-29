@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Web_App_Job_Seeker.Models;
 using System;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Web_App_Job_Seeker.Services
 {
@@ -69,22 +70,26 @@ namespace Web_App_Job_Seeker.Services
 
         async Task<ProfessionalInfo> IService<ProfessionalInfo, int>.GetByIdAsync(int id)
         {
-            try
-            {
-                var result = await ctx.ProfessionalInfos.FindAsync(id);
-                if (result == null)
-                {
-                    return null;
-                }
-               // await ctx.SaveChangesAsync();
-                return result;
-            }
-            catch (Exception ex)
-            {
+            var res = await ctx.ProfessionalInfos.ToListAsync();
+            var edu = res.Where(x => x.PersonId == id).FirstOrDefault();
+            return edu;
 
-                Console.WriteLine(ex.Message);
-                return null;
-            }
+            //try
+            //{
+            //    var result = await ctx.ProfessionalInfos.FindAsync(id);
+            //    if (result == null)
+            //    {
+            //        return null;
+            //    }
+            //   // await ctx.SaveChangesAsync();
+            //    return result;
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    Console.WriteLine(ex.Message);
+            //    return null;
+            //}
         }
 
         async Task<ProfessionalInfo> IService<ProfessionalInfo, int>.UpdateAsync(int id, ProfessionalInfo entity)

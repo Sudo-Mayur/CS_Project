@@ -141,8 +141,10 @@ C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net5.0\zh
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\Create.cshtml.g.cs
-C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\CreateEdu.cshtml.g.cs
-C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\CreatePro.cshtml.g.cs
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\Index.cshtml.g.cs
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\FileUpload.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\JobSeekersList\Index.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\Create.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\CreatePro.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\PersonalInfo\CreateEdu.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net5.0\Razor\Views\JobSeekersList\Details.cshtml.g.cs

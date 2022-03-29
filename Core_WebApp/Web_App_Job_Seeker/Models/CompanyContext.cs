@@ -35,17 +35,21 @@ namespace Web_App_Job_Seeker.Models
             modelBuilder.Entity<EducationalInfo>(entity =>
             {
                 entity.HasKey(e => e.EducationId)
-                    .HasName("PK__Educatio__4BBE38E5B72D8585");
+                    .HasName("PK__Educatio__4BBE38E5B11CD673");
 
                 entity.ToTable("EducationalInfo");
 
                 entity.Property(e => e.EducationId).HasColumnName("EducationID");
 
-                entity.Property(e => e.DegreeCollegeName)
+                entity.Property(e => e.DegreeUniversityName)
                     .HasMaxLength(200)
                     .IsUnicode(false);
 
-                entity.Property(e => e.DegreeUniversityName)
+                entity.Property(e => e.DiplomaBoardName)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.HighestQuaification)
                     .HasMaxLength(200)
                     .IsUnicode(false);
 
@@ -54,10 +58,7 @@ namespace Web_App_Job_Seeker.Models
                     .IsUnicode(false)
                     .HasColumnName("HSCBoardName");
 
-                entity.Property(e => e.HsccollegeName)
-                    .HasMaxLength(200)
-                    .IsUnicode(false)
-                    .HasColumnName("HSCCollegeName");
+                entity.Property(e => e.HscpassingYear).HasColumnName("HSCPassingYear");
 
                 entity.Property(e => e.Hscpercentage).HasColumnName("HSCPercentage");
 
@@ -66,28 +67,26 @@ namespace Web_App_Job_Seeker.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.SscboardName)
+                    .IsRequired()
                     .HasMaxLength(200)
                     .IsUnicode(false)
                     .HasColumnName("SSCBoardName");
 
-                entity.Property(e => e.Sscpercentage).HasColumnName("SSCPercentage");
+                entity.Property(e => e.SscpassingYear).HasColumnName("SSCPassingYear");
 
-                entity.Property(e => e.SscschoolName)
-                    .HasMaxLength(200)
-                    .IsUnicode(false)
-                    .HasColumnName("SSCSchoolName");
+                entity.Property(e => e.Sscpercentage).HasColumnName("SSCPercentage");
 
                 entity.HasOne(d => d.Person)
                     .WithMany(p => p.EducationalInfos)
                     .HasForeignKey(d => d.PersonId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Education__Perso__2E1BDC42");
+                    .HasConstraintName("FK__Education__Perso__44FF419A");
             });
 
             modelBuilder.Entity<PersonalInfo>(entity =>
             {
                 entity.HasKey(e => e.PersonId)
-                    .HasName("PK__Personal__AA2FFBE5C2D28F5D");
+                    .HasName("PK__Personal__AA2FFBE573DC3B5E");
 
                 entity.ToTable("PersonalInfo");
 
@@ -123,7 +122,7 @@ namespace Web_App_Job_Seeker.Models
             modelBuilder.Entity<ProfessionalInfo>(entity =>
             {
                 entity.HasKey(e => e.ProfessionalId)
-                    .HasName("PK__Professi__B242EFA801C2CA0F");
+                    .HasName("PK__Professi__B242EFA87B10F625");
 
                 entity.ToTable("ProfessionalInfo");
 
@@ -143,7 +142,7 @@ namespace Web_App_Job_Seeker.Models
                     .WithMany(p => p.ProfessionalInfos)
                     .HasForeignKey(d => d.PersonId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Professio__Perso__30F848ED");
+                    .HasConstraintName("FK__Professio__Perso__47DBAE45");
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -12,12 +12,12 @@
     <div class="col-md-4">
         <form asp-action="CreatePro">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-           @* <div class="form-group">
+            @*<div class="form-group">
                 <label asp-for="ProfessionalId" class="control-label"></label>
                 <input asp-for="ProfessionalId" class="form-control" />
                 <span asp-validation-for="ProfessionalId" class="text-danger"></span>
             </div>*@
-          @*  <div class="form-group">
+           @* <div class="form-group">
                 <label asp-for="PersonId" class="control-label"></label>
                 <input asp-for="PersonId" class="form-control" />
                 <span asp-validation-for="PersonId" class="text-danger"></span>
@@ -38,7 +38,7 @@
                 <span asp-validation-for="ProjectInfo" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Submit" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
@@ -48,6 +48,3 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

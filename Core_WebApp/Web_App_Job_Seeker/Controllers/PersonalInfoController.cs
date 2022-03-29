@@ -11,11 +11,7 @@ using Web_App_Job_Seeker.SessionExtension;
 
 namespace Web_App_Job_Seeker.Controllers
 {
-    //IWebHostEnvironment hostEnvironment;
-    //public FileUploadController(IWebHostEnvironment hostEnvironment)
-    //{
-    //    this.hostEnvironment = hostEnvironment;
-    //}
+    
     public class PersonalInfoController : Controller
     {
         private readonly IService<PersonalInfo, int> PerService;
@@ -33,25 +29,7 @@ namespace Web_App_Job_Seeker.Controllers
 
         public IActionResult Index()
         {
-            //var resPer = PerService.GetAsync().Result;
-            //var resEdu = EduService.GetAsync().Result;
-            ////Full Name COntact No Email Highest Quaification IMage
-
-            //var Resultant = from e in resPer
-            //                join d in resEdu on
-            //                e.PersonId equals d.PersonId
-            //                select new
-            //                {
-            //                    Fullname = e.FullName,
-            //                    ContactNo = e.ContactNo,
-            //                    Email = e.Email,
-            //                    Designation = e.Designation,
-            //                    DeptName = d.DeptName,
-            //                    Email = e.Email,
-            //                    Tax = e.Tax
-            //                };
-            var res=PerService.GetAsync().Result;
-            return View(res);
+            return View();
         }
 
         public IActionResult Create()
@@ -143,7 +121,7 @@ namespace Web_App_Job_Seeker.Controllers
                         // Create a File into the folder
                         await file.CopyToAsync(fs);
                     }
-                    data.ProfileFileName =finalPath;
+                    data.ProfileFileName = @$"~/images/{file.FileName}";
                     data.ProfileUploadStatus = "File is Uploaded Successfully";
                 }
                 else
@@ -160,7 +138,7 @@ namespace Web_App_Job_Seeker.Controllers
                         // Create a File into the folder
                         await Resume.CopyToAsync(fs);
                     }
-                    data.ResumeFileName = finalPath;
+                    data.ResumeFileName =@$"~/PDF/{Resume.FileName}";
                     data.ResumeUploadStatus = "Resume Uploded Successfully";
                 }
                 else
@@ -174,17 +152,38 @@ namespace Web_App_Job_Seeker.Controllers
             }
 
 
-
             var person = HttpContext.Session.GetSessionData<PersonalInfo>("PersonalInfo");
             var education = HttpContext.Session.GetSessionData<EducationalInfo>("EducationalInfo");
             var professional = HttpContext.Session.GetSessionData<ProfessionalInfo>("ProfessionalInfo");
+            
 
-
-            //var res=PerService.CreateAsync(personalInfo).Result;
             person.ImageFilePath = data.ProfileFileName;
             person.ProfileFilePath = data.ResumeFileName;
             var res = PerService.CreateAsync(person).Result;
+
             education.PersonId = res.PersonId;
+
+            if(education.MastersPassingYear!=null)
+            {
+                education.HighestQuaification = "Master";
+            }
+            else if(education.DegreePassingYear!=null)
+            {
+                education.HighestQuaification = "Bachelor";
+            }
+            else if (education.DiplomaPassingYear !=null)
+            {
+                education.HighestQuaification = "Diploma";
+            }
+            else if (education.HscpassingYear !=null)
+            {
+                education.HighestQuaification = "HSC";
+            }
+            else
+            {
+                education.HighestQuaification = "SSC";
+            }
+
             var res1 = EduService.CreateAsync(education).Result;
             professional.PersonId = res.PersonId;
             var res2 = ProService.CreateAsync(professional).Result;
@@ -194,3 +193,5 @@ namespace Web_App_Job_Seeker.Controllers
 
     }
 }
+
+//dotnet ef dbcontext scaffold "Data Source=.;Initial Catalog=Company;Integrated Security=SSPI" Microsoft.EntityFrameworkCore.SqlServer -o Models --force

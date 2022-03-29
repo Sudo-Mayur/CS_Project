@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Web_App_Job_Seeker.Models;
 namespace Web_App_Job_Seeker.Services
@@ -67,21 +68,26 @@ namespace Web_App_Job_Seeker.Services
 
         async Task<EducationalInfo> IService<EducationalInfo, int>.GetByIdAsync(int id)
         {
-            try
-            {
-                var result = await ctx.EducationalInfos.FindAsync(id);
-                if (result == null)
-                {
-                    return null;
-                }
-                return result;
-            }
-            catch (Exception ex)
-            {
 
-                Console.WriteLine(ex.Message);
-                return null;
-            }
+            var res = await ctx.EducationalInfos.ToListAsync();
+            var edu = res.Where(x => x.PersonId == id).FirstOrDefault();
+            return edu;
+
+            //try
+            //{
+            //    var result = await ctx.EducationalInfos.FindAsync(id);
+            //    if (result == null)
+            //    {
+            //        return null;
+            //    }
+            //    return result;
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    Console.WriteLine(ex.Message);
+            //    return null;
+            //}
         }
 
         async Task<EducationalInfo> IService<EducationalInfo, int>.UpdateAsync(int id, EducationalInfo entity)
@@ -94,13 +100,10 @@ namespace Web_App_Job_Seeker.Services
                     return null;
                 }
                 result.PersonId = entity.PersonId;
-                result.SscschoolName = entity.SscschoolName;
                 result.SscboardName = entity.SscboardName;
                 result.Sscpercentage = entity.Sscpercentage;
-                result.HsccollegeName = entity.HsccollegeName;
                 result.HscboardName = entity.HscboardName;
                 result.Hscpercentage = entity.Hscpercentage;
-                result.DegreeCollegeName = entity.DegreeCollegeName;
                 result.DegreeUniversityName = entity.DegreeUniversityName;
                 result.DegreePercentage = entity.DegreePercentage;
                 result.MastersUniversityName = entity.MastersUniversityName;

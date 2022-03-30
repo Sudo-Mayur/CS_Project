@@ -13,6 +13,9 @@ namespace Web_App_Job_Seeker.Services
         {
             this.ctx = ctx;
         }
+
+       
+
         async Task<EducationalInfo> IService<EducationalInfo, int>.CreateAsync(EducationalInfo entity)
         {
             try

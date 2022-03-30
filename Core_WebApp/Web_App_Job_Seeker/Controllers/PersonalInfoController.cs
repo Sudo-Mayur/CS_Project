@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
@@ -34,45 +36,101 @@ namespace Web_App_Job_Seeker.Controllers
 
         public IActionResult Create()
         {
-            var personalInfo = new PersonalInfo();
-            return View(personalInfo);
+            var res = HttpContext.Session.GetSessionData<PersonalInfo>("PersonalInfo");
+            if(res== null)
+            {
+                var personalInfo = new PersonalInfo();
+                return View(personalInfo);
+            }
+            return View(res);
+           
         }
         [HttpPost]
         public IActionResult Create(PersonalInfo personalInfo)
         {
-
-            //var res=PerService.CreateAsync(personalInfo).Result;
-            HttpContext.Session.SetSessionData<PersonalInfo>("PersonalInfo", personalInfo);
-            return RedirectToAction("CreateEdu", "PersonalInfo");
-
-            //return RedirectToAction("CreateEdu");
+            if(ModelState.IsValid)
+            {
+                HttpContext.Session.SetSessionData<PersonalInfo>("PersonalInfo", personalInfo);
+                return RedirectToAction("CreateEdu", "PersonalInfo");
+            }
+            else
+            {
+                return View(personalInfo);
+            }
 
         }
 
         public IActionResult CreateEdu()
         {
-            var educationalInfo=new EducationalInfo();
-            return View(educationalInfo);
+           
+            var res = HttpContext.Session.GetSessionData<EducationalInfo>("EducationalInfo");
+            List<SelectListItem> items = new List<SelectListItem>();
+            items.Add(new SelectListItem { Text = "0", Value = "0" });
+            items.Add(new SelectListItem { Text = "2014", Value = "2014" });
+            items.Add(new SelectListItem { Text = "2015", Value = "2015" });
+            items.Add(new SelectListItem { Text = "2016", Value = "2016" });
+            items.Add(new SelectListItem { Text = "2017", Value = "2017" });
+            items.Add(new SelectListItem { Text = "2018", Value = "2018" });
+            items.Add(new SelectListItem { Text = "2019", Value = "2019" });
+            items.Add(new SelectListItem { Text = "2020", Value = "2020" });
+            items.Add(new SelectListItem { Text = "2021", Value = "2021" });
+            items.Add(new SelectListItem { Text = "2022", Value = "2022" });
+            ViewBag.EduYear = items;
+            if (res==null)
+            {
+                var educationalInfo = new EducationalInfo();
+                return View(educationalInfo);
+            }
+            return View(res);
+           
         }
         [HttpPost]
         public IActionResult CreateEdu(EducationalInfo educationalInfo)
         {
-            //var res = EduService.CreateAsync(educationalInfo).Result;
-            //return RedirectToAction("CreatePro");
-            HttpContext.Session.SetSessionData<EducationalInfo>("EducationalInfo", educationalInfo);
-            return RedirectToAction("CreatePro", "PersonalInfo");
+            if(ModelState.IsValid)
+            {
+                HttpContext.Session.SetSessionData<EducationalInfo>("EducationalInfo", educationalInfo);
+                return RedirectToAction("CreatePro", "PersonalInfo");
+            }
+            else
+            {
+                ViewBag.Message = " The Minimum Qulification is SSC So,Candidate Must Passed SSC Examination";
+                return View(educationalInfo);
+            }
+            
         }
 
         public IActionResult CreatePro()
         {
-            var professionalInfo=new ProfessionalInfo();
-            return View(professionalInfo);
+            var res = HttpContext.Session.GetSessionData<ProfessionalInfo>("ProfessionalInfo");
+            if (res == null)
+            {
+                var professionalInfo = new ProfessionalInfo();
+                return View(professionalInfo);
+            }
+            return View(res);   
         }
         [HttpPost]
-        public IActionResult CreatePro(ProfessionalInfo professionalInfo)
+        public IActionResult CreatePro(ProfessionalInfo professionalInfo,string action)
         {
-            //var res = ProService.CreateAsync(professionalInfo).Result;
-            //return RedirectToAction("Index");
+            //var campanies = HttpContext.Session.GetSessionData<List<ProfessionalInfo>>("campanies");
+            //if (campanies == null)
+            //{
+            //    campanies = new List<ProfessionalInfo>();
+            //    campanies.Add(professionalInfo);
+            //    HttpContext.Session.SetSessionData<List<ProfessionalInfo>>("campanies", campanies);
+            //}
+            //if (action == "AddOneMore")
+            //{
+            //    return RedirectToAction("CreatePro");
+            //}
+            //else if
+            //{
+            //    return View("FileUpload", "PersonalInfo");
+            //}
+
+            //return View("Index");
+
             HttpContext.Session.SetSessionData<ProfessionalInfo>("ProfessionalInfo", professionalInfo);
             return RedirectToAction("FileUpload", "PersonalInfo");
         }
@@ -97,7 +155,7 @@ namespace Web_App_Job_Seeker.Controllers
             // Always Check Length of file
 
             // if()
-            if (file.Length > 0)
+            if (file.Length > 0 && file.Length<5000000)
             {
                 // REad the Uploaded File Name
                 var postedFileName = ContentDispositionHeaderValue
@@ -126,7 +184,8 @@ namespace Web_App_Job_Seeker.Controllers
                 }
                 else
                 {
-                    data.ProfileUploadStatus = "Failed......";
+                    data.ProfileUploadStatus = "Failed to Upload Profile Picture......";
+                    return View(data);
                 }
 
                 if (fileInfonew.Extension == ".pdf")
@@ -143,7 +202,8 @@ namespace Web_App_Job_Seeker.Controllers
                 }
                 else
                 {
-                    data.ResumeUploadStatus = "Failed......";
+                    data.ResumeUploadStatus = "Failed to Upload Resume......";
+                    return View(data);
                 }
             }
             else
@@ -163,19 +223,19 @@ namespace Web_App_Job_Seeker.Controllers
 
             education.PersonId = res.PersonId;
 
-            if(education.MastersPassingYear!=null)
+            if(education.MastersPercentage!=null)
             {
                 education.HighestQuaification = "Master";
             }
-            else if(education.DegreePassingYear!=null)
+            else if(education.DegreePercentage != null)
             {
                 education.HighestQuaification = "Bachelor";
             }
-            else if (education.DiplomaPassingYear !=null)
+            else if (education.DiplomaPercentage !=null)
             {
                 education.HighestQuaification = "Diploma";
             }
-            else if (education.HscpassingYear !=null)
+            else if (education.Hscpercentage !=null)
             {
                 education.HighestQuaification = "HSC";
             }
@@ -185,13 +245,21 @@ namespace Web_App_Job_Seeker.Controllers
             }
 
             var res1 = EduService.CreateAsync(education).Result;
-            professional.PersonId = res.PersonId;
+            professional.PersonId =res.PersonId ;
             var res2 = ProService.CreateAsync(professional).Result;
+
+            //var res3 = ProService.AddList(professional, res.PersonId);
+
+
+            HttpContext.Session.Remove("PersonalInfo");
+            HttpContext.Session.Remove("EducationalInfo");
+            HttpContext.Session.Remove("ProfessionalInfo");
+
 
             return RedirectToAction("Index");
         }
-
     }
 }
+
 
 //dotnet ef dbcontext scaffold "Data Source=.;Initial Catalog=Company;Integrated Security=SSPI" Microsoft.EntityFrameworkCore.SqlServer -o Models --force

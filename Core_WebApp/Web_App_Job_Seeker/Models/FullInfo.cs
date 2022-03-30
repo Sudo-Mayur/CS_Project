@@ -7,8 +7,8 @@
         public string Address { get; set; }
         public string ContactNo { get; set; }
         public string Email { get; set; }
-        public string ImageFilePath { get; set; }
-        public string ProfileFilePath { get; set; }
+        public string ImageFile { get; set; }
+        public string ProfileFile { get; set; }
 
         public string SscboardName { get; set; }
         public double Sscpercentage { get; set; }

@@ -13,9 +13,11 @@ namespace Web_App_Job_Seeker.Services
         {
             this.ctx = ctx;
         }
+
+       
         async Task<PersonalInfo> IService<PersonalInfo, int>.CreateAsync(PersonalInfo entity)
         {
-            
+         
             try
             {
                 var result = await ctx.PersonalInfos.AddAsync(entity);

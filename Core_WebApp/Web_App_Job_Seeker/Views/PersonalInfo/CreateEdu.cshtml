@@ -11,6 +11,8 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="CreateEdu">
+            <h4>@ViewBag.Message</h4>
+
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             @*<div class="form-group">
                 <label asp-for="EducationId" class="control-label"></label>
@@ -34,7 +36,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="SscpassingYear" class="control-label"></label>
-                <input asp-for="SscpassingYear" class="form-control" />
+@*                <input asp-for="SscpassingYear" class="form-control" />
+*@                 <select asp-for="SscpassingYear" class ="form-control" asp-items=ViewBag.EduYear></select>
                 <span asp-validation-for="SscpassingYear" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -49,7 +52,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="HscpassingYear" class="control-label"></label>
-                <input asp-for="HscpassingYear" class="form-control" />
+@*                <input asp-for="HscpassingYear" class="form-control" />
+*@                <select asp-for="HscpassingYear" class ="form-control" asp-items=ViewBag.EduYear></select>
                 <span asp-validation-for="HscpassingYear" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -64,7 +68,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="DiplomaPassingYear" class="control-label"></label>
-                <input asp-for="DiplomaPassingYear" class="form-control" />
+@*                <input asp-for="DiplomaPassingYear" class="form-control" />
+*@                <select asp-for="DiplomaPassingYear" class ="form-control" asp-items=ViewBag.EduYear></select>
                 <span asp-validation-for="DiplomaPassingYear" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -79,7 +84,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="DegreePassingYear" class="control-label"></label>
-                <input asp-for="DegreePassingYear" class="form-control" />
+@*                <input asp-for="DegreePassingYear" class="form-control" />
+*@                <select asp-for="DegreePassingYear" class ="form-control" asp-items=ViewBag.EduYear></select>
                 <span asp-validation-for="DegreePassingYear" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -94,7 +100,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="MastersPassingYear" class="control-label"></label>
-                <input asp-for="MastersPassingYear" class="form-control" />
+@*                <input asp-for="MastersPassingYear" class="form-control" />
+*@                <select asp-for="MastersPassingYear" class ="form-control" asp-items=ViewBag.EduYear></select>
                 <span asp-validation-for="MastersPassingYear" class="text-danger"></span>
             </div>
            @* <div class="form-group">
@@ -110,6 +117,6 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Create">Back to List</a>
 </div>
 

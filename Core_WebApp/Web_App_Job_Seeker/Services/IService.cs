@@ -10,5 +10,6 @@ namespace Web_App_Job_Seeker.Services
         Task<TEntity> CreateAsync(TEntity entity);
         Task<TEntity> UpdateAsync(TPk id, TEntity entity);
         Task<TEntity> DeleteAsync(TPk id);
+
     }
 }

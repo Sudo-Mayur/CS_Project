@@ -30,11 +30,20 @@ namespace Core_API.Models
         public string? Description { get; set; }
         [Required]
         public int CategoryRowId { get; set; }
+        [Required]
+        public int Price { get; set; }
         public Category? Category { get; set; }
     }
+
+
 }
 
-//dotnet ef migrations add firstMigration -c Core_API.ModelClasses.ApiDbContext
+
+
+
+
+//dotnet ef migrations add ThirdMigration -c Core_API.ModelClasses.ApiDbContext
 //dotnet ef database update -c Core_API.ModelClasses.ApiDbContext
 
 
+//Modify the Product class by adding the Price int property in it, generate Migration, Update database

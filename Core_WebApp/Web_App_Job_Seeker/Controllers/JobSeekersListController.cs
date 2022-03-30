@@ -56,12 +56,13 @@ namespace Web_App_Job_Seeker.Controllers
         {
             FullInfo f = new FullInfo();
             var res1 = PerService.GetByIdAsync(id).Result;
+            f.PersonId = res1.PersonId;
             f.FullName = res1.FullName;
             f.ContactNo = res1.ContactNo;
             f.Address= res1.Address;
             f.Email = res1.Email;
-            f.ImageFilePath = res1.ImageFilePath;
-            f.ProfileFilePath= res1.ProfileFilePath;
+            f.ImageFile = res1.ImageFilePath;
+            f.ProfileFile= res1.ProfileFilePath;
 
             var res2 = EduService.GetByIdAsync(id).Result;
             f.SscboardName= res2.SscboardName;
@@ -71,7 +72,7 @@ namespace Web_App_Job_Seeker.Controllers
             f.Hscpercentage= res2.Hscpercentage;
             f.HscpassingYear=res2.HscpassingYear;
             f.DiplomaBoardName=res2.DiplomaBoardName;
-            f.DegreePercentage= res2.DegreePercentage;
+            f.DiplomaPercentage= res2.DiplomaPercentage;
             f.DiplomaPassingYear= res2.DiplomaPassingYear;
             f.DegreeUniversityName= res2.DegreeUniversityName;
             f.DegreePercentage=res2.DegreePercentage;
@@ -87,36 +88,5 @@ namespace Web_App_Job_Seeker.Controllers
             
             return View(f);
         }
-
-        //public int PersonId { get; set; }
-        //public string FullName { get; set; }
-        //public string Address { get; set; }
-        //public string ContactNo { get; set; }
-        //public string Email { get; set; }
-        //public string ImageFilePath { get; set; }
-        //public string ProfileFilePath { get; set; }
-
-        //public string SscboardName { get; set; }
-        //public double Sscpercentage { get; set; }
-        //public int SscpassingYear { get; set; }
-        //public string HscboardName { get; set; }
-        //public double? Hscpercentage { get; set; }
-        //public int? HscpassingYear { get; set; }
-        //public string DiplomaBoardName { get; set; }
-        //public double? DiplomaPercentage { get; set; }
-        //public int? DiplomaPassingYear { get; set; }
-        //public string DegreeUniversityName { get; set; }
-        //public double? DegreePercentage { get; set; }
-        //public int? DegreePassingYear { get; set; }
-        //public string MastersUniversityName { get; set; }
-        //public double? MastersPercentage { get; set; }
-        //public int? MastersPassingYear { get; set; }
-        //public string HighestQuaification { get; set; }
-
-        //public string WorkExperience { get; set; }
-        //public string Companies { get; set; }
-        //public string ProjectInfo { get; set; }
-
-
     }
 }

@@ -148,25 +148,7 @@ namespace Sample_Web_App.Controllers
             else
             {
                 return Json(data: false);
-            }
-
-            //int count = 0;
-            //foreach (char c in EmpName)
-            //{
-            //    if (c == ' ')
-            //    {
-            //        count++;
-            //    }
-            //}
-
-            //if(count==2)
-            //{
-            //    return Json(data: true);
-            //}
-            //else
-            //{
-            //    return Json(data: false);
-            //}
+            }   
         }
             
 
@@ -214,4 +196,4 @@ namespace Sample_Web_App.Controllers
     }
 }
 
-//dotnet ef dbcontext scaffold "Data Source=.;Initial Catalog=Company;Integrated Security=SSPI" Microsoft.EntityFrameworkCore.SqlServer -o Models --force
+//dotnet ef dbcontext scaffold "Data Source=.;Initial Catalog=ApiDb;Integrated Security=SSPI" Microsoft.EntityFrameworkCore.SqlServer -o Models 

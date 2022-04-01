@@ -13,7 +13,6 @@ namespace Web_App_Job_Seeker.Controllers
         private readonly IService<EducationalInfo, int> EduService;
         private readonly IService<ProfessionalInfo, int> ProService;
 
-        
 
         public JobSeekersListController(IService<PersonalInfo, int> PerService, IService<EducationalInfo, int> EduService, IService<ProfessionalInfo, int> ProService)
         {
@@ -36,17 +35,16 @@ namespace Web_App_Job_Seeker.Controllers
                                 Fullname = e.FullName,
                                 ContactNo = e.ContactNo,
                                 Email = e.Email,
-                                HighestQuaification=d.HighestQuaification,
-                                ImageFilePath =e.ImageFilePath,
-                                PersonID=e.PersonId,
-                               
+                                HighestQuaification = d.HighestQuaification,
+                                ImageFilePath = e.ImageFilePath,
+                                PersonID = e.PersonId,
                             };
 
-        
-        List<PersonData> personDatas = new List<PersonData>();
+
+            List<PersonData> personDatas = new List<PersonData>();
             foreach (var d in Resultant)
             {
-                personDatas.Add(new PersonData() { FullName = d.Fullname, ContactNo = d.ContactNo, Email = d.Email, HighestQuaification=d.HighestQuaification, Image =d.ImageFilePath , PersonID=d.PersonID});
+                personDatas.Add(new PersonData() { FullName = d.Fullname, ContactNo = d.ContactNo, Email = d.Email, HighestQuaification = d.HighestQuaification, Image = d.ImageFilePath, PersonID = d.PersonID });
             }
 
             return View(personDatas);
@@ -59,33 +57,37 @@ namespace Web_App_Job_Seeker.Controllers
             f.PersonId = res1.PersonId;
             f.FullName = res1.FullName;
             f.ContactNo = res1.ContactNo;
-            f.Address= res1.Address;
+            f.AddressLine1 = res1.AddressLine1;
+            f.City = res1.City;
+            f.PinCode = res1.PinCode;
             f.Email = res1.Email;
             f.ImageFile = res1.ImageFilePath;
-            f.ProfileFile= res1.ProfileFilePath;
+            f.ProfileFile = res1.ProfileFilePath;
 
             var res2 = EduService.GetByIdAsync(id).Result;
-            f.SscboardName= res2.SscboardName;
-            f.Sscpercentage= res2.Sscpercentage;
-            f.SscpassingYear= res2.SscpassingYear;
-            f.HscboardName=res2.HscboardName;
-            f.Hscpercentage= res2.Hscpercentage;
-            f.HscpassingYear=res2.HscpassingYear;
-            f.DiplomaBoardName=res2.DiplomaBoardName;
-            f.DiplomaPercentage= res2.DiplomaPercentage;
-            f.DiplomaPassingYear= res2.DiplomaPassingYear;
-            f.DegreeUniversityName= res2.DegreeUniversityName;
-            f.DegreePercentage=res2.DegreePercentage;
-            f.DegreePassingYear=res2.DegreePassingYear;
-            f.MastersUniversityName=res2.MastersUniversityName ;
-            f.MastersPercentage=res2.MastersPercentage;
-            f.MastersPassingYear = res2.MastersPassingYear;
+            f.SscboardName = res2.SscboardName;
+            f.Sscpercentage = res2.Sscpercentage;
+            f.SscpassingDate = res2.SscpassingDate;
+            f.HscboardName = res2.HscboardName;
+            f.Hscpercentage = res2.Hscpercentage;
+            f.HscpassingDate = res2.HscpassingDate;
+            f.DiplomaBoardName = res2.DiplomaBoardName;
+            f.DiplomaPercentage = res2.DiplomaPercentage;
+            f.DiplomaPassingDate = res2.DiplomaPassingDate;
+            f.DegreeUniversityName = res2.DegreeUniversityName;
+            f.DegreePercentage = res2.DegreePercentage;
+            f.DegreeType = res2.DegreeType;
+            f.DegreePassingDate = res2.DegreePassingDate;
+            f.MastersUniversityName = res2.MastersUniversityName;
+            f.MastersPercentage = res2.MastersPercentage;
+            f.MastersPassingDate = res2.MastersPassingDate;
+            f.HighestQuaification = res2.HighestQuaification;
 
             var res3 = ProService.GetByIdAsync(id).Result;
-            f.WorkExperience= res3.WorkExperience;
-            f.Companies= res3.Companies;
-            f.ProjectInfo= res3.ProjectInfo;
-            
+            f.WorkExperience = res3.WorkExperience;
+            f.Companies = res3.Companies;
+            f.ProjectInfo = res3.ProjectInfo;
+
             return View(f);
         }
     }

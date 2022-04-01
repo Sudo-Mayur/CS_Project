@@ -2,10 +2,12 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Web_App_Job_Seeker.Models;
 using Web_App_Job_Seeker.Services;
@@ -62,20 +64,7 @@ namespace Web_App_Job_Seeker.Controllers
 
         public IActionResult CreateEdu()
         {
-           
             var res = HttpContext.Session.GetSessionData<EducationalInfo>("EducationalInfo");
-            List<SelectListItem> items = new List<SelectListItem>();
-            items.Add(new SelectListItem { Text = "0", Value = "0" });
-            items.Add(new SelectListItem { Text = "2014", Value = "2014" });
-            items.Add(new SelectListItem { Text = "2015", Value = "2015" });
-            items.Add(new SelectListItem { Text = "2016", Value = "2016" });
-            items.Add(new SelectListItem { Text = "2017", Value = "2017" });
-            items.Add(new SelectListItem { Text = "2018", Value = "2018" });
-            items.Add(new SelectListItem { Text = "2019", Value = "2019" });
-            items.Add(new SelectListItem { Text = "2020", Value = "2020" });
-            items.Add(new SelectListItem { Text = "2021", Value = "2021" });
-            items.Add(new SelectListItem { Text = "2022", Value = "2022" });
-            ViewBag.EduYear = items;
             if (res==null)
             {
                 var educationalInfo = new EducationalInfo();
@@ -94,7 +83,7 @@ namespace Web_App_Job_Seeker.Controllers
             }
             else
             {
-                ViewBag.Message = " The Minimum Qulification is SSC So,Candidate Must Passed SSC Examination";
+                ViewBag.Message = " The Minimum Qulification is SSC So,Candidate Must Passed SSC Examination.";
                 return View(educationalInfo);
             }
             
@@ -113,32 +102,17 @@ namespace Web_App_Job_Seeker.Controllers
         [HttpPost]
         public IActionResult CreatePro(ProfessionalInfo professionalInfo,string action)
         {
-            //var campanies = HttpContext.Session.GetSessionData<List<ProfessionalInfo>>("campanies");
-            //if (campanies == null)
-            //{
-            //    campanies = new List<ProfessionalInfo>();
-            //    campanies.Add(professionalInfo);
-            //    HttpContext.Session.SetSessionData<List<ProfessionalInfo>>("campanies", campanies);
-            //}
-            //if (action == "AddOneMore")
-            //{
-            //    return RedirectToAction("CreatePro");
-            //}
-            //else if
-            //{
-            //    return View("FileUpload", "PersonalInfo");
-            //}
-
-            //return View("Index");
-
+           
             HttpContext.Session.SetSessionData<ProfessionalInfo>("ProfessionalInfo", professionalInfo);
             return RedirectToAction("FileUpload", "PersonalInfo");
         }
 
         public IActionResult FileUpload()
         {
-            ProfileData data = new ProfileData();
-            return View(data);
+            
+                ProfileData data = new ProfileData();
+                return View(data);
+                       
         }
 
         [HttpPost]
@@ -147,6 +121,11 @@ namespace Web_App_Job_Seeker.Controllers
             // REad the Current Directtory that is mapped with WebServer
             // var folder = Path.Combine(Directory.GetCurrentDirectory(), "UploadedImages");
             // Get the File Objet
+           if(data.ProfilePicture==null || data.Resume==null)
+            {
+                ViewBag.Message = "Its Mandetory Upload Profile picture and Resume";
+                return View(data);              
+            }
 
             IFormFile file = data.ProfilePicture;
             IFormFile Resume=data.Resume;
@@ -180,15 +159,16 @@ namespace Web_App_Job_Seeker.Controllers
                         await file.CopyToAsync(fs);
                     }
                     data.ProfileFileName = @$"~/images/{file.FileName}";
-                    data.ProfileUploadStatus = "File is Uploaded Successfully";
+                    //data.ProfileUploadStatus = "File is Uploaded Successfully";
+
                 }
                 else
                 {
-                    data.ProfileUploadStatus = "Failed to Upload Profile Picture......";
+                    data.ProfileUploadStatus = "Failed to Upload Profile Picture, The Profile Picture Must be JPG or in PNG Format......";
                     return View(data);
                 }
 
-                if (fileInfonew.Extension == ".pdf")
+                if (fileInfonew.Extension == ".pdf" || fileInfonew.Extension==".docx" || fileInfonew.Extension==".doc")
                 {
 
                     var finalPath = Path.Combine(hostEnvironment.WebRootPath, "PDF", resumeFileName);
@@ -198,11 +178,11 @@ namespace Web_App_Job_Seeker.Controllers
                         await Resume.CopyToAsync(fs);
                     }
                     data.ResumeFileName =@$"~/PDF/{Resume.FileName}";
-                    data.ResumeUploadStatus = "Resume Uploded Successfully";
+                   //data.ResumeUploadStatus = "Resume Uploded Successfully";
                 }
                 else
                 {
-                    data.ResumeUploadStatus = "Failed to Upload Resume......";
+                    data.ResumeUploadStatus = "Failed to Upload Resume,The  Resume Must be PDF or in DOCX Format......";
                     return View(data);
                 }
             }
@@ -258,6 +238,21 @@ namespace Web_App_Job_Seeker.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public IActionResult ValidateName(string FullName)
+        {
+
+            Regex reg = new Regex("^([a-zA-Z]+( [a-zA-Z]+)+)$");
+            if (reg.IsMatch(Convert.ToString(FullName)))
+            {
+                return Json(data: true);
+            }
+            else
+            {
+                return Json(data: false);
+            }
+        }
+
     }
 }
 

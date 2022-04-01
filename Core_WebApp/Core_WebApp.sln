@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationNew_Employeee
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web_App_Job_Seeker", "Web_App_Job_Seeker\Web_App_Job_Seeker.csproj", "{5766DD54-DFCA-4C3F-B74A-33F99E37453F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core_API", "Core_API\Core_API.csproj", "{AB0D8732-9353-42ED-943E-0B91B3F6C0B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core_API", "Core_API\Core_API.csproj", "{AB0D8732-9353-42ED-943E-0B91B3F6C0B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core_RazorViews", "Core_RazorViews", "{9AE407CC-1C3A-4885-8E30-7A0C2639A1A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP_RazorViews", "ASP_RazorViews\ASP_RazorViews.csproj", "{BC0E1A87-17FA-4951-A953-47D8125F15DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +43,16 @@ Global
 		{AB0D8732-9353-42ED-943E-0B91B3F6C0B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB0D8732-9353-42ED-943E-0B91B3F6C0B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB0D8732-9353-42ED-943E-0B91B3F6C0B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC0E1A87-17FA-4951-A953-47D8125F15DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC0E1A87-17FA-4951-A953-47D8125F15DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC0E1A87-17FA-4951-A953-47D8125F15DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC0E1A87-17FA-4951-A953-47D8125F15DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC0E1A87-17FA-4951-A953-47D8125F15DF} = {9AE407CC-1C3A-4885-8E30-7A0C2639A1A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0941EF6E-F4E7-4FC0-AA9A-B78D59315575}

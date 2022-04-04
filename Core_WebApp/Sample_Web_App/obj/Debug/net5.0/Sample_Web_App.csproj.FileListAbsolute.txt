@@ -160,3 +160,7 @@ C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\
 C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\FileUpload\Index.cshtml.g.cs
 C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\FileUpload\Upload.cshtml.g.cs
 C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\Shared\CustomError.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\Cache\Index.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\CategoryClient\Create.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\CategoryClient\Index.cshtml.g.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Sample_Web_App\obj\Debug\net5.0\Razor\Views\CategoryClient\Edit.cshtml.g.cs

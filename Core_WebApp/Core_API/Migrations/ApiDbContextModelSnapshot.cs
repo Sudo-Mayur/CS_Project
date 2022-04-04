@@ -22,6 +22,34 @@ namespace Core_API.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Core_API.ModelClasses.ExceptionInfo", b =>
+                {
+                    b.Property<int>("RequestID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RequestID"), 1L, 1);
+
+                    b.Property<string>("ControllerName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ErrorMessage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RequestMethodType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StatckTrace")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RequestID");
+
+                    b.ToTable("exceptionInfos");
+                });
+
             modelBuilder.Entity("Core_API.ModelClasses.RequiestInfo", b =>
                 {
                     b.Property<int>("RequiestID")
@@ -31,14 +59,12 @@ namespace Core_API.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RequiestID"), 1L, 1);
 
                     b.Property<string>("ControllerName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateTime")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("RequiestMethode")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("RequiestID");

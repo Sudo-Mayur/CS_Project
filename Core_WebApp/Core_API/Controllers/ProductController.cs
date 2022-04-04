@@ -10,10 +10,12 @@ namespace Core_API.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IService<Product, int> ProServ;
+        private readonly IService<Category, int> CategoryServ;
 
-        public ProductController(IService<Product, int> serv)
+        public ProductController(IService<Product, int> ProServ, IService<Category, int> CategoryServ)
         {
-            ProServ= serv;
+            this.ProServ = ProServ;
+            this.CategoryServ = CategoryServ;
         }
 
         [HttpGet]
@@ -32,10 +34,20 @@ namespace Core_API.Controllers
         [HttpPost]
         public IActionResult Post(Product Pro)
         {
-            if(ModelState.IsValid)
+            int BasePrice = CategoryServ.GetAsync().Result.Where(x => x.CategoryRowId == Pro.CategoryRowId).Select(x => x.BasePrice).FirstOrDefault();
+
+            if (ModelState.IsValid)
             {
-                var res = ProServ.CreateAsync(Pro).Result;
-                return Ok(res);
+                if (BasePrice <= Pro.Price)
+                {
+                    var res = ProServ.CreateAsync(Pro).Result;
+                    return Ok(res);
+                }
+                else
+                {
+                    return BadRequest("Base Price Must Greater Than or Is equal to Product Price");
+
+                }
             }
             else
             {
@@ -71,3 +83,8 @@ namespace Core_API.Controllers
 
     }
 }
+
+
+//MAke sure that when a new product for a category is created or updated, the Price
+//    value for the Product MUST be
+//        greater than or equal to the BAsePrice mentioned by the category

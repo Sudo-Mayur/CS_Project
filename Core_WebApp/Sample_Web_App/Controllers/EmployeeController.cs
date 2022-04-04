@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Sample_Web_App.CustomSession;
 using Sample_Web_App.Models;
 using Sample_Web_App.Services;
 using System;
@@ -55,14 +57,20 @@ namespace Sample_Web_App.Controllers
         public IActionResult Create()
         {
             ViewBag.Department = new SelectList(deptService.GetAsync().Result.ToList(), "DeptNo", "DeptName");
-            var emp=new Employee();
-            return View(emp);
+            var res=HttpContext.Session.GetObject<Employee>("Employee");
+            if(res==null)
+            {
+                var emp = new Employee();
+                return View(emp);
+            }
+            return View(res);
         }
         [HttpPost]
         public IActionResult Create(Employee employee)
         {
             try
             {
+                HttpContext.Session.SetObject<Employee>("Employee", employee);
                 var emp = empService.GetAsync(employee.EmpNo);
                 if (emp.Result != null)
                 {
@@ -77,7 +85,9 @@ namespace Sample_Web_App.Controllers
                     if(capacity > count)
                     {
                         var result = empService.Create(employee).Result;
+                        HttpContext.Session.Remove("Employee");
                         return RedirectToAction("Index");
+
                     }
                     else
                     {
@@ -151,7 +161,6 @@ namespace Sample_Web_App.Controllers
             }   
         }
             
-
         public IActionResult Edit(int id)
         {
             ViewBag.Department = new SelectList(deptService.GetAsync().Result.ToList(), "DeptNo", "DeptName");

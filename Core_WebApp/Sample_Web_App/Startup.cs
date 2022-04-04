@@ -44,6 +44,11 @@ namespace Sample_Web_App
             services.AddScoped<IService<Employee, int>, EmployeeService>();
             services.AddScoped<IService<UserInfo, int>, UserService>();
 
+            // COnfigure the Memory Cache
+            // THe Same memory where the Host is executing 
+            // the Application
+            services.AddMemoryCache();
+
             // COfigure Sessions
             // The Session Time out is 20 Mins for Idle Request
             services.AddDistributedMemoryCache();

@@ -35,7 +35,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="SscpassingDate" class="control-label"></label>
-                <input asp-for="SscpassingDate" class="form-control" />
+@*                 <select asp-for="SscpassingDate"  asp-items="ViewBag.Passyear" class ="form-control"/>
+*@                <input asp-for="SscpassingDate" class="form-control" />
                 <span asp-validation-for="SscpassingDate" class="text-danger"></span>
             </div>
             <div class="form-group">

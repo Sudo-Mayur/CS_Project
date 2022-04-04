@@ -65,6 +65,13 @@ namespace Web_App_Job_Seeker.Controllers
         public IActionResult CreateEdu()
         {
             var res = HttpContext.Session.GetSessionData<EducationalInfo>("EducationalInfo");
+            //List<SelectListItem> Year = new List<SelectListItem>();
+            //for (int i = 2010; i <= 2022; i++)
+            //{
+            //    Year.Add(new SelectListItem() { Text = $"{i}", Value = $"{i}" });
+            //}
+            //ViewBag.Passyear = Year;
+
             if (res==null)
             {
                 var educationalInfo = new EducationalInfo();

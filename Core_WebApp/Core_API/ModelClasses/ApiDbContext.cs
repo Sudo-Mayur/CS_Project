@@ -9,6 +9,7 @@ namespace Core_API.ModelClasses
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<RequiestInfo> requiestInfos { get; set; }
+        public DbSet<ExceptionInfo> exceptionInfos { get; set; }
 
         public ApiDbContext(DbContextOptions<ApiDbContext> options):base(options)
         {
@@ -25,3 +26,6 @@ namespace Core_API.ModelClasses
         }
     }
 }
+
+
+

@@ -21,7 +21,7 @@ namespace Core_API.CustomMiddleware
         /// <returns></returns>
         public async Task InvokeAsync(HttpContext context, ApiDbContext ctx)
         {
-            await next(context);
+            await next(context); 
             this.ctx = ctx;
             RequiestInfo log = new RequiestInfo()
             {
@@ -49,3 +49,4 @@ namespace Core_API.CustomMiddleware
         }
     }
 }
+

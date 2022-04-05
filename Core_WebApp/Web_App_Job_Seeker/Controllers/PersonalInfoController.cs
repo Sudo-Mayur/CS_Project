@@ -64,13 +64,16 @@ namespace Web_App_Job_Seeker.Controllers
 
         public IActionResult CreateEdu()
         {
-            var res = HttpContext.Session.GetSessionData<EducationalInfo>("EducationalInfo");
             //List<SelectListItem> Year = new List<SelectListItem>();
             //for (int i = 2010; i <= 2022; i++)
             //{
             //    Year.Add(new SelectListItem() { Text = $"{i}", Value = $"{i}" });
             //}
             //ViewBag.Passyear = Year;
+
+            var res = HttpContext.Session.GetSessionData<EducationalInfo>("EducationalInfo");
+
+           
 
             if (res==null)
             {
@@ -83,7 +86,14 @@ namespace Web_App_Job_Seeker.Controllers
         [HttpPost]
         public IActionResult CreateEdu(EducationalInfo educationalInfo)
         {
-            if(ModelState.IsValid)
+            //List<SelectListItem> Year = new List<SelectListItem>();
+            //for (int i = 2010; i <= 2022; i++)
+            //{
+            //    Year.Add(new SelectListItem() { Text = $"{i}", Value = $"{i}" });
+            //}
+            //ViewBag.Passyear = Year;
+
+            if (ModelState.IsValid)
             {
                 HttpContext.Session.SetSessionData<EducationalInfo>("EducationalInfo", educationalInfo);
                 return RedirectToAction("CreatePro", "PersonalInfo");

@@ -23,7 +23,16 @@ builder.Services.AddScoped<IService<Category, int>, CategoryService>();
 builder.Services.AddScoped<IService<Product, int>, ProductService>();
 
 
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
+
+builder.Services.AddControllers()
+        .AddJsonOptions(options => {
+            // SUpress the defualut Camel Casing for Property NAmes
+            options.JsonSerializerOptions.PropertyNamingPolicy = null;
+        }).AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 // COnfigure the CORS Service

@@ -43,7 +43,7 @@ namespace Core_API.CustomMiddleware
                 var errorInfo = new ErrorInfo()
                 {
                     ErrorCode = context.Response.StatusCode,
-                    ErrorMessage = message
+                    ErrorMessage = message     
                 };
 
                 ExceptionInfo exception = new ExceptionInfo()

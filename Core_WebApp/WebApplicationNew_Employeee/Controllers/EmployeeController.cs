@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebApplicationNew_Employeee.Models;
 using WebApplicationNew_Employeee.Services;
 
 namespace WebApplicationNew_Employeee.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly IService<Employee, int> empService;

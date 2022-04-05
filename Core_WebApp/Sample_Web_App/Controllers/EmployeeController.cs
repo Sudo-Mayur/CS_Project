@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Sample_Web_App.CustomSession;
@@ -11,6 +12,7 @@ using System.Text.RegularExpressions;
 
 namespace Sample_Web_App.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly IService<Employee, int> empService;

@@ -26,3 +26,5 @@ namespace WebApplicationNew_Employeee
 }
 
 
+//dotnet ef migrations add FirstMigration -c  WebApplicationNew_Employeee.Data.WebApplicationNew_EmployeeeContext
+//dotnet ef database update -c  WebApplicationNew_Employeee.Data.WebApplicationNew_EmployeeeContext

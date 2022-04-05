@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Sample_Web_App.Models;
 using Sample_Web_App.Services;
 using System;
@@ -25,7 +26,9 @@ namespace Sample_Web_App.Controllers
             var res = deptService.GetAsync().Result;
             return View(res);
         }
-        public IActionResult Create()
+
+        [Authorize]
+       public IActionResult Create()
         {
             var dept=new Department();
             return View(dept);
@@ -69,7 +72,7 @@ namespace Sample_Web_App.Controllers
             //    });
             //}
             }
-
+        [Authorize]
         public IActionResult Edit(int id)
         {
             var res=deptService.GetAsync(id).Result;
@@ -91,6 +94,7 @@ namespace Sample_Web_App.Controllers
             
         }
 
+        [Authorize]
         public IActionResult Delete(int id)
         {
             var res =deptService.GetAsync(id).Result;

@@ -3,11 +3,13 @@ using Core_WebApp.CustomFilters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MVC_Assignments.CustomFilters;
+using Sample_Web_App.Data;
 using Sample_Web_App.Models;
 using Sample_Web_App.Services;
 using System;
@@ -38,6 +40,23 @@ namespace Sample_Web_App
                 options.UseSqlServer(Configuration.GetConnectionString("AppConnStr"));
             });
 
+
+            //The Gegistration of the SecurityDbContext into the dependency container
+            services.AddDbContext<SecurityDbContext>(options =>
+                   options.UseSqlServer(
+                       Configuration.GetConnectionString("SecurityDbContextConnection")));
+            //Regfister the identity provider classes in dependency container
+            //Usermanager<IdentityUser>: User management (CRUD)
+            //SigninManager <IdentityUser>: User Login Management
+            services.AddDefaultIdentity<IdentityUser>(//options =>
+            //Navigate to the conform email page when new user is register
+            //options.SignIn.RequireConfirmedAccount = true
+            )
+            
+                //Connet to DataBase fpr security using EF Core
+                .AddEntityFrameworkStores<SecurityDbContext>();
+
+
             //register the custom service those contains Bisinnes logic
             //service interface , classs implementing service interface
             services.AddScoped<IService<Department, int>, DepartmentService>();
@@ -63,14 +82,18 @@ namespace Sample_Web_App
             // THis is is used to Register Filters at Global Level
             services.AddControllersWithViews(options =>
             {
-                options.Filters.Add(typeof(LogFilterAttribute));
-               // options.Filters.Add(new LogFilterAttribute());
+                //options.Filters.Add(typeof(LogFilterAttribute));
+                //Comment because of razor view
+                // options.Filters.Add(new LogFilterAttribute());
 
                 // REgister the Exception Filter
                 // The IModelMetadataProvider will be resolved by the 
                 // PIpeline
-                options.Filters.Add(typeof(AppExceptionFilterAttribute));
+                //Comment because of razor view
+                //options.Filters.Add(typeof(AppExceptionFilterAttribute));
             });
+            //Add services to support an exucation of razor pages
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -95,7 +118,8 @@ namespace Sample_Web_App
 
             // Use the Sessin Middleware
             app.UseSession();
-
+            //Middaleware for user UseAuthentication
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
@@ -106,6 +130,8 @@ namespace Sample_Web_App
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                //Map requiest to razor view for identity pages
+                endpoints.MapRazorPages(); //Razor view
             });
         }
     }

@@ -87,7 +87,7 @@ namespace Core_API.Controllers
             }
         }
 
-        [HttpDelete("(id)")]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             var res=catServ.DeleteAsync(id).Result;

@@ -15,12 +15,12 @@ namespace Web_App_Job_Seeker.Models
         /// <returns></returns>    
         public override bool IsValid(object value)
         {
-            if (Convert.ToInt32(value) < 0)
+            if (Convert.ToInt32(value) > 0 && Convert.ToInt32(value) <=100)
             {
-                return false;
-
+                return true;
+                
             }
-            return true;
+            return false;
         }
 
     }

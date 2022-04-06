@@ -35,8 +35,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="SscpassingDate" class="control-label"></label>
-@*             <select asp-for="SscpassingDate"  asp-items="ViewBag.Passyear" class ="form-control"/>
-*@               <input asp-for="SscpassingDate" class="form-control" />
+                <select asp-for="SscpassingDate" class ="form-control" asp-items=ViewBag.Passyear> 
+               <option value="none" selected disabled hidden>Select an Option</option>
+                </select>
+           @* <select asp-for="SscpassingDate"  asp-items="ViewBag.Passyear" class ="form-control"/>
+             <input asp-for="SscpassingDate" class="form-control" />*@
                 <span asp-validation-for="SscpassingDate" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -51,9 +54,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="HscpassingDate" class="control-label"></label>
-                <input asp-for="HscpassingDate" class="form-control" />
-                <span asp-validation-for="HscpassingDate" class="text-danger"></span>
+                <select asp-for="HscpassingDate" class ="form-control" asp-items=ViewBag.Passyear>
+               <option value="none" selected disabled hidden>Select an Option</option>
+                </select>
+@*                <input asp-for="HscpassingDate" class="form-control" />
+*@                <span asp-validation-for="HscpassingDate" class="text-danger"></span>
             </div>
+
+             <h7>If You Have Completed Your Diploma Then Fill the details
+                otherwise keep as it is blank.
+            </h7>
+
             <div class="form-group">
                 <label asp-for="DiplomaBoardName" class="control-label"></label>
                 <input asp-for="DiplomaBoardName" class="form-control" />
@@ -66,9 +77,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="DiplomaPassingDate" class="control-label"></label>
-                <input asp-for="DiplomaPassingDate" class="form-control" />
-                <span asp-validation-for="DiplomaPassingDate" class="text-danger"></span>
+                <select asp-for="DiplomaPassingDate" class ="form-control" asp-items=ViewBag.Passyear>
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                </select>
+@*                <input asp-for="DiplomaPassingDate" class="form-control" />
+*@                <span asp-validation-for="DiplomaPassingDate" class="text-danger"></span>
             </div>
+
+            <h7>If You Have Completed Your Bachelor Degree Then Fill the details
+                otherwise keep as it is blank.
+            </h7>
+
             <div class="form-group">
                 <label asp-for="DegreeUniversityName" class="control-label"></label>
                 <input asp-for="DegreeUniversityName" class="form-control" />
@@ -86,9 +105,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="DegreePassingDate" class="control-label"></label>
-                <input asp-for="DegreePassingDate" class="form-control" />
-                <span asp-validation-for="DegreePassingDate" class="text-danger"></span>
+                <select asp-for="DegreePassingDate" class ="form-control" asp-items=ViewBag.Passyear>
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                </select>
+@*                <input asp-for="DegreePassingDate" class="form-control" />
+*@                <span asp-validation-for="DegreePassingDate" class="text-danger"></span>
             </div>
+
+            <h7>If You Have Completed Your Masters Then Fill the details
+                otherwise keep as it is blank.
+            </h7>
+
             <div class="form-group">
                 <label asp-for="MastersUniversityName" class="control-label"></label>
                 <input asp-for="MastersUniversityName" class="form-control" />
@@ -101,8 +128,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="MastersPassingDate" class="control-label"></label>
-                <input asp-for="MastersPassingDate" class="form-control" />
-                <span asp-validation-for="MastersPassingDate" class="text-danger"></span>
+                <select asp-for="MastersPassingDate" class ="form-control" asp-items=ViewBag.Passyear>
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                </select>
+@*                <input asp-for="MastersPassingDate" class="form-control" />
+*@                <span asp-validation-for="MastersPassingDate" class="text-danger"></span>
             </div>
            @* <div class="form-group">
                 <label asp-for="HighestQuaification" class="control-label"></label>

@@ -41,15 +41,17 @@ namespace Sample_Web_App.Controllers
 
         }
 
-        public IActionResult Edit()
+        public async Task<IActionResult> Edit(int id)
         {
-            return View(new Category());
+            var res = await client.GetFromJsonAsync<Category>("https://localhost:7161/api/Category/"+id);
+            return View(res);
+            //return View(new Category());
         }
 
-        [HttpPut]
+        [HttpPost]
         public async Task<IActionResult> Edit(int id,Category category)
         {
-            var response = await client.PutAsJsonAsync<Category>("https://localhost:7161/api/Category", category);
+            var response = await client.PutAsJsonAsync<Category>("https://localhost:7161/api/Category/"+id, category);
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -61,25 +63,26 @@ namespace Sample_Web_App.Controllers
             }
         }
 
-        //public IActionResult Delete()
-        //{
-        //    return View(new Category());
-        //}
+        public async Task<IActionResult> Delete(int id)
+        {
+            var res = await client.GetFromJsonAsync<Category>("https://localhost:7161/api/Category/" + id);
+            return View(res);
+        }
 
-        //[HttpDelete]
-        //public async Task<IActionResult> Delete(int id, Category category)
-        //{
-        //    var response = await client.DeleteAsJsonAsync<Category>("https://localhost:7161/api/Category", category);
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        return RedirectToAction("Index");
-        //    }
-        //    else
-        //    {
-        //        ViewBag.Message = "No Succes";
-        //        return View(category);
-        //    }
-        //}
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id,Category category) 
+        {
+            var response = await client.DeleteAsync("https://localhost:7161/api/Category/"+ id);
+            if (response.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.Message = "No Succes";
+                return View(category);
+            }
+        }
 
     }
 }

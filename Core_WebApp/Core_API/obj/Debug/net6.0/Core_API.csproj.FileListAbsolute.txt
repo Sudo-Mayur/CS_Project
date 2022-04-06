@@ -65,3 +65,5 @@ C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Microsoft.As
 C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Coditas\source\repos\Core_WebApp\Core_API\obj\Debug\net6.0\Core_API.Properties.Resources.resources
+C:\Users\Coditas\source\repos\Core_WebApp\Core_API\obj\Debug\net6.0\Core_API.csproj.GenerateResource.cache

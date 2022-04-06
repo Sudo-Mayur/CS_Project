@@ -45,17 +45,40 @@ namespace Sample_Web_App
             services.AddDbContext<SecurityDbContext>(options =>
                    options.UseSqlServer(
                        Configuration.GetConnectionString("SecurityDbContextConnection")));
+
+
             //Regfister the identity provider classes in dependency container
             //Usermanager<IdentityUser>: User management (CRUD)
             //SigninManager <IdentityUser>: User Login Management
-            services.AddDefaultIdentity<IdentityUser>(//options =>
+            //services.AddDefaultIdentity<IdentityUser>(//options =>
             //Navigate to the conform email page when new user is register
             //options.SignIn.RequireConfirmedAccount = true
-            )
-            
-                //Connet to DataBase fpr security using EF Core
-                .AddEntityFrameworkStores<SecurityDbContext>();
+            // )
 
+            //Connet to DataBase fpr security using EF Core
+            //  .AddEntityFrameworkStores<SecurityDbContext>()..AddDefaultUI();
+
+            // REgistration of 
+            // UserManager<IdentityUser>
+            // RoleManager<IdentityRole>
+            // SignInManager<IdenttyUser>
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<SecurityDbContext>().AddDefaultUI();
+
+
+            services.AddAuthorization(options => {
+                options.AddPolicy("ReadPolicy", policy => {
+                    policy.RequireRole("Manager", "Clerk", "Operator");
+                });
+                options.AddPolicy("ManagerClerkPolicy", policy =>
+                {
+                    policy.RequireRole("Manager", "Clerk");
+                });
+                options.AddPolicy("ManagerPolicy", policy =>
+                {
+                    policy.RequireRole("Manager");
+                });
+
+            });
 
             //register the custom service those contains Bisinnes logic
             //service interface , classs implementing service interface

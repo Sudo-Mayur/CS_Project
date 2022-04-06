@@ -21,13 +21,14 @@ namespace Sample_Web_App.Controllers
 
         //[LogFilter]
         //Apply Filter at ActionLevel
+        [Authorize(Policy = "ReadPolicy")]
         public IActionResult Index()
         {
             var res = deptService.GetAsync().Result;
             return View(res);
         }
 
-        [Authorize]
+        [Authorize(Policy ="ManagerClerkPolicy")]
        public IActionResult Create()
         {
             var dept=new Department();
@@ -72,7 +73,7 @@ namespace Sample_Web_App.Controllers
             //    });
             //}
             }
-        [Authorize]
+        [Authorize(Policy ="ManagerClerkPolicy")]
         public IActionResult Edit(int id)
         {
             var res=deptService.GetAsync(id).Result;
@@ -94,7 +95,7 @@ namespace Sample_Web_App.Controllers
             
         }
 
-        [Authorize]
+        [Authorize(Policy ="ManagerPolicy")]
         public IActionResult Delete(int id)
         {
             var res =deptService.GetAsync(id).Result;

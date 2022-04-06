@@ -62,10 +62,12 @@ app.UseHttpsRedirection();
 //app.UseRouting();
 
 app.UseAuthorization();
-app.UseRequesException();
 
 // Use the Custom Log Middleward
-app.UseLogRequiest();
+//app.UseRequesException();
+
+// Use the Custom Log Middleward
+//app.UseLogRequiest();
 app.UseRouting();
 
 

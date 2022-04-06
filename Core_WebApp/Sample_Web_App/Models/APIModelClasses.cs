@@ -33,6 +33,7 @@ namespace Sample_Web_App.Models
         public string? Description { get; set; }
         [Required]
         public int CategoryRowId { get; set; }
+        public int Price { get; set; }
         public Category? Category { get; set; }
     }
 }

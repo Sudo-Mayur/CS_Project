@@ -14,8 +14,6 @@ namespace Web_App_Job_Seeker.Services
             this.ctx = ctx;
         }
 
-       
-
         async Task<EducationalInfo> IService<EducationalInfo, int>.CreateAsync(EducationalInfo entity)
         {
             try
@@ -72,25 +70,25 @@ namespace Web_App_Job_Seeker.Services
         async Task<EducationalInfo> IService<EducationalInfo, int>.GetByIdAsync(int id)
         {
 
-            var res = await ctx.EducationalInfos.ToListAsync();
-            var edu = res.Where(x => x.PersonId == id).FirstOrDefault();
-            return edu;
+            //var res = await ctx.EducationalInfos.ToListAsync();
+            //var edu = res.Where(x => x.PersonId == id).FirstOrDefault();
+            //return edu;
 
-            //try
-            //{
-            //    var result = await ctx.EducationalInfos.FindAsync(id);
-            //    if (result == null)
-            //    {
-            //        return null;
-            //    }
-            //    return result;
-            //}
-            //catch (Exception ex)
-            //{
+            try
+            {
+                var result = await ctx.EducationalInfos.FindAsync(id);
+                if (result == null)
+                {
+                    return null;
+                }
+                return result;
+            }
+            catch (Exception ex)
+            {
 
-            //    Console.WriteLine(ex.Message);
-            //    return null;
-            //}
+                Console.WriteLine(ex.Message);
+                return null;
+            }
         }
 
         async Task<EducationalInfo> IService<EducationalInfo, int>.UpdateAsync(int id, EducationalInfo entity)
@@ -105,12 +103,17 @@ namespace Web_App_Job_Seeker.Services
                 result.PersonId = entity.PersonId;
                 result.SscboardName = entity.SscboardName;
                 result.Sscpercentage = entity.Sscpercentage;
+                result.SscpassingDate=entity.SscpassingDate;
                 result.HscboardName = entity.HscboardName;
                 result.Hscpercentage = entity.Hscpercentage;
+                result.HscpassingDate= entity.HscpassingDate;
                 result.DegreeUniversityName = entity.DegreeUniversityName;
                 result.DegreePercentage = entity.DegreePercentage;
+                result.DegreeType= entity.DegreeType;
+                result.DegreePassingDate= entity.DegreePassingDate;
                 result.MastersUniversityName = entity.MastersUniversityName;
                 result.MastersPercentage = entity.MastersPercentage;
+                result.MastersPassingDate=entity.MastersPassingDate;
 
                 await ctx.SaveChangesAsync();
                 return result;

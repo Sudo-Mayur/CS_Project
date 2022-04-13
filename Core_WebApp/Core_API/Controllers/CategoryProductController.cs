@@ -17,31 +17,54 @@ namespace Core_API.Controllers
             this.catServ = catServ;
             this.productServ = productServ;
         }
+
+
         [HttpPost]
-        public IActionResult Create(CategoryProduct product)
+        public IActionResult Create(catpro data)
         {
-            if (ModelState.IsValid)
+            if(!ModelState.IsValid)
             {
-                var cat = new Category()
+                var catresult = catServ.CreateAsync(data.category).Result;
+                foreach (var item in data.Products)
                 {
-                    CategoryId = product.CategoryId,
-                    CategoryName = product.CategoryName,
-                    BasePrice = product.BasePrice,
-                };
-                var catResultant = catServ.CreateAsync(cat).Result;
-                foreach (var item in product.Products)
-                {
-                    item.CategoryRowId = catResultant.CategoryRowId;
+                    item.CategoryRowId = data.category.CategoryRowId;
                     var res = productServ.CreateAsync(item).Result;
                 }
-                //var res = prdServ.CreateAsync(product);
-                return Ok(product);
+                return Ok("Created Successfully..........");
             }
             else
             {
                 return BadRequest(ModelState);
-            }
+            }           
         }
+
+
+        //previouse Methode
+        //public IActionResult Create(CategoryProduct product)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        var cat = new Category()
+        //        {
+        //            CategoryId = product.CategoryId,
+        //            CategoryName = product.CategoryName,
+        //            BasePrice = product.BasePrice,
+        //        };
+
+        //        var catResultant = catServ.CreateAsync(cat).Result;
+        //        foreach (var item in product.Products)
+        //        {
+        //            item.CategoryRowId = catResultant.CategoryRowId;
+        //            var res = productServ.CreateAsync(item).Result;
+        //        }
+        //        //var res = prdServ.CreateAsync(product);
+        //        return Ok(product);
+        //    }
+        //    else
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
+        //}
     }
 }
 

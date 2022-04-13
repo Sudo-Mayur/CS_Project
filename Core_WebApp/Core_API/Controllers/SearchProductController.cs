@@ -18,64 +18,210 @@ namespace Core_API.Controllers
             this.productServ = productServ;
         }
 
-        //Add a COntroller e.g.SeatchController that will contain
+        //Add a COntroller e.g.SearchtchController that will contain
         //Get method for Search Products by CategoryName
-        [HttpPost]
+
+        [HttpGet("{name}")]
         public IActionResult Get(string name)
         {
-            if (ModelState.IsValid)
+            List<Product> product = new List<Product>();
+
+            int? cat = catServ.GetAsync().Result.Where(x => x.CategoryName == name).Select(x => x.CategoryRowId).FirstOrDefault();
+            if (cat != 0)
             {
-                var cat = catServ.GetAsync().Result.Where(x => x.CategoryName == name).Select(x => x.CategoryRowId).FirstOrDefault();
-                var pro = productServ.GetAsync().Result.Where(x => x.CategoryRowId == cat);
-                return Ok(pro);
+                if (cat != null)
+                {
+
+                    var products = productServ.GetAsync().Result.ToList();
+
+                    var result = from prd in products
+                                 where prd.CategoryRowId == cat
+                                 select new Product()
+                                 {
+                                     ProductRowId = prd.ProductRowId,
+                                     ProductId = prd.ProductId,
+                                     ProductName = prd.ProductName,
+                                     Description = prd.Description,
+                                     Price = prd.Price,
+                                 };
+
+                    if (result.Count() > 0)
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        return Ok($"No Products for Category Name {name}");
+                    }
+
+                }
+                else
+                {
+                    return BadRequest("Please provide Correct Caregory NAme");
+                }
             }
             else
             {
-                return BadRequest(ModelState);
+                // return BadRequest("Please provide Correct Caregory NAme");
+                //var pd = new Product();
+                return Ok(product);
             }
-           
         }
 
+        //OR Condition
         //Create a API thet will have a Search GET Method with Following parameters
         //Search(string CategoryNAme, string condition, string ProductName)
-        //This will return Data based on 'AND' and 'OR' value for 'condition' parameter
+        //This will return Data based on 'OR' value for 'condition' parameter
 
         [HttpGet]
-        public IActionResult Search(string catname, string condition, string productname)
+        public IActionResult SearchProduct(string? CategoryNAme, string? ProductName, string Operator)
         {
             if (ModelState.IsValid)
             {
-                if (condition == "And")
+                if (Operator == "AND")
                 {
-                    var cat = catServ.GetAsync().Result.Where(x => x.CategoryName == catname).Select(x => x.CategoryRowId).FirstOrDefault();
-                    var pro = productServ.GetAsync().Result.Where(x => x.CategoryRowId == cat).Select(y => y.ProductName);
-                    foreach (var item in pro)
+                    if (CategoryNAme != null && ProductName != null)
                     {
-                        if (item == productname)
+                        var catID = catServ.GetAsync().Result.Where(x => x.CategoryName == CategoryNAme).Select(x => x.CategoryRowId).FirstOrDefault();
+                        if (catID != 0)
                         {
-                            var productInfo = productServ.GetAsync().Result.Where(x => x.ProductName == productname).FirstOrDefault();
-                            var catInfo = catServ.GetAsync().Result.Where(x => x.CategoryName == catname).FirstOrDefault();
-                            catANDprod CP = new catANDprod();
-
-                            CP.CategoryRowID = catInfo.CategoryRowId;
-                            CP.CategoryName = catInfo.CategoryName;
-                            CP.BasePrice = catInfo.BasePrice;
-                            CP.ProductRowID = productInfo.ProductRowId;
-                            CP.ProductName = productInfo.ProductName;
-                            CP.Price = productInfo.Price;
-                            return Ok(CP);
+                            var catResultant = catServ.GetAsync(catID).Result;
+                            var proExistance = productServ.GetAsync().Result.Where(x => x.CategoryRowId == catID);
+                            if (proExistance != null)
+                            {
+                                var product = proExistance.Where(x => x.ProductName.ToLower() == ProductName.ToLower());
+                                CategoryProduct categoryProduct = new CategoryProduct()
+                                {
+                                    CategoryRowId = catID,
+                                    CategoryId = catResultant.CategoryId,
+                                    CategoryName = catResultant.CategoryName,
+                                    BasePrice = catResultant.BasePrice,
+                                };
+                                categoryProduct.Products = new List<Product>();
+                                foreach (Product p in product)
+                                {
+                                    categoryProduct.Products.Add(new Product() { ProductRowId = p.ProductRowId, ProductName = p.ProductName, Description = p.Description, Price = p.Price, CategoryRowId = p.CategoryRowId, ProductId = p.ProductId });
+                                }
+                                return Ok(categoryProduct);
+                            }
+                            else
+                            {
+                                return BadRequest("No Product Found");
+                            }
+                        }
+                        else
+                        {
+                            return BadRequest("No Such Catagory found!");
+                        }
+                    }
+                    return BadRequest("Both Feild Required");
+                }
+                else if (Operator == "OR")
+                {
+                    if (CategoryNAme != null && ProductName != null)
+                    {
+                        var catID = catServ.GetAsync().Result.Where(x => x.CategoryName == CategoryNAme).Select(x => x.CategoryRowId).FirstOrDefault();
+                        //var proExist = productServ.GetAsync().Result.Where(x => x.CategoryRowId == catID);
+                        //var prod = proExist.Where(x => x.ProductName.ToLower() == ProductName.ToLower());
+                        if (catID != 0)
+                        {
+                            var catRes = catServ.GetAsync(catID).Result;
+                            var proExistance = productServ.GetAsync().Result.Where(x => x.CategoryRowId == catID);
+                            if (proExistance != null)
+                            {
+                                var product = proExistance.Where(x => x.ProductName.ToLower() == ProductName.ToLower());
+                                CategoryProduct categoryProduct = new CategoryProduct()
+                                {
+                                    CategoryRowId = catID,
+                                    CategoryId = catRes.CategoryId,
+                                    CategoryName = catRes.CategoryName,
+                                    BasePrice = catRes.BasePrice,
+                                };
+                                categoryProduct.Products = new List<Product>();
+                                foreach (Product p in product)
+                                {
+                                    categoryProduct.Products.Add(new Product() { ProductRowId = p.ProductRowId, ProductName = p.ProductName, Description = p.Description, Price = p.Price, CategoryRowId = p.CategoryRowId, ProductId = p.ProductId });
+                                }
+                                return Ok(categoryProduct);
+                            }
+                            else
+                            {
+                                return Ok(catRes);
+                            }
+                        }
+                        else
+                        {
+                            var prod = productServ.GetAsync().Result.Where(x => x.ProductName.ToLower() == ProductName.ToLower());
+                            if (prod.Count() != 0)
+                            {
+                                return Ok(prod);
+                            }
+                            else
+                            {
+                                return BadRequest("No Such Category, No Such Product Exists");
+                            }
+                        }
+                    }
+                    else if (CategoryNAme != null)
+                    {
+                        var catID = catServ.GetAsync().Result.Where(x => x.CategoryName == CategoryNAme).Select(x => x.CategoryRowId).FirstOrDefault();
+                        if (catID != 0)
+                        {
+                            var catRes = catServ.GetAsync(catID).Result;
+                            return Ok(catRes);
+                        }
+                        else
+                        {
+                            return BadRequest("No Such Category Exists");
+                        }
+                    }
+                    else if (ProductName != null)
+                    {
+                        var prod = productServ.GetAsync().Result.Where(x => x.ProductName.ToLower() == ProductName.ToLower());
+                        if (prod.Count() != 0)
+                        {
+                            return Ok(prod);
+                        }
+                        else
+                        {
+                            return BadRequest("No Product Found");
                         }
                     }
                 }
-                return BadRequest("Wrong Input");
+                else
+                {
+                    return BadRequest("Invalid Operator");
+                }
             }
-
-            else
-            {
-                return BadRequest(ModelState);
-            }
-
-            }
+            return BadRequest("NO Found");
         }
+
+
+
+        //[HttpGet("{catname}/{condition}/{prdname}")]
+        //[ActionName("searchcomplex")]
+        //public IActionResult SearchCondition(string catname, string condition, string prdname)
+        //{
+        //    List<Product> products = new List<Product>();
+        //    Category cat = catServ.GetAsync().Result.Where(c => c.CategoryName == catname).FirstOrDefault();
+        //    switch (condition)
+        //    {
+        //        case "AND":
+        //            products = (from prd in productServ.GetAsync().Result.ToList()
+        //                        where prd.CategoryRowId == cat.CategoryRowId && prd.ProductName == prdname
+        //                        select prd).ToList();
+        //            break;
+        //        case "OR":
+        //            products = (from prd in productServ.GetAsync().Result.ToList()
+        //                        where prd.CategoryRowId == cat.CategoryRowId || prd.ProductName == prdname
+        //                        select prd).ToList();
+        //            break;
+        //        default:
+        //            products = new List<Product>();
+        //            break;
+        //    }
+        //    return Ok(products);
+        //}
     }
+}
 

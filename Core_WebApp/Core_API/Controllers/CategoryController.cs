@@ -1,5 +1,6 @@
 ﻿using Core_API.Models;
 using Core_API.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace Core_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoryController : ControllerBase
     {
         private readonly IService<Category, int> catServ;
@@ -33,7 +35,12 @@ namespace Core_API.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
+            
             var res= catServ.GetAsync(id).Result;
+            if(res==null)
+            {
+                throw new Exception("ID not found....!");
+            }
             return Ok(res);
         }
 
@@ -97,3 +104,5 @@ namespace Core_API.Controllers
 
     }
 }
+
+

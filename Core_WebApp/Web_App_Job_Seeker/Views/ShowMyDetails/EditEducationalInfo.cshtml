@@ -1,0 +1,120 @@
+﻿@model Web_App_Job_Seeker.Models.EducationalInfo
+
+@{
+    ViewData["Title"] = "EditEducationalInfo";
+}
+
+<h1>EditEducationalInfo</h1>
+
+<h4>EducationalInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditEducationalInfo">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           @* <div class="form-group">
+                <label asp-for="EducationId" class="control-label"></label>
+                <input asp-for="EducationId" class="form-control" />
+                <span asp-validation-for="EducationId" class="text-danger"></span>
+            </div>*@
+           @* <div class="form-group">
+                <label asp-for="PersonId" class="control-label"></label>
+                <input asp-for="PersonId" class="form-control" />
+                <span asp-validation-for="PersonId" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="SscboardName" class="control-label"></label>
+                <input asp-for="SscboardName" class="form-control" />
+                <span asp-validation-for="SscboardName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sscpercentage" class="control-label"></label>
+                <input asp-for="Sscpercentage" class="form-control" />
+                <span asp-validation-for="Sscpercentage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SscpassingDate" class="control-label"></label>
+                <input asp-for="SscpassingDate" class="form-control" />
+                <span asp-validation-for="SscpassingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HscboardName" class="control-label"></label>
+                <input asp-for="HscboardName" class="form-control" />
+                <span asp-validation-for="HscboardName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hscpercentage" class="control-label"></label>
+                <input asp-for="Hscpercentage" class="form-control" />
+                <span asp-validation-for="Hscpercentage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HscpassingDate" class="control-label"></label>
+                <input asp-for="HscpassingDate" class="form-control" />
+                <span asp-validation-for="HscpassingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiplomaBoardName" class="control-label"></label>
+                <input asp-for="DiplomaBoardName" class="form-control" />
+                <span asp-validation-for="DiplomaBoardName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiplomaPercentage" class="control-label"></label>
+                <input asp-for="DiplomaPercentage" class="form-control" />
+                <span asp-validation-for="DiplomaPercentage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiplomaPassingDate" class="control-label"></label>
+                <input asp-for="DiplomaPassingDate" class="form-control" />
+                <span asp-validation-for="DiplomaPassingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DegreeUniversityName" class="control-label"></label>
+                <input asp-for="DegreeUniversityName" class="form-control" />
+                <span asp-validation-for="DegreeUniversityName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DegreePercentage" class="control-label"></label>
+                <input asp-for="DegreePercentage" class="form-control" />
+                <span asp-validation-for="DegreePercentage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DegreeType" class="control-label"></label>
+                <input asp-for="DegreeType" class="form-control" />
+                <span asp-validation-for="DegreeType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DegreePassingDate" class="control-label"></label>
+                <input asp-for="DegreePassingDate" class="form-control" />
+                <span asp-validation-for="DegreePassingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MastersUniversityName" class="control-label"></label>
+                <input asp-for="MastersUniversityName" class="form-control" />
+                <span asp-validation-for="MastersUniversityName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MastersPercentage" class="control-label"></label>
+                <input asp-for="MastersPercentage" class="form-control" />
+                <span asp-validation-for="MastersPercentage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MastersPassingDate" class="control-label"></label>
+                <input asp-for="MastersPassingDate" class="form-control" />
+                <span asp-validation-for="MastersPassingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HighestQuaification" class="control-label"></label>
+                <input asp-for="HighestQuaification" class="form-control" />
+                <span asp-validation-for="HighestQuaification" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Getinfo">Back to ProfileDetails</a>
+</div>
+

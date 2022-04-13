@@ -1,0 +1,51 @@
+﻿@model Web_App_Job_Seeker.Models.ProfessionalInfo
+
+@{
+    ViewData["Title"] = "DeleteProfessionalInfo";
+}
+
+<h1>DeleteProfessionalInfo</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ProfessionalInfo</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProfessionalId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProfessionalId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PersonId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PersonId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WorkExperience)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WorkExperience)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Companies)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Companies)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProjectInfo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProjectInfo)
+        </dd>
+    </dl>
+    
+    <form asp-action="DeleteProfessionalInfo">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="GetInfo">Back to List</a>
+    </form>
+</div>
+

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -15,7 +16,7 @@ using Web_App_Job_Seeker.SessionExtension;
 
 namespace Web_App_Job_Seeker.Controllers
 {
-    
+    [Authorize(Policy = "JobSeekerPolicy")]
     public class PersonalInfoController : Controller
     {
         private readonly IService<PersonalInfo, int> PerService;
@@ -214,13 +215,15 @@ namespace Web_App_Job_Seeker.Controllers
             var person = HttpContext.Session.GetSessionData<PersonalInfo>("PersonalInfo");
             var education = HttpContext.Session.GetSessionData<EducationalInfo>("EducationalInfo");
             var professional = HttpContext.Session.GetSessionData<ProfessionalInfo>("ProfessionalInfo");
-            
+            var loginid=HttpContext.Session.GetString("LoginID");
 
             person.ImageFilePath = data.ProfileFileName;
             person.ProfileFilePath = data.ResumeFileName;
+            person.UserId = loginid;
+
             var res = PerService.CreateAsync(person).Result;
 
-            education.PersonId = res.PersonId;
+            education.PersonId = res.PersonId;  
 
             if(education.MastersPercentage!=null)
             {

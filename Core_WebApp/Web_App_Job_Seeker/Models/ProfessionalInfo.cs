@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-#nullable disable
-
 namespace Web_App_Job_Seeker.Models
 {
     public partial class ProfessionalInfo

@@ -17,18 +17,35 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                       <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
+                        @*<li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                        </li>*@
                         <li class="nav-item">
                             <a class="btn btn-primary" asp-area="" asp-controller="PersonalInfo" asp-action="Index">Registration</a>
                         </li>
                          <li class="nav-item">
                             <a class="btn btn-primary" asp-area="" asp-controller="JobSeekersList" asp-action="Index">JobSeekersList</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" asp-area="" asp-controller="ShowMyDetails" asp-action="GetInfo">ShowMyDetails</a>
+                        </li>
+                        
+                       @* <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="EmployeerRegistration" asp-action="Index">EmployeerRegistration</a>
+                        </li>*@
+                       @* <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="EmployeerList" asp-action="Index">EmployeerList</a>
+                        </li>*@
+                         <li class="nav-item">
+                           
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Role" asp-action="Index">Role</a>
                         </li>
                     </ul>
                 </div>
@@ -52,3 +69,5 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+

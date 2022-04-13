@@ -1,18 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 using Web_App_Job_Seeker.Models;
 using Web_App_Job_Seeker.Services;
 
-
 namespace Web_App_Job_Seeker.Controllers
 {
+    [Authorize(Policy = "EmployeerPolicy")]
     public class JobSeekersListController : Controller
     {
         private readonly IService<PersonalInfo, int> PerService;
         private readonly IService<EducationalInfo, int> EduService;
         private readonly IService<ProfessionalInfo, int> ProService;
-
 
         public JobSeekersListController(IService<PersonalInfo, int> PerService, IService<EducationalInfo, int> EduService, IService<ProfessionalInfo, int> ProService)
         {
@@ -64,7 +64,8 @@ namespace Web_App_Job_Seeker.Controllers
             f.ImageFile = res1.ImageFilePath;
             f.ProfileFile = res1.ProfileFilePath;
 
-            var res2 = EduService.GetByIdAsync(id).Result;
+            var res2 = EduService.GetAsync().Result.ToList().Where(x => x.PersonId == id).FirstOrDefault();
+            //var res2 = EduService.GetByIdAsync(id).Result;
             f.SscboardName = res2.SscboardName;
             f.Sscpercentage = res2.Sscpercentage;
             f.SscpassingDate = res2.SscpassingDate;
@@ -83,7 +84,8 @@ namespace Web_App_Job_Seeker.Controllers
             f.MastersPassingDate = res2.MastersPassingDate;
             f.HighestQuaification = res2.HighestQuaification;
 
-            var res3 = ProService.GetByIdAsync(id).Result;
+            var res3 = ProService.GetAsync().Result.ToList().Where(x => x.PersonId == id).FirstOrDefault();
+            //var res3 = ProService.GetByIdAsync(id).Result;
             f.WorkExperience = res3.WorkExperience;
             f.Companies = res3.Companies;
             f.ProjectInfo = res3.ProjectInfo;
@@ -92,3 +94,5 @@ namespace Web_App_Job_Seeker.Controllers
         }
     }
 }
+
+

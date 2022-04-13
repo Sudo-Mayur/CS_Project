@@ -14,6 +14,7 @@ namespace Web_App_Job_Seeker.Models
         public string ImageFile { get; set; }
         public string ProfileFile { get; set; }
 
+        public int EducationId { get; set; }
         public string SscboardName { get; set; }
         public double? Sscpercentage { get; set; }
         public int SscpassingDate { get; set; }
@@ -32,6 +33,7 @@ namespace Web_App_Job_Seeker.Models
         public int MastersPassingDate { get; set; }
         public string HighestQuaification { get; set; }
 
+        public int ProfessionalId { get; set; }
         public string WorkExperience { get; set; }
         public string Companies { get; set; }
         public string ProjectInfo { get; set; }

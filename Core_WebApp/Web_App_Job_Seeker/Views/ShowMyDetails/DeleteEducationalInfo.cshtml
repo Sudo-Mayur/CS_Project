@@ -1,0 +1,134 @@
+﻿@model Web_App_Job_Seeker.Models.EducationalInfo
+
+@{
+    ViewData["Title"] = "DeleteEducationalInfo";
+}
+
+<h1>DeleteEducationalInfo</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>EducationalInfo</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EducationId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EducationId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PersonId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PersonId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SscboardName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SscboardName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sscpercentage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sscpercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SscpassingDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SscpassingDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HscboardName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HscboardName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Hscpercentage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Hscpercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HscpassingDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HscpassingDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiplomaBoardName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiplomaBoardName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiplomaPercentage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiplomaPercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiplomaPassingDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiplomaPassingDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DegreeUniversityName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DegreeUniversityName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DegreePercentage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DegreePercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DegreeType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DegreeType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DegreePassingDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DegreePassingDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MastersUniversityName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MastersUniversityName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MastersPercentage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MastersPercentage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MastersPassingDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MastersPassingDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HighestQuaification)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HighestQuaification)
+        </dd>
+    </dl>
+    
+    <form asp-action="DeleteEducationalInfo">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="GetInfo">Back to List</a>
+    </form>
+</div>

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-#nullable disable
 
 namespace Web_App_Job_Seeker.Models
 {
@@ -10,13 +7,8 @@ namespace Web_App_Job_Seeker.Models
     {
         public int EducationId { get; set; }
         public int PersonId { get; set; }
-        [Required(ErrorMessage = "SSC Board name is Required")]
         public string SscboardName { get; set; }
-        [Required(ErrorMessage = "SSC Percentage is Required")]
-        [NonNegative(ErrorMessage = "Percentage must be Positive value")]
-        public double? Sscpercentage { get; set; }
-        [Required(ErrorMessage = "SSC Passing Year is Required")]
-        [Year(ErrorMessage = "SSC Passing Year is Required")]
+        public double Sscpercentage { get; set; }
         public int SscpassingDate { get; set; }
         public string HscboardName { get; set; }
         public double? Hscpercentage { get; set; }

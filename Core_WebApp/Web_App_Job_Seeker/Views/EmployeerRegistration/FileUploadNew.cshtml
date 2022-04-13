@@ -1,0 +1,28 @@
+﻿@model Web_App_Job_Seeker.Models.ProfileData
+@{
+    ViewData["Title"] = "Upload";
+}
+<h6>It is mandetory to Upload both feild</h6>
+<h1>Upload Files</h1>
+<h2>Upload Image</h2>
+<form enctype="multipart/form-data" method="post">
+    <dl>
+        <dt>
+            <label asp-for="@Model.ProfilePicture"></label>
+        </dt>
+        <dd>
+            <input asp-for="@Model.ProfilePicture" type="file">
+            <span asp-validation-for="@Model.ProfilePicture"></span>
+        </dd>
+         <div class="container">
+         @Model.ProfileUploadStatus
+     </div>
+    </dl>
+    <div class="form-group">
+                <input type="submit"  value="SaveAndFinish" class="btn btn-primary" />
+            </div>
+
+            <div>
+    <a asp-action="CreatePro">Back to List</a>
+</div>
+</form>

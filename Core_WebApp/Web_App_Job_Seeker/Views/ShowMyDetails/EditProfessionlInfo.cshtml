@@ -1,0 +1,50 @@
+﻿@model Web_App_Job_Seeker.Models.ProfessionalInfo
+
+@{
+    ViewData["Title"] = "EditProfessionlInfo";
+}
+
+<h1>EditProfessionlInfo</h1>
+
+<h4>ProfessionalInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditProfessionlInfo">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           @* <div class="form-group">
+                <label asp-for="ProfessionalId" class="control-label"></label>
+                <input asp-for="ProfessionalId" class="form-control" />
+                <span asp-validation-for="ProfessionalId" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="PersonId" class="control-label"></label>
+                <input asp-for="PersonId" class="form-control" />
+                <span asp-validation-for="PersonId" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="WorkExperience" class="control-label"></label>
+                <input asp-for="WorkExperience" class="form-control" />
+                <span asp-validation-for="WorkExperience" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Companies" class="control-label"></label>
+                <input asp-for="Companies" class="form-control" />
+                <span asp-validation-for="Companies" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectInfo" class="control-label"></label>
+                <input asp-for="ProjectInfo" class="form-control" />
+                <span asp-validation-for="ProjectInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="GetInfo">Back to ProfileDetails</a>
+</div>
+

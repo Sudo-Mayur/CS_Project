@@ -35,6 +35,7 @@ namespace Core_API.Models
         [Required]
         [NonNegative(ErrorMessage ="Price Must be Positive Value")]
         public int Price { get; set; }
+
         public Category? Category { get; set; }
     }
 
@@ -43,10 +44,21 @@ namespace Core_API.Models
         public int CategoryRowId { get; set; }
         public string? CategoryId { get; set; }
         public string? CategoryName { get; set; }
+
+       // public string? Description { get; set; }
+
+        //public int Price { get; set; }
         public int BasePrice { get; set; }
         public List<Product>? Products { get; set; }
 
     }
+
+    public class catpro
+    {
+        public Category category { get; set; }
+        public List<Product>? Products { get; set; }
+    }
+        
 
     public class catANDprod
     {
@@ -63,8 +75,8 @@ namespace Core_API.Models
 
 
 
-//dotnet ef migrations add FourthMigration -c Core_API.ModelClasses.ApiDbContext
-//dotnet ef database update -c Core_API.ModelClasses.ApiDbContext
+//dotnet ef migrations add SecurityMigration -c Core_API.ModelClasses.CodAuthDbContext
+//dotnet ef database update -c Core_API.ModelClasses.CodAuthDbContext
 
 
 //Modify the Product class by adding the Price int property in it, generate Migration, Update database

@@ -73,26 +73,26 @@ namespace Web_App_Job_Seeker.Services
 
         async Task<ProfessionalInfo> IService<ProfessionalInfo, int>.GetByIdAsync(int id)
         {
-            var res = await ctx.ProfessionalInfos.ToListAsync();
-            var edu = res.Where(x => x.PersonId == id).FirstOrDefault();
-            return edu;
+            //var res = await ctx.ProfessionalInfos.ToListAsync();
+            //var edu = res.Where(x => x.PersonId == id).FirstOrDefault();
+            //return edu;
 
-            //try
-            //{
-            //    var result = await ctx.ProfessionalInfos.FindAsync(id);
-            //    if (result == null)
-            //    {
-            //        return null;
-            //    }
-            //   // await ctx.SaveChangesAsync();
-            //    return result;
-            //}
-            //catch (Exception ex)
-            //{
+            try
+            {
+                var result = await ctx.ProfessionalInfos.FindAsync(id);
+                if (result == null)
+                {
+                    return null;
+                }
+                // await ctx.SaveChangesAsync();
+                return result;
+            }
+            catch (Exception ex)
+            {
 
-            //    Console.WriteLine(ex.Message);
-            //    return null;
-            //}
+                Console.WriteLine(ex.Message);
+                return null;
+            }
         }
 
         async Task<ProfessionalInfo> IService<ProfessionalInfo, int>.UpdateAsync(int id, ProfessionalInfo entity)

@@ -1,8 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-
-#nullable disable
 
 namespace Web_App_Job_Seeker.Models
 {
@@ -18,6 +17,7 @@ namespace Web_App_Job_Seeker.Models
         }
 
         public virtual DbSet<EducationalInfo> EducationalInfos { get; set; }
+        public virtual DbSet<Employeer> Employeers { get; set; }
         public virtual DbSet<PersonalInfo> PersonalInfos { get; set; }
         public virtual DbSet<ProfessionalInfo> ProfessionalInfos { get; set; }
 
@@ -87,6 +87,61 @@ namespace Web_App_Job_Seeker.Models
                     .HasConstraintName("FK__Education__Perso__6477ECF3");
             });
 
+            modelBuilder.Entity<Employeer>(entity =>
+            {
+                entity.ToTable("Employeer");
+
+                entity.Property(e => e.ContactNo)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.District)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Email)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.EmployeerName)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ImagePath)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.OrgAddress)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.OrgContact)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.OrgName)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.OrgState)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.OrgType)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.OrganizationInfo)
+                    .HasMaxLength(400)
+                    .IsUnicode(false)
+                    .HasColumnName("organizationInfo");
+
+                entity.Property(e => e.UserId)
+                    .HasMaxLength(100)
+                    .IsUnicode(false)
+                    .HasColumnName("UserID");
+            });
+
             modelBuilder.Entity<PersonalInfo>(entity =>
             {
                 entity.HasKey(e => e.PersonId)
@@ -131,6 +186,15 @@ namespace Web_App_Job_Seeker.Models
                 entity.Property(e => e.ProfileFilePath)
                     .HasMaxLength(200)
                     .IsUnicode(false);
+
+                entity.Property(e => e.Status)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.UserId)
+                    .HasMaxLength(100)
+                    .IsUnicode(false)
+                    .HasColumnName("UserID");
             });
 
             modelBuilder.Entity<ProfessionalInfo>(entity =>

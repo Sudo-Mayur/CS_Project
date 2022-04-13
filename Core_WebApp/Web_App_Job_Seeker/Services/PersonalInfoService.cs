@@ -98,6 +98,9 @@ namespace Web_App_Job_Seeker.Services
                     return null;
                 }
                 result.FullName = entity.FullName;
+                result.AddressLine1 = entity.AddressLine1;
+                result.City= entity.City;
+                result.PinCode= entity.PinCode;
                // result.Address = entity.Address;
                 result.ContactNo = entity.ContactNo;
                 result.Email = entity.Email;

@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Student_Managment.Models
+{
+    public partial class UserInfo
+    {
+        public int Id { get; set; }
+        public string? UserId { get; set; }
+        public double? Mathematics { get; set; }
+        public double? Science { get; set; }
+        public double? Geography { get; set; }
+        public double? History { get; set; }
+        public DateTime? Enterdate { get; set; }
+    }
+}

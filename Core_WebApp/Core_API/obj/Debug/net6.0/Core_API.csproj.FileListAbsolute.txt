@@ -67,3 +67,9 @@ C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Newtonsoft.J
 C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\Coditas\source\repos\Core_WebApp\Core_API\obj\Debug\net6.0\Core_API.Properties.Resources.resources
 C:\Users\Coditas\source\repos\Core_WebApp\Core_API\obj\Debug\net6.0\Core_API.csproj.GenerateResource.cache
+C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Coditas\source\repos\Core_WebApp\Core_API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

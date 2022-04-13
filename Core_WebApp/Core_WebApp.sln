@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core_API", "Core_API\Core_A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core_RazorViews", "Core_RazorViews", "{9AE407CC-1C3A-4885-8E30-7A0C2639A1A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP_RazorViews", "ASP_RazorViews\ASP_RazorViews.csproj", "{BC0E1A87-17FA-4951-A953-47D8125F15DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP_RazorViews", "ASP_RazorViews\ASP_RazorViews.csproj", "{BC0E1A87-17FA-4951-A953-47D8125F15DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor_Wasm", "Blazor_Wasm\Blazor_Wasm.csproj", "{AE0952BD-07DC-4C20-8F9D-39CF2C584451}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{BC0E1A87-17FA-4951-A953-47D8125F15DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC0E1A87-17FA-4951-A953-47D8125F15DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC0E1A87-17FA-4951-A953-47D8125F15DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE0952BD-07DC-4C20-8F9D-39CF2C584451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0952BD-07DC-4C20-8F9D-39CF2C584451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0952BD-07DC-4C20-8F9D-39CF2C584451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0952BD-07DC-4C20-8F9D-39CF2C584451}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

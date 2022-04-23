@@ -28,6 +28,7 @@ namespace Core_API.Controllers
             }
             return BadRequest(ModelState);
         }
+        
 
         [HttpPost]
         [ActionName("login")]
@@ -52,4 +53,3 @@ namespace Core_API.Controllers
         }
     }
 }
-

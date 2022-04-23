@@ -26,7 +26,7 @@ namespace Web_App_Job_Seeker
 }
 
 
-
+//User@21gmail.com==JobSeeker
 
 //public int PersonId { get; set; }
 //[Name(ErrorMessage = "Enter Candidate Name in Proper Formate Like Mayur Mahadev Chavan")]

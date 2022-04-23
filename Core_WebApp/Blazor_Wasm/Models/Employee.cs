@@ -14,7 +14,15 @@
             public EmployeeDB()
             {
                 Add(new Employee() { EmpNo = 1, EmpName = "Mayur", Designation = "Manager", DeptName = "IT", Salary = 2000 });
+                Add(new Employee() { EmpNo = 1, EmpName = "Yash", Designation = "Manager", DeptName = "IT", Salary = 2000 });
             }
+
         }
     }
 }
+
+
+
+
+
+

@@ -9,3 +9,10 @@
         Task<TEntity> DeleteAsync(TPK id);
     }
 }
+
+
+
+
+
+
+

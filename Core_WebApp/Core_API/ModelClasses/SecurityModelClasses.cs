@@ -29,3 +29,5 @@ namespace Core_API.ModelClasses
         public string Message { get; set; }
     }
 }
+
+

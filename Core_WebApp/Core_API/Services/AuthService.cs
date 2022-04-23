@@ -19,6 +19,7 @@ namespace Core_API.Services
             this._signInManager = signInManager;
             this._config = config;
         }
+        
 
         public async Task<ResponseData> RegisterNewUserAsync(RegisterUser user)
         {
@@ -95,3 +96,5 @@ namespace Core_API.Services
         }
     }
 }
+
+

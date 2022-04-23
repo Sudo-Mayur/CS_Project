@@ -1,10 +1,10 @@
 ﻿@page "/empcrud"
-@using Blazor_Wasm.Models;
+@using Blazor_Wasm.Models
+@using System.Reflection
 @using static Blazor_Wasm.Models.Employee
-<!--UI for the COmponent-->
-<h3>Employee CRUD</h3>
 
-<EditForm Model="employee">
+<div class="container">
+    <EditForm Model="employee">
 <table class="table table-bordered table-striped">
     <tbody>
         <tr>
@@ -73,45 +73,41 @@
         </tr>
     </tfoot>
 </table>
-<hr/>
-<div class="container">
-   @* @System.Text.Json.JsonSerializer.Serialize(employees)*@
-   <table>
-       <thead>
-           <tr>
-               <th>EmpNo</th>
-               <th>EmpName</th>
-               <th>DeptName</th>
-               <th>Designation</th>
-               <th>Salary</th>
-           </tr>
-       </thead>
-       <tbody>
-                @foreach (var emp in employees)
-                {
-                     <tr>
-                         <td>@emp.EmpNo</td>
-                         <td>@emp.EmpName</td>
-                         <td>@emp.DeptName</td>
-                         <td>@emp.Designation</td>
-                         <td>@emp.Salary</td>
-                     </tr>
-                }
-            </tbody>
-   </table>
-</div>
+<hr />
 </EditForm>
+    <table class="table table-bordered table-striped">
 
-<!--Logic for The component with
-    Proeprties
-    Methods
--->
+        <tbody>
+
+            <tr>
+                @foreach (var head in headers)
+               {
+                  <th>@head</th>
+               }
+            </tr>
+
+            @foreach (var emp in employees)
+           {
+               <tr>
+
+                   @foreach (var head in headers)
+                  {
+                      <td>@emp.GetType().GetProperty(head).GetValue(emp,null)   </td>
+                  }
+
+               </tr>
+           }
+
+        </tbody>
+
+    </table>
+    </div>
 @code {
-    // Data Members that will be exposed to UI for Read/Write Operations
     Employee employee;
     EmployeeDB employees;
     List<string> departments;
     List<string> designations;
+    List<string> headers = new List<string>();
 
     /// <summary>
     /// Method that will be executed when the COmponent list abut to Load
@@ -123,6 +119,15 @@
         employees = new EmployeeDB();
         departments = new List<string>() { "IT", "HRD", "System", "Training" };
         designations = new List<string>() { "Manager", "Lead", "Engineer", "Operator", "Clerk" };
+
+        var ep = employee.GetType().GetProperties(System.Reflection.BindingFlags.DeclaredOnly | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+          foreach (var data in ep)
+
+        {
+
+            headers.Add(data.Name);
+
+        }
         return base.OnInitializedAsync();
     }
 
@@ -131,8 +136,14 @@
         employee = new Employee();
     }
     void save()
-    {
+    {    
         employees.Add(employee);        
+    }
+                                                                                                        
+    void edit(int empNo)
+    {
+       employee = employees.Find(x=>x.EmpNo == empNo);
+      
     }
 }
 

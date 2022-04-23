@@ -13,4 +13,16 @@ namespace Student_Managment.Models
         public double? History { get; set; }
         public DateTime? Enterdate { get; set; }
     }
+
+    public partial class StudentMarks
+    {
+        public int UserID { get; set; }
+        public string? MailID { get; set; }
+        public double MathsScore { get; set; }
+        public double SciScore { get; set; }
+        public double HistScore { get; set; }
+        public double GeoScore { get; set; }
+        public DateTime EntryDate { get; set; }
+    }
+
 }

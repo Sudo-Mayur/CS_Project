@@ -7,7 +7,7 @@ using Web_App_Job_Seeker.Services;
 
 namespace Web_App_Job_Seeker.Controllers
 {
-    [Authorize(Policy = "EmployeerPolicy")]
+   // [Authorize(Policy = "EmployeerPolicy")]
     public class JobSeekersListController : Controller
     {
         private readonly IService<PersonalInfo, int> PerService;
@@ -22,9 +22,10 @@ namespace Web_App_Job_Seeker.Controllers
         }
         public IActionResult Index()
         {
+
+          
             var resPer = PerService.GetAsync().Result;
             var resEdu = EduService.GetAsync().Result;
-
             //Full Name COntact No Email Highest Quaification IMage
 
             var Resultant = from e in resPer
@@ -92,6 +93,114 @@ namespace Web_App_Job_Seeker.Controllers
 
             return View(f);
         }
+
+        public IActionResult Search(string SearchBy, string search)
+        {
+            if(search==null)
+            {
+                return RedirectToAction("Index");
+            }
+            if (SearchBy == "Name")
+            {
+                var res1 = PerService.GetAsync().Result.Where(e => e.FullName.StartsWith(search)).ToList();
+                if(res1.Count==0)
+                {
+                    ViewBag.Message = "No Record Found";
+                   // return RedirectToAction("Index");
+                }
+                var resEdu = EduService.GetAsync().Result;
+                var Resultant = from e in res1
+                                join d in resEdu on
+                                e.PersonId equals d.PersonId
+                                select new
+                                {
+                                    Fullname = e.FullName,
+                                    ContactNo = e.ContactNo,
+                                    Email = e.Email,
+                                    HighestQuaification = d.HighestQuaification,
+                                    ImageFilePath = e.ImageFilePath,
+                                    PersonID = e.PersonId,
+                                    City = e.City
+                                };
+
+
+                List<PersonData> personDatas = new List<PersonData>();
+                foreach (var d in Resultant)
+                {
+                    personDatas.Add(new PersonData() { FullName = d.Fullname, ContactNo = d.ContactNo, Email = d.Email, HighestQuaification = d.HighestQuaification, Image = d.ImageFilePath, PersonID = d.PersonID , City = d.City });
+                }
+
+                return View(personDatas);
+            }
+
+            else if(SearchBy=="Quailification")
+            {
+                var resPer = EduService.GetAsync().Result.Where(e => e.HighestQuaification==search).ToList();
+                if (resPer.Count == 0)
+                {
+                    ViewBag.Message = "No Record Found";
+                }
+                var res1 = PerService.GetAsync().Result;
+                var Resultant = from e in res1
+                                join d in resPer on
+                                e.PersonId equals d.PersonId
+                                select new
+                                {
+                                    Fullname = e.FullName,
+                                    ContactNo = e.ContactNo,
+                                    Email = e.Email,
+                                    HighestQuaification = d.HighestQuaification,
+                                    ImageFilePath = e.ImageFilePath,
+                                    PersonID = e.PersonId,
+                                    City = e.City
+                                };
+
+
+                List<PersonData> personDatas = new List<PersonData>();
+                foreach (var d in Resultant)
+                {
+                    personDatas.Add(new PersonData() { FullName = d.Fullname, ContactNo = d.ContactNo, Email = d.Email, HighestQuaification = d.HighestQuaification, Image = d.ImageFilePath, PersonID = d.PersonID, City = d.City });
+                }
+
+                return View(personDatas);
+
+            }
+
+            else if(SearchBy == "WorkExperience")
+            {
+                var res = ProService.GetAsync().Result.Where(e => e.WorkExperience == search).ToList();
+                var resPer = PerService.GetAsync().Result;
+                var Resultant = from e in resPer
+                                join d in res on
+                                e.PersonId equals d.PersonId
+                                select new
+                                {
+                                    Fullname = e.FullName,
+                                    ContactNo = e.ContactNo,
+                                    Email = e.Email,
+                                    ImageFilePath = e.ImageFilePath,
+                                    PersonID = e.PersonId,
+                                    City=e.City
+                                };
+
+
+                List<PersonData> personDatas = new List<PersonData>();
+                foreach (var d in Resultant)
+                {
+                    personDatas.Add(new PersonData() { FullName = d.Fullname, ContactNo = d.ContactNo, Email = d.Email,  Image = d.ImageFilePath, PersonID = d.PersonID, City = d.City });
+                }
+
+                return View(personDatas);
+
+
+
+            }
+            else
+            {
+                return View(Search);
+            }
+        }
+      
     }
 }
 

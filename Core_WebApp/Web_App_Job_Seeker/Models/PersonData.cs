@@ -10,6 +10,7 @@ namespace Web_App_Job_Seeker.Models
         public string Email { get; set; }
         public string HighestQuaification { get; set; }
         public string Image { get; set; }
+        public string City { get; set; }
 
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3sccGEOUOQuVanvSg3tXiaA3widCa0rGaWRVg5GnC48oLQpyal7SKeFv61u8gG9wJgU06wI94i6EE3rTsXL3Kw==",
+  "dgSpecHash": "zBK2XLebq8C236dIIW7YcJccxlYM+65e6318W1tM80LIiiJDAaKw1Ml7M0jjRMLS41tb/0asP21w75XoDDPasg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Coditas\\source\\repos\\Core_WebApp\\Core_WebApp\\Core_WebApp.csproj",
   "expectedPackageFiles": [
@@ -112,7 +112,7 @@
     "C:\\Users\\Coditas\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Coditas\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Coditas\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+    "C:\\Users\\Coditas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
   ],
   "logs": []
 }

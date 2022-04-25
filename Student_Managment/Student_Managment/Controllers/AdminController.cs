@@ -63,3 +63,4 @@ namespace Student_Managment.Controllers
 
 //dotnet ef migrations add firstMigration -c Student_Managment.Models.SecurityStudentMarksContext
 //dotnet ef database update -c Student_Managment.Models.SecurityStudentMarksContext
+

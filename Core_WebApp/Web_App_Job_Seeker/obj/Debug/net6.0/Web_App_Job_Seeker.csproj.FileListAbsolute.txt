@@ -267,3 +267,7 @@ C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net6.0\Mi
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\obj\Debug\net6.0\Web_App_Job_Seeker.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Coditas\source\repos\Core_WebApp\Web_App_Job_Seeker\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
